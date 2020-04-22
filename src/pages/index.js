@@ -1,3 +1,18 @@
-import React from "react"
+import React from 'react'
+import Layout from '../components/layout'
 
-export default () => <div>Hello world!</div>
+const HomePage = () => {
+    return (
+        <Layout pageMeta={{
+            title: "Home",
+            keywords: ["construction"],
+            description: "Taniko Construction"
+        }}>
+            <section className="">
+                <p>Home</p>
+            </section>
+        </Layout>
+    )
+}
+
+export default HomePage
