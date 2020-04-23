@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import '../styles/mystyles.scss'
 
 const HomePage = () => {
     return (
@@ -8,8 +9,8 @@ const HomePage = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-            <section className="">
-                <p>Home</p>
+            <section className="hero-body has-background-primary">
+
             </section>
         </Layout>
     )
