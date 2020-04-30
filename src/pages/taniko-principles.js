@@ -1,18 +1,18 @@
 import React from 'react'
 import Layout from '../components/layout'
-import MauriAtua from '../images/mauri-atua.svg'
-import MauriWhenua from '../images/mauri-whenua.svg'
-import MauriTangata from '../images/mauri-tangata.svg'
+import MauriAtua from '../images/mauri-atua_black.svg'
+import MauriWhenua from '../images/mauri-whenua_black.svg'
+import MauriTangata from '../images/mauri-tangata_black.svg'
 
-const mauriAtua = () => {
+const tanikoPrinciples = () => {
     return (
         <Layout pageMeta={{
-            title: "Our Values",
+            title: "Taniko Principles",
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-            <section className="hero">
-                <h1 className="title section">Our Values</h1>
+            <section className="section is-large has-text-centered has-background-white">
+                <h1 className="is-size-1 has-text-black">Our Values</h1>
                 <div className="section">
                     <div className="hero-body columns">
                         <div className="column is-5">
@@ -65,4 +65,4 @@ const mauriAtua = () => {
     )
 }
 
-export default mauriAtua
+export default tanikoPrinciples
