@@ -1,16 +1,16 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-const contactPage = () => {
+const whoWeAre = () => {
     return (
         <Layout pageMeta={{
-            title: "Our Clients",
+            title: "Who We Are",
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-            <h1>Contact Us</h1>
+            <h1>Who We Are</h1>
         </Layout>
     )
 }
 
-export default contactPage
+export default whoWeAre

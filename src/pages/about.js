@@ -1,11 +1,16 @@
 import React from 'react'
+import Layout from '../components/layout'
 
-const aboutPage = () => {
+const About = () => {
     return (
-        <section className="">
-            <p>About</p>
-        </section>
+        <Layout pageMeta={{
+            title: "About Us",
+            keywords: ["construction"],
+            description: "Taniko Construction"
+        }}>
+        <h1>About Us</h1> 
+        </Layout>
     )
 }
 
-export default aboutPage
+export default About
