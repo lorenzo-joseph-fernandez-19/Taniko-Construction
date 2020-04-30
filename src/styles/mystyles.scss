@@ -1,11 +1,22 @@
 @charset "utf-8";
 @import "../../node_modules/bulma/bulma.sass";
+@import 'bulma';
+
 
   /* Bulma Styling */
 
+$white: #FFFFFF;
+$red: #9E221E;
+$grey: #3B3838;
+$black: #000000;
+
 $family-sans-serif: 'Bahnschrift Regular', sans-serif;
 $family-primary: $family-sans-serif;
-
+$gap: 50px;
+$text: $white;
+$link: $white;
+$link-hover: $red;
+$menu-item-hover-background-color: $black;
 
 
 @import "../../node_modules/bulma/sass/base/_all.sass";
@@ -216,7 +227,6 @@ $family-primary: $family-sans-serif;
 
 /* General/Custom Styling */
 
-
 body {
   background-color: black;
   height: 100%;
@@ -224,11 +234,10 @@ body {
   color: white;
 }
 
-.span-style {
-  background-color: white;
-  height: 2px;
-
+li {
+  list-style: none;
 }
+
 
 .line::after {
   content: " ";
@@ -236,7 +245,7 @@ body {
   width: 0;
   height: 2px;
   background: #9E221E;
-  transition: width .5s
+  transition: width .5s;
 }
 
 .line:hover::after {
@@ -261,12 +270,80 @@ body {
   font-size: 20px;
 }
 
-.menu {
-  display: flex;
-  justify-content: flex-end;
-}
 
 footer {
-  background-color: #3B3838;
+  background-color: black;
   color: white;
+}
+
+/* Background Styling */
+
+.box:after {
+  content: ' ';
+  border-top: 100vh solid black;
+  border-right: 100vw solid transparent;
+  width: 0;
+  position: absolute;
+}
+
+/* Navbar Styling */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+}
+
+.nav-links {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: #FFFFFF;
+  margin: 5px;
+}
+
+@media screen and (max-width:1024px){
+  .nav-links {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width:768px){
+  body {
+    overflow-x: hidden;
+     
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translateX(100%);
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  
+}
+ 
+.nav-active {
+   transform: translateX(0%);
 }
