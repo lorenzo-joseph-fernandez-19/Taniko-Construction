@@ -29,7 +29,7 @@ const Footer = class extends React.Component {
                 <div className="column is-4">
                 <section>
                     <ul>
-                      <li>{`© ${new Date().getFullYear()} Taniko Group`}</li>
+                      <li>(Social Icons}</li>
                     </ul>
                 </section>  
                 </div>

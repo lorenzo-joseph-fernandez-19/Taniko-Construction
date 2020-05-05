@@ -133,9 +133,8 @@ $black: #000000;
 
 $family-sans-serif: 'Bahnschrift Regular', sans-serif;
 $family-primary: $family-sans-serif;
-$gap: 50px;
-$text: $white;
-$link: $white;
+$link-focus: $white;
+$link-focus-border: $white;
 $link-hover: $red;
 $menu-item-hover-background-color: $black;
 
@@ -148,20 +147,19 @@ $menu-item-hover-background-color: $black;
 @import "../../node_modules/bulma/sass/layout/_all.sass";
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 
+/* Styling */
 
-/* General/Custom Styling */
-
-body {
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  color: white;
+.logo-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-li {
-  list-style: none;
+.image-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .line::after {
   content: " ";
@@ -198,105 +196,244 @@ li {
   font-size: 30px;
 }
 
-
 footer {
   background-color: black;
   color: white;
 }
 
-/* Background Styling */
+.img-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+button:focus {outline:0;}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
 
 /* Navbar Styling */
 
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+  float: right;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 36px;
+  width: 36px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: black;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: white;
+  padding: 2.5em 1.5em 0;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: white;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  text-align: center;
+  color: black;
+}
+
+.bm-item:hover {
+  color: #9E221E;
+  font-weight: bolder;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Form Styling */
+
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-nav {
+body {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  min-height: 8vh;
+  background-color: black;
+  font-family: 'Bahnschrift Regular';
 }
 
-.nav-links {
+.containerz {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px;
+  height: 600px;
+  background: transparent;
   display: flex;
-  width: 50%;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.burger {
-  display: none;
+.containerz .formBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerz .formBox form {
+  position: relative;
+  width: 100%;
+  padding: 0 0 0 75px;
+}
+
+.containerz .formBox form h2 {
+  color: white;
+  font-weight: 1000;
+  font-size: 4em;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.containerz .formBox form .inputBox {
+  position: relative;
+  margin-bottom: 40px;
+
+}
+
+.containerz .formBox form .inputBox:last-child {
+  margin-bottom: 0px;
+}
+
+.containerz .formBox form .inputBox input,
+.containerz .formBox form .inputBox textarea {
+  position: relative;
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: white;
+  padding-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  resize: none;
+
+}
+
+.containerz .formBox form .inputBox textarea {
+  height: 100px;
+}
+
+.containerz .formBox form .inputBox input[type="submit"] {
+  background: white;
+  padding: 8px 20px;
+  margin: -10px;
+  width: 100px;
   cursor: pointer;
+  background: #9E221E;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border-radius: 20px;
+
 }
 
-.burger div{
-  width: 25px;
-  height: 3px;
-  background-color: #FFFFFF;
-  margin: 5px;
-  transition: all 0.3s ease;
+.containerz .formBox form .inputBox input[type="submit"]:focus {
+  background: white;
+  color: black;
 }
 
-@media screen and (max-width:1024px){
-  .nav-links {
-    display: flex;
-    width: 70%;
-    justify-content: space-around;
-  }
+.containerz .formBox form .inputBox span {
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  font-weight: 300;
+  display: inline-block;
+  pointer-events: none;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.5);
+  transition: all 0.2s;
 }
 
-@media screen and (max-width:768px){
-  body {
-    overflow-x: hidden;
-  }
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-  .nav-links li{
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-}
-  
+.containerz .formBox form .inputBox input:focus ~ span,
+.containerz .formBox form .inputBox textarea:focus ~ span,
+.containerz .formBox form .inputBox input:valid ~ span,
+.containerz .formBox form .inputBox textarea:valid ~ span {
+  transform: translateY(-30px);
+  color: white;
+  font-size: 20px;
 }
 
-.nav-active{
-  transform: translateX(0%);
+.containerz .formBox form .inputBox input:focus,
+.containerz .formBox form .inputBox textarea:focus,
+.containerz .formBox form .inputBox input:valid,
+.containerz .formBox form .inputBox textarea:valid {
+  border-bottom-color: white;
 }
 
-@keyframes navLinkFadeOut{
-  from{
-      opacity: 1;
-      transform: translateX(0px);
-  }
-  to{
-      opacity: 0;
-      transform: translateX(50px);
-  }
-}
+.containerz .imageBox:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transform-origin: bottom;
+  transform: skewX(-25deg) translateX(10%);
 
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 5px);
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  transform: rotate(+45deg) translate(-5px, -5px);
 }

@@ -10,7 +10,6 @@ const burgerMenu = () => {
             <Link to="/about">About Us</Link>
             <Link to="/what-we-do">What We Do</Link>
             <Link to="/who-we-are">Who We Are</Link>
-            <Link to="/taniko-principles">Taniko Principles</Link>
             <Link to="/our-clients">Our Clients</Link>
             <Link to="/contact">Contact Us</Link>
         </Menu>

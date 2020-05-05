@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Slider from '../components/slider'
 
 const About = () => {
     return (
@@ -8,9 +9,10 @@ const About = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-            <section className="section is-large has-text-centered has-background-white">
-                <h1 className="is-size-1 has-text-black">About Us</h1> 
-            </section>
+            <Slider>
+                
+            </Slider>
+            
         </Layout>
     )
 }

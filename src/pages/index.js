@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import '../styles/mystyles.scss'
-import { Link } from 'gatsby'
+import Slider from '../components/slider'
 
 const HomePage = () => {
     return (
@@ -10,11 +10,10 @@ const HomePage = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-            <section className="section is-large has-text-centered has-background-white">
-                    <div className="translation" data-hover="The tapestry of understanding cannot be woven by one strand alone, but only by the working together of weavers will such a tapestry be completed.">
+            <Slider />
+                    <div className="translation has-text-white" data-hover="The tapestry of understanding cannot be woven by one strand alone, but only by the working together of weavers will such a tapestry be completed.">
                         <i>E kore e taea whenu kotahi te whāriki te raranga, heoi anō, mā te mahi ngātahi o ngā kairaranga, ka oti ai tēnei whāriki</i>
                     </div>
-            </section>
         </Layout>
     )
 }
