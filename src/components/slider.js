@@ -11,7 +11,7 @@ import Logo from "../images/logo-white.svg"
 const Slider = () => {
     return (
       <HeroSlider
-        slidingAnimation='fade'
+        slidingAnimation='left_to_right'
         orientation="horizontal"
         initialSlide={1}
         onBeforeChange={(previousSlide, nextSlide) =>

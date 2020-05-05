@@ -7,7 +7,7 @@ const Footer = class extends React.Component {
       return (
         <footer className="level">
           <div className="level-item">
-          <Link to="/">Home</Link>
+          <Link to="/privacy-policy">Privacy</Link>
           <Link to="/">Home</Link>
           <Link to="/">Home</Link>
           <Link to="/">Home</Link>

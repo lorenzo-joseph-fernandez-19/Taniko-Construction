@@ -8,7 +8,9 @@ const About = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-            <p> About</p>
+            <section>
+                <p>About Us</p>
+            </section>
             
         </Layout>
     )
