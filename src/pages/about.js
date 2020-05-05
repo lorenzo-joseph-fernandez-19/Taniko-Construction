@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/layout'
-import Slider from '../components/slider'
 
 const About = () => {
     return (
@@ -9,9 +8,7 @@ const About = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-            <Slider>
-                
-            </Slider>
+            <p> About</p>
             
         </Layout>
     )
