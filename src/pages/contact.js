@@ -10,7 +10,7 @@ const contactPage = () => {
         }}>
             <div className="containerz">
                 <div className="formBox">
-                    <form>
+                    <form name="contact" method="POST" data-netlify="true">
                         <h2>Contact Us</h2>
                         <div className="inputBox">
                             <input type="text" name="" required="required" />

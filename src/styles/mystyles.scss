@@ -149,6 +149,22 @@ $menu-item-hover-background-color: $black;
 
 /* Styling */
 
+section {
+  background: black;
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+
 .logo-center {
   display: flex;
   justify-content: center;
@@ -196,11 +212,6 @@ $menu-item-hover-background-color: $black;
   font-size: 30px;
 }
 
-footer {
-  background-color: black;
-  color: white;
-}
-
 .img-style {
   display: flex;
   justify-content: center;
@@ -209,13 +220,6 @@ footer {
 
 button:focus {outline:0;}
 
-.dot {
-    height: 25px;
-    width: 25px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-}
 
 /* Navbar Styling */
 
@@ -300,7 +304,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -309,6 +312,7 @@ body {
   align-items: center;
   background-color: black;
   font-family: 'Bahnschrift Regular';
+  width: 100%;
 }
 
 .containerz {
