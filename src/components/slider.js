@@ -1,8 +1,8 @@
 import React from 'react'
 import HeroSlider, { Slide, MenuNav } from "hero-slider"
-import Wrapper from "../components/UI/Wrapper/wrapper"
-import Title from "../components/UI/Title/title"
-import Subtitle from "../components/UI/Subtitle/subtitle"
+import Wrapper from "../components/UI/Wrapper/wrapper.js"
+import Title from "../components/UI/Title/title.js"
+import Subtitle from "../components/UI/Subtitle/subtitle.js"
 import Atua from "../images/mauri-atua.svg"
 import Whenua from "../images/mauri-whenua.svg"
 import Tangata from "../images/mauri-tangata.svg"
@@ -33,7 +33,6 @@ const Slider = () => {
       >
 
         <Slide
-          children="Hi"
           navDescription= "Taniko Principles"
           background={{
             backgroundAttachment: "fixed",
