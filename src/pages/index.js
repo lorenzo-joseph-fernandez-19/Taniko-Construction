@@ -10,7 +10,9 @@ const HomePage = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-            <Slider />
+        <div>
+          {typeof window !== 'undefined' && <Slider />}
+        </div>
                 <section className="section has-background-black">
                     
                 </section>
