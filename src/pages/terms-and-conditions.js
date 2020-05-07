@@ -9,7 +9,9 @@ const Terms = () => {
             description: "Taniko Construction"
         }}>
         <div>
-            <p>Terms & Conditions</p>
+            <section className="hero is-fullheight"> 
+                <p className="has-text-white is-size-1 has-text-centered">Terms & Conditions</p>
+            </section>
         </div>
         </Layout>
     )

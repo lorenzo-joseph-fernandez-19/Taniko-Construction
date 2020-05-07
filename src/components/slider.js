@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSlider, { Slide, MenuNav } from "hero-slider"
+import HeroSlider, { Slide, Nav } from "hero-slider"
 import Wrapper from "../components/UI/Wrapper/wrapper.js"
 import Title from "../components/UI/Title/title.js"
 import Subtitle from "../components/UI/Subtitle/subtitle.js"
@@ -25,8 +25,8 @@ const Slider = () => {
         settings={{
           slidingDuration: 400,
           slidingDelay: 100,
-          shouldAutoplay: false,
-          shouldDisplayButtons: false,
+          shouldAutoplay: true,
+          shouldDisplayButtons: true,
           autoplayDuration: 4000,
           height: "100vh"
         }}
@@ -95,7 +95,8 @@ const Slider = () => {
             <i>Toitū te whenua, whatu ngarongaro te tangata.</i>
           </div>
         </Slide>
-        <MenuNav />
+        <Nav />
+        {/* <MenuNav /> */}
       </HeroSlider>
     );
   };

@@ -133,6 +133,7 @@ $black: #000000;
 
 $family-sans-serif: 'Bahnschrift Regular', sans-serif;
 $family-primary: $family-sans-serif;
+$link: $white;
 $link-focus: $white;
 $link-focus-border: $white;
 $link-hover: $red;
@@ -149,12 +150,6 @@ $menu-item-hover-background-color: $black;
 
 /* Styling */
 
-section {
-  background: black;
-  width: 80%;
-  margin: 0 auto;
-}
-
 footer {
   background-color: black;
   color: white;
@@ -164,6 +159,9 @@ footer {
   width: 100%;
 }
 
+li {
+  list-style: none;
+}
 
 .logo-center {
   display: flex;
@@ -220,6 +218,9 @@ footer {
 
 button:focus {outline:0;}
 
+.icon:hover {
+  color: #9E221E;
+}
 
 /* Navbar Styling */
 
@@ -307,12 +308,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: black;
   font-family: 'Bahnschrift Regular';
-  width: 100%;
+  height: 200vh;
 }
 
 .containerz {
@@ -439,5 +437,5 @@ body {
   background: black;
   transform-origin: bottom;
   transform: skewX(-25deg) translateX(10%);
-
 }
+
