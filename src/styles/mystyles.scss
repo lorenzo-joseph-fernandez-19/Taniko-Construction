@@ -150,10 +150,20 @@ $menu-item-hover-background-color: $black;
 
 /* Styling */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: 'Bahnschrift Regular';
+}
+
 footer {
   background-color: black;
   color: white;
-  position: fixed;
+  position: relative;
   left: 0px;
   bottom: 0px;
   width: 100%;
@@ -218,10 +228,6 @@ li {
 
 button:focus {outline:0;}
 
-.icon:hover {
-  color: #9E221E;
-}
-
 /* Navbar Styling */
 
 /* Position and sizing of burger button */
@@ -252,7 +258,7 @@ button:focus {outline:0;}
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: black;
+  background: #9E221E;
 }
 
 /*
@@ -268,7 +274,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu {
   background: white;
   padding: 2.5em 1.5em 0;
-  font-size: 3em;
+  font-size: 2.5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,17 +307,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* Contact Form Styling */
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: black;
-  font-family: 'Bahnschrift Regular';
-  height: 200vh;
-}
 
 .containerz {
   position: relative;

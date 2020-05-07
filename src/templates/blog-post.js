@@ -19,15 +19,13 @@ export const query = graphql`
     `
 
 const Blog = props => {
-  const options = {
-    renderNode: {
-      "embedded-asset-block": (node) => {
-        const alt = node.data.target.fields.title['en-US']
-        const url = node.data.target.fields.file['en-US'].url
-        return <img alt={alt} src={url} />
-      }
-    }
-  }
+  // const options = {
+  //   renderNode: {
+  //     "embedded-asset-block": (node) => {
+  //       const alt = node.data.target.fields.title['en-US']
+  //       const url = node.data.target.fields.file['en-US'].url
+  //       return <img alt={alt} src={url} />
+  //     }
 
 
   return (
@@ -36,8 +34,9 @@ const Blog = props => {
       keywords: ["Taniko"],
       description: "Taniko Blogs"
     }}>
-      <div className="hero-body is-fullheight background-image">
-        <div className="container center">
+      <div className="hero-body is-fullheight">
+        <div className="container">
+        <p>{props.data.allWordpressPost.content}</p>
           <article className="media">
             <div className="media-content">
               <div className="content">
@@ -48,9 +47,6 @@ const Blog = props => {
           </article>
         </div>
       </div>
-        <div className="box container">
-            <p>{props.data.allWordpressPost.content}</p>
-          </div>
     </Layout>
   )
 }
