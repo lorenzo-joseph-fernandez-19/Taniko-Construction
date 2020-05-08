@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Photo from "../images/construction.jpg"
 
 
 export const query = graphql`
@@ -16,39 +17,39 @@ export const query = graphql`
             }
         }
       }
-    `
+    `  
 
-const Blog = props => {
-  // const options = {
-  //   renderNode: {
-  //     "embedded-asset-block": (node) => {
-  //       const alt = node.data.target.fields.title['en-US']
-  //       const url = node.data.target.fields.file['en-US'].url
-  //       return <img alt={alt} src={url} />
-  //     }
-
-
-  return (
-    <Layout pageMeta={{
-      title: `${props.data.allWordpressPost.title}`,
-      keywords: ["Taniko"],
-      description: "Taniko Blogs"
-    }}>
-      <div className="hero-body is-fullheight">
-        <div className="container">
-        <p>{props.data.allWordpressPost.content}</p>
-          <article className="media">
-            <div className="media-content">
-              <div className="content">
-                <h1 className="is-size-1 has-text-light">{props.data.allWordpressPost.title}</h1>
-                <p className="subtitle is-size-3 has-text-light">{props.data.allWordpressPost.date}</p>
-              </div>
-            </div>
-          </article>
+    const BlogPostTemplate = ({ data }) => (
+      <Layout pageMeta={{
+        title: `${data.allWordpressPost.title}`,
+        keywords: ["Taniko"],
+        description: "Taniko Blogs"
+      }}>
+      {/* <SEO
+        title={data.wordpressPost.title}
+        description={data.wordpressPost.excerpt}
+      /> */}
+      <div class="hero is-medium is-bold">
+         <img src={Photo} alt="construction worker" width="2000" height="400" />
+          <div class="hero-body">
+           <div class="container has-text-centered">
+              <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</h1>
+           </div>
         </div>
-      </div>
+       </div>
+      <h1>{data.allWordpressPost.title}</h1>
+      <p>
+        Written  on {data.allWordpressPost.date}
+      </p>
+      {/* <Img
+        sizes={data.wordpressPost.acf.feat_img.localFile.childImageSharp.sizes}
+        alt={data.wordpressPost.title}
+        style={{ maxHeight: 450 }}
+      /> */}
+      <div
+        dangerouslySetInnerHTML={{ __html: data.allWordpressPost.content }}
+      />
     </Layout>
-  )
-}
-
-export default Blog
+    )
+    
+export default BlogPostTemplate

@@ -228,6 +228,16 @@ li {
 
 button:focus {outline:0;}
 
+.icon-style {
+  margin: 0.5em;
+}
+
+.column-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Navbar Styling */
 
 /* Position and sizing of burger button */
@@ -258,7 +268,7 @@ button:focus {outline:0;}
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #9E221E;
+  background: #000000;
 }
 
 /*
@@ -306,131 +316,131 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* Contact Form Styling */
+// /* Contact Form Styling */
 
-.containerz {
-  position: relative;
-  width: 100%;
-  max-width: 1100px;
-  margin: 20px;
-  height: 600px;
-  background: transparent;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+// .containerz {
+//   position: relative;
+//   width: 100%;
+//   max-width: 1100px;
+//   margin: 20px;
+//   height: 600px;
+//   background: transparent;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
 
-.containerz .formBox {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// .containerz .formBox {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
-.containerz .formBox form {
-  position: relative;
-  width: 100%;
-  padding: 0 0 0 75px;
-}
+// .containerz .formBox form {
+//   position: relative;
+//   width: 100%;
+//   padding: 0 0 0 75px;
+// }
 
-.containerz .formBox form h2 {
-  color: white;
-  font-weight: 1000;
-  font-size: 4em;
-  letter-spacing: 2px;
-  margin-bottom: 40px;
-}
+// .containerz .formBox form h2 {
+//   color: white;
+//   font-weight: 1000;
+//   font-size: 4em;
+//   letter-spacing: 2px;
+//   margin-bottom: 40px;
+// }
 
-.containerz .formBox form .inputBox {
-  position: relative;
-  margin-bottom: 40px;
+// .containerz .formBox form .inputBox {
+//   position: relative;
+//   margin-bottom: 40px;
 
-}
+// }
 
-.containerz .formBox form .inputBox:last-child {
-  margin-bottom: 0px;
-}
+// .containerz .formBox form .inputBox:last-child {
+//   margin-bottom: 0px;
+// }
 
-.containerz .formBox form .inputBox input,
-.containerz .formBox form .inputBox textarea {
-  position: relative;
-  background: transparent;
-  outline: none;
-  border: none;
-  width: 100%;
-  color: white;
-  padding-bottom: 10px;
-  font-size: 16px;
-  letter-spacing: 1px;
-  font-weight: 300;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  resize: none;
+// .containerz .formBox form .inputBox input,
+// .containerz .formBox form .inputBox textarea {
+//   position: relative;
+//   background: transparent;
+//   outline: none;
+//   border: none;
+//   width: 100%;
+//   color: white;
+//   padding-bottom: 10px;
+//   font-size: 16px;
+//   letter-spacing: 1px;
+//   font-weight: 300;
+//   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+//   resize: none;
 
-}
+// }
 
-.containerz .formBox form .inputBox textarea {
-  height: 100px;
-}
+// .containerz .formBox form .inputBox textarea {
+//   height: 100px;
+// }
 
-.containerz .formBox form .inputBox input[type="submit"] {
-  background: white;
-  padding: 8px 20px;
-  margin: -10px;
-  width: 100px;
-  cursor: pointer;
-  background: #9E221E;
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
-  border: none;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  border-radius: 20px;
+// .containerz .formBox form .inputBox input[type="submit"] {
+//   background: white;
+//   padding: 8px 20px;
+//   margin: -10px;
+//   width: 100px;
+//   cursor: pointer;
+//   background: #9E221E;
+//   color: white;
+//   font-size: 18px;
+//   font-weight: 400;
+//   border: none;
+//   text-transform: uppercase;
+//   letter-spacing: 4px;
+//   border-radius: 20px;
 
-}
+// }
 
-.containerz .formBox form .inputBox input[type="submit"]:focus {
-  background: white;
-  color: black;
-}
+// .containerz .formBox form .inputBox input[type="submit"]:focus {
+//   background: white;
+//   color: black;
+// }
 
-.containerz .formBox form .inputBox span {
-  position: absolute;
-  left: 0;
-  font-size: 20px;
-  font-weight: 300;
-  display: inline-block;
-  pointer-events: none;
-  letter-spacing: 1px;
-  color: rgba(255,255,255,0.5);
-  transition: all 0.2s;
-}
+// .containerz .formBox form .inputBox span {
+//   position: absolute;
+//   left: 0;
+//   font-size: 20px;
+//   font-weight: 300;
+//   display: inline-block;
+//   pointer-events: none;
+//   letter-spacing: 1px;
+//   color: rgba(255,255,255,0.5);
+//   transition: all 0.2s;
+// }
 
-.containerz .formBox form .inputBox input:focus ~ span,
-.containerz .formBox form .inputBox textarea:focus ~ span,
-.containerz .formBox form .inputBox input:valid ~ span,
-.containerz .formBox form .inputBox textarea:valid ~ span {
-  transform: translateY(-30px);
-  color: white;
-  font-size: 20px;
-}
+// .containerz .formBox form .inputBox input:focus ~ span,
+// .containerz .formBox form .inputBox textarea:focus ~ span,
+// .containerz .formBox form .inputBox input:valid ~ span,
+// .containerz .formBox form .inputBox textarea:valid ~ span {
+//   transform: translateY(-30px);
+//   color: white;
+//   font-size: 20px;
+// }
 
-.containerz .formBox form .inputBox input:focus,
-.containerz .formBox form .inputBox textarea:focus,
-.containerz .formBox form .inputBox input:valid,
-.containerz .formBox form .inputBox textarea:valid {
-  border-bottom-color: white;
-}
+// .containerz .formBox form .inputBox input:focus,
+// .containerz .formBox form .inputBox textarea:focus,
+// .containerz .formBox form .inputBox input:valid,
+// .containerz .formBox form .inputBox textarea:valid {
+//   border-bottom-color: white;
+// }
 
-.containerz .imageBox:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  transform-origin: bottom;
-  transform: skewX(-25deg) translateX(10%);
-}
+// .containerz .imageBox:before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: black;
+//   transform-origin: bottom;
+//   transform: skewX(-25deg) translateX(10%);
+// }
 

@@ -8,11 +8,10 @@ const Terms = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-        <div>
-            <section className="hero is-fullheight"> 
-                <p className="has-text-white is-size-1 has-text-centered">Terms & Conditions</p>
-            </section>
-        </div>
+        <section className="section is-large has-text-centered">
+            <h1 className="is-size-1 has-text-white">Terms & Conditions</h1> 
+    
+        </section>
         </Layout>
     )
 }

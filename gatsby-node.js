@@ -16,7 +16,6 @@ exports.onCreateWebpackConfig = ({
     })
   }
 };
-
 const path = require(`path`)
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -35,7 +34,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
   res.data.allWordpressPost.edges.forEach(edge => {
     createPage({
-      path: `/news/${edge.node.slug}`,
+      path: `/blog/${edge.node.slug}`,
       component: blogPostTemplate,
       context: {
         slug: edge.node.slug,
