@@ -25,7 +25,7 @@ const BlogPage = () => {
           keywords: ["Taniko"],
           description: "Taniko"
         }}>
-          <div className="section is-large has-text-centered">
+          <div className="section is-medium has-text-centered">
           <h1 className="is-size-1 has-text-white">Our Blog</h1> 
                 <ol>{data.allWordpressPost.edges.map((edge) => { 
                 return (

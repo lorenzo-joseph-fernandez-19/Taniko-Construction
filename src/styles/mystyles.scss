@@ -139,7 +139,6 @@ $link-focus-border: $white;
 $link-hover: $red;
 $menu-item-hover-background-color: $black;
 
-
 @import "../../node_modules/bulma/sass/base/_all.sass";
 @import "../../node_modules/bulma/sass/components/_all.sass";
 @import "../../node_modules/bulma/sass/elements/_all.sass";
@@ -176,7 +175,6 @@ footer {
 .link-underline {
   text-decoration-line: underline;
 }
-
 
 .logo-center {
   display: flex;
@@ -305,6 +303,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .bm-menu {
+    font-size: 16px;
+  }
 }
 
 /* Morph shape necessary with bubble or elastic */
