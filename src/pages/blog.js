@@ -5,20 +5,20 @@ import Photo from '../images/construction.jpg'
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
-        query {
-            allWordpressPost(sort: {fields: date, order: DESC}) {
-                edges {
-                    node {
-                      title
-                      slug
-                      excerpt
-                      date(formatString: "MMMM Do, YYYY")
-                      content
-                    }
-                  }
-                }
-              }
-            `)
+      query {
+        allWordpressPost(sort: {fields: date, order: DESC}) {
+          edges {
+            node {
+              title
+              slug
+              date(formatString: "MMMM Do, YYYY")
+              content
+              excerpt
+            }
+          }
+        }
+      }
+    `)
     return (
         <Layout pageMeta={{
           title: "Blog",
@@ -27,31 +27,31 @@ const BlogPage = () => {
         }}>
           <div className="section is-large has-text-centered">
           <h1 className="is-size-1 has-text-white">Our Blog</h1> 
-            <div className="container has-text-centered">
                 <ol>{data.allWordpressPost.edges.map((edge) => { 
                 return (
+                  <div className="section is-medium">
                   <Link to={`/blog/${edge.node.slug}`}>
-                    <article class="columns">
-                      <div class="column is-one-third">
-                        <div class="card large">
-                          <div class="card-image">
-                            <figure class="image">
+                    <article className="columns">
+                      <div className="column is-one-third">
+                        <div className="card large">
+                          <div className="card-image">
+                            <figure className="image">
                               <img src={Photo} alt={edge.node.title}/>
                             </figure>
                           </div>
-                          <div class="card-content">
-                            <div class="media">
-                              <div class="media-content">
-                                <p class="title has-text-centered is-4">{edge.node.title}</p>
-                                <p class="has-text-centered">{edge.node.date}</p>
+                          <div className="card-content">
+                            <div className="media">
+                              <div className="media-content">
+                                <p className="title has-text-centered is-4">{edge.node.title}</p>
+                                <p className="has-text-centered">{edge.node.date}</p>
                               </div>
                             </div>
-                            <div class="content">
+                            <div className="content">
                               <p dangerouslySetInnerHTML={{ __html:edge.node.excerpt}} />
                             </div>
-                            <footer class="card-footer has-text-info">
-                              <p class="card-footer-item">
-                              <p>Read More...</p>
+                            <footer className="card-footer has-text-info">
+                              <p className="card-footer-item">
+                              <p className="read-more">Read More...</p>
                               </p>
                             </footer>
                           </div>
@@ -59,11 +59,11 @@ const BlogPage = () => {
                       </div>
                     </article>
                 </Link>
+                </div>
                 )
               })}
               </ol>
             </div>
-          </div>
         </Layout>
     )
 }

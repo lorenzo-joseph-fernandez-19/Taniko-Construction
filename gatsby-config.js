@@ -1,14 +1,10 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
 
 module.exports = {
-  /* Your site config here */
   plugins: [
   `gatsby-plugin-react-helmet`,
   `gatsby-plugin-sass`,
+  `gatsby-transformer-sharp`, 
+  `gatsby-plugin-sharp`,
   {
     resolve: `gatsby-plugin-google-analytics`,
     options: {
@@ -46,10 +42,29 @@ module.exports = {
         protocol: `http`,
         // Indicates if a site is hosted on WordPress.com
         hostingWPCOM: false,
-        // Specify which URL structures to fetch
+        // We will be using some advanced custom fields
+        useACF: true,
+        acfOptionPageIds: [],
+        verboseOutput: false,
+        perPage: 100,
+        // searchAndReplaceContentUrls: {
+        //   sourceUrl: "https://www.using-wordpress-with-gatsby.iamtimsmith.com",
+        //   replacementUrl: "https://localhost:8000",
+        // },
+        concurrentRequests: 10,
         includedRoutes: [
-          '**/posts',
-        ]
+          "**/categories",
+          "**/posts",
+          "**/pages",
+          "**/media",
+          "**/tags",
+          "**/taxonomies",
+          "**/users",
+        ],
+        excludedRoutes: [],
+        normalizer: function ({ entities }) {
+          return entities
+        }
       }
     }
   ],
