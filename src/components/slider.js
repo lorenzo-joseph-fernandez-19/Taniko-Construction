@@ -37,8 +37,9 @@ const Slider = () => {
           background={{
             backgroundAttachment: "fixed",
             backgroundColor: "#000000",
-          }}><div className="logo-center">
-            <img src={Logo} width="750" height="750" alt="Taniko Logo"/>
+          }}> 
+            <div className="logo-center">
+              <img src={Logo} width="750" height="750" alt="Taniko Logo"/>
             </div>
           </Slide>
 
@@ -50,14 +51,19 @@ const Slider = () => {
           }}>
           <Wrapper>
             <Title>Mauri Atua</Title>
-            <div className="image-position">
-              <img src={Atua} width="450" height="450" alt="Mauri Atua Triangle" />
-            </div>
-            <Subtitle>We acknowledge the spiritual essence that is intrinsically linked to everything that lives.</Subtitle>
-          </Wrapper>
-              <div className="translation" data-hover="While the land remains, people disappear.">
-                    <i>Toitū te whenua, whatu ngarongaro te tangata.</i>
+            <hr className="hr" />
+            <div className="columns">
+              <div className="image-position column">
+                <img src={Atua} width="450" height="450" alt="Mauri Atua Triangle" />
               </div>
+              <div className="column">
+                <Subtitle>We acknowledge the spiritual essence that is intrinsically linked to everything that lives.</Subtitle>
+              </div>
+            </div>
+          </Wrapper>
+              {/* <div className="translation" data-hover="While the land remains, people disappear.">
+                    <i>Toitū te whenua, whatu ngarongaro te tangata.</i>
+              </div> */}
           </Slide>
   
         <Slide
@@ -68,14 +74,19 @@ const Slider = () => {
           }}>
              <Wrapper>
             <Title>Mauri Whenua</Title>
-            <div className="image-position">
-              <img src={Whenua} width="450" height="450" alt="Mauri Whenua Triangle" />
+            <hr className="hr" />
+            <div className="columns">
+              <div className="image-position column">
+                <img src={Whenua} width="450" height="450" alt="Mauri Whenua Triangle" />
+              </div>
+              <div className="column">
+                <Subtitle>We care for the life essence of our Earth Mother and all life that depends upon her.</Subtitle>
+              </div>
             </div>
-            <Subtitle>We care for the life essence of our Earth Mother and all life that depends upon her.</Subtitle>
           </Wrapper>
-          <div className="translation" data-hover="What is the most important thing in this world, it is people, it is people, it is people.">
+          {/* <div className="translation" data-hover="What is the most important thing in this world, it is people, it is people, it is people.">
             <i>He aha te mea nui o tēnei ao, he tangata, he tangata, he tangata.</i>
-          </div>
+          </div> */}
         </Slide>
   
         <Slide
@@ -86,17 +97,21 @@ const Slider = () => {
           }}>
             <Wrapper>
             <Title>Mauri Tangata</Title>
-            <div className="image-position">
-              <img src={Tangata} width="450" height="450" alt="Mauri Tangata Triangle" />
+            <hr className="hr" />
+            <div className="columns">
+              <div className="image-position column">
+                <img src={Tangata} width="450" height="450" alt="Mauri Tangata Triangle" />
+              </div>
+              <div className="column">
+                <Subtitle>We care for and value the importance and sacredness of people.</Subtitle>
+              </div>
             </div>
-            <Subtitle>We care for and value the importance and sacredness of people.</Subtitle>
           </Wrapper>
-          <div className="translation" data-hover="While the land remains, people disappear.">
+          {/* <div className="translation" data-hover="While the land remains, people disappear.">
             <i>Toitū te whenua, whatu ngarongaro te tangata.</i>
-          </div>
+          </div> */}
         </Slide>
         <Nav />
-        {/* <MenuNav /> */}
       </HeroSlider>
     );
   };

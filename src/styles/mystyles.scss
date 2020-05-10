@@ -138,6 +138,9 @@ $link-focus: $white;
 $link-focus-border: $white;
 $link-hover: $red;
 $menu-item-hover-background-color: $black;
+$input-focus-border-color: $red;
+$input-arrow: $red;
+$input-color: $white;
 
 @import "../../node_modules/bulma/sass/base/_all.sass";
 @import "../../node_modules/bulma/sass/components/_all.sass";
@@ -148,6 +151,10 @@ $menu-item-hover-background-color: $black;
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 
 /* Styling */
+
+::selection {
+  background-color: #9E221E;
+}
 
 * {
   margin: 0;
@@ -184,16 +191,8 @@ footer {
 
 .image-position {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-@media only screen and (max-width: 600px) {
-  .image-position {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  justify-content: center;
+  align-items: center;
 }
 
 .line::after {
@@ -253,6 +252,21 @@ button:focus {outline:0;}
   color: #9E221E;
 }
 
+.button-style {
+  background-color: #9E221E;
+  color: white;
+}
+
+.button-style:hover {
+  background-color: #9E221E;
+  color: white;
+}
+
+.hr {
+  width: 10%;
+  background: #9E221E;
+  margin-bottom: 80px;
+}
 /* Navbar Styling */
 
 /* Position and sizing of burger button */

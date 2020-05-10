@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Logo from "../images/logo-white.svg"
 
 
+
 const Footer = () => {
   return (
     <footer className="footer has-background-black">
