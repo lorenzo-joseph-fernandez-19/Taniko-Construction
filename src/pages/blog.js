@@ -45,7 +45,10 @@ const BlogPage = () => {
                             <div className="media">
                               <div className="media-content">
                                 <p className="title has-text-centered is-4">{edge.node.title}</p>
-                                <p className="has-text-centered">{edge.node.date}</p>
+                                <div class="tags has-addons is-centered level-item">
+                                  <span class="tag is-danger is-rounded">@skeetskeet</span>
+                                  <span class="tag is-rounded">{edge.node.date}</span>
+                                </div>
                               </div>
                             </div>
                             <div className="content">

@@ -1,8 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Photo from "../images/construction.jpg"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
 
 export const query = graphql`
@@ -23,30 +22,30 @@ export const query = graphql`
         keywords: ["Taniko"],
         description: "Taniko Blogs"
       }}>
-      {/* <SEO
-        title={data.wordpressPost.title}
-        description={data.wordpressPost.excerpt}
-      /> */}
-      <div class="hero is-medium is-bold">
-         <img src={data.wordpressPost.featured_media.source_url} alt="construction worker" width="2000" height="400" />
-          <div class="hero-body">
-           <div class="container has-text-centered">
-              <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</h1>
-           </div>
-        </div>
+      <div className="hero is-medium is-bold">
+         <img className="blog-image" src={data.wordpressPost.featured_media.source_url} alt={data.wordpressPost.title} width="2000" height="400" />
        </div>
-      <h1>{data.wordpressPost.title}</h1>
-      <p>
-        Written  on {data.wordpressPost.date}
-      </p>
-      {/* <Img
-        sizes={data.wordpressPost.acf.feat_img.localFile.childImageSharp.sizes}
-        alt={data.wordpressPost.title}
-        style={{ maxHeight: 450 }}
-      /> */}
-      <div
-        dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}
-      />
+       <div class="container container-position">
+          <div class="column is-8 is-offset-2">
+            <div class="card">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content has-text-centered">
+                    <h1 class="is-size-1 has-text-black">{data.wordpressPost.title}</h1>
+                    <div class="tags has-addons is-centered level-item">
+                      <span class="tag is-danger is-rounded">@skeetskeet</span>
+                      <span class="tag is-rounded">{data.wordpressPost.date}</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content content-style">
+                <div dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}/>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div className="section is-medium"></div>
     </Layout>
     )
     
