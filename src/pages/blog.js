@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import Photo from '../images/construction.jpg'
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
@@ -12,8 +11,11 @@ const BlogPage = () => {
               title
               slug
               date(formatString: "MMMM Do, YYYY")
-              content
+              featured_media {
+                source_url
+              }
               excerpt
+              content
             }
           }
         }
@@ -36,7 +38,7 @@ const BlogPage = () => {
                         <div className="card large">
                           <div className="card-image">
                             <figure className="image">
-                              <img src={Photo} alt={edge.node.title}/>
+                              <img src={edge.node.featured_media.source_url} alt={edge.node.title}/>
                             </figure>
                           </div>
                           <div className="card-content">

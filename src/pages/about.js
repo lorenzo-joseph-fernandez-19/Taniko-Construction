@@ -8,8 +8,9 @@ const About = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-            <section className="section is-large has-text-centered">
-                <h1 className="is-size-1 has-text-white">About Us</h1> 
+            <section className="section is-medium has-text-centered">
+                <h1 className="is-size-1 has-text-white">About Us</h1>
+                <hr className="hr" />
             </section>
             
         </Layout>

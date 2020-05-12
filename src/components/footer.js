@@ -13,14 +13,14 @@ const Footer = () => {
       <div className="container has-text-centered">
         <div className="content">
           <div className="columns">
-            <div className="column column-style has-text-left">
+            <div className="column column-style">
               <ul>
                 <li className="list-style line"><Link to="/about">About Us</Link></li>
                 <li className="list-style line"><Link to="/what-we-do">What We Do</Link></li>
                 <li className="list-style line"><Link to="/who-we-are">Who We Are</Link></li>
                 </ul>
               </div>
-              <div className="column column-style has-text-left">
+              <div className="column column-style">
               <ul>
                 <li className="list-style line"><Link to="/our-clients">Our Clients</Link></li>
                 <li className="list-style line"><Link to="/blog">Our Blog</Link></li>

@@ -163,6 +163,7 @@ $input-color: $white;
 
 body {
   background-color: black;
+  // background-image: url('../images/keanu.png');
   font-family: 'Bahnschrift Regular';
 }
 
@@ -193,6 +194,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
 }
 
 .line::after {
@@ -246,6 +248,7 @@ button:focus {outline:0;}
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .read-more {

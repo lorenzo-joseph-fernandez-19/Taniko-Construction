@@ -5,7 +5,6 @@ import Photo from "../images/construction.jpg"
 import Img from "gatsby-image"
 
 
-
 export const query = graphql`
     query {
         allWordpressPost(sort: {fields: date, order: DESC}) {
@@ -23,7 +22,7 @@ export const query = graphql`
 
     const BlogPostTemplate = ({ data }) => (
       <Layout pageMeta={{
-        title: `${data.allWordpressPost.title}`,
+        title: `${data.allWordpressPost.edges.title}`,
         keywords: ["Taniko"],
         description: "Taniko Blogs"
       }}>
