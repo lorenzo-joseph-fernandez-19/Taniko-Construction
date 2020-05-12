@@ -43,7 +43,7 @@ module.exports = {
         // Indicates if a site is hosted on WordPress.com
         hostingWPCOM: false,
         // We will be using some advanced custom fields
-        useACF: true,
+        useACF: false,
         acfOptionPageIds: [],
         verboseOutput: false,
         perPage: 100,

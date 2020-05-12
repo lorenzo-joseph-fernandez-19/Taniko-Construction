@@ -6,23 +6,20 @@ import Img from "gatsby-image"
 
 
 export const query = graphql`
-    query {
-        allWordpressPost(sort: {fields: date, order: DESC}) {
-            edges {
-                node {
-                title
-                slug
-                date(formatString: "MMMM Do, YYYY")
-                content
-                }
-            }
-        }
+  query($slug: String!) {
+    wordpressPost(slug: { eq: $slug }) {
+      title
+      date(formatString: "MMMM Do, YYYY")
+      content
+      featured_media {
+        source_url
       }
-    `  
-
+    }
+  }
+`
     const BlogPostTemplate = ({ data }) => (
       <Layout pageMeta={{
-        title: `${data.allWordpressPost.edges.title}`,
+        title: `${data.wordpressPost.title}`,
         keywords: ["Taniko"],
         description: "Taniko Blogs"
       }}>
@@ -31,16 +28,16 @@ export const query = graphql`
         description={data.wordpressPost.excerpt}
       /> */}
       <div class="hero is-medium is-bold">
-         <img src={Photo} alt="construction worker" width="2000" height="400" />
+         <img src={data.wordpressPost.featured_media.source_url} alt="construction worker" width="2000" height="400" />
           <div class="hero-body">
            <div class="container has-text-centered">
               <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</h1>
            </div>
         </div>
        </div>
-      <h1>{data.allWordpressPost.title}</h1>
+      <h1>{data.wordpressPost.title}</h1>
       <p>
-        Written  on {data.allWordpressPost.date}
+        Written  on {data.wordpressPost.date}
       </p>
       {/* <Img
         sizes={data.wordpressPost.acf.feat_img.localFile.childImageSharp.sizes}
@@ -48,7 +45,7 @@ export const query = graphql`
         style={{ maxHeight: 450 }}
       /> */}
       <div
-        dangerouslySetInnerHTML={{ __html: data.allWordpressPost.content }}
+        dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}
       />
     </Layout>
     )
