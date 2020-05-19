@@ -10,12 +10,13 @@ import Logo from "../images/logo-white.svg"
 const Footer = () => {
   return (
     <footer className="footer has-background-black">
+    <hr className="hr"></hr>
       <div className="container has-text-centered">
         <div className="content">
           <div className="columns">
             <div className="column column-style">
               <ul>
-                <li className="list-style line"><Link to="/about">About Us</Link></li>
+                <li className="list-style line"><Link to="/our-values">Our Values</Link></li>
                 <li className="list-style line"><Link to="/what-we-do">What We Do</Link></li>
                 <li className="list-style line"><Link to="/who-we-are">Who We Are</Link></li>
                 </ul>
@@ -31,8 +32,8 @@ const Footer = () => {
                 <Link to="/"><img src={Logo} alt="Taniko Logo" width="250" height="250" /></Link>
               </div>
             </div>
-            <hr></hr>
-            <div className="level">
+            <hr className="hr"></hr>
+            <div className="level footer-margin">
               <div className="level-item">
                 <p>{`© ${new Date().getFullYear()} Taniko Group Limited`}</p>
               </div>

@@ -10,7 +10,8 @@ const PrivacyPolicy = () => {
             description: "Taniko Construction"
         }}>
         <section className="section is-medium has-text-white">
-            <h1 className="has-text-centered is-size-1">Privacy Policy</h1> 
+            <h1 className="has-text-centered is-size-1">Privacy Policy</h1>
+            <hr className="red-line" />
             <div className="section is-medium">
                 <div className="container">
                     <div className="content">

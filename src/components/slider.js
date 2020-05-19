@@ -25,7 +25,7 @@ const Slider = () => {
         settings={{
           slidingDuration: 400,
           slidingDelay: 100,
-          shouldAutoplay: true,
+          shouldAutoplay: false,
           shouldDisplayButtons: true,
           autoplayDuration: 4000,
           height: "100vh"
@@ -41,6 +41,7 @@ const Slider = () => {
             <div className="logo-center">
               <img src={Logo} width="750" height="750" alt="Taniko Logo"/>
             </div>
+            <Subtitle>Weaving a collective future</Subtitle>
           </Slide>
 
         <Slide

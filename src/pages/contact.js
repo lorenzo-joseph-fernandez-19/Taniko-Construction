@@ -12,7 +12,7 @@ const contactPage = () => {
                 <section className="section is-medium has-text-centered">
                   <div className="container">
                     <h2 className="is-size-1 has-text-white has-text-centered">Get in Touch</h2>
-                    <div className="section is-medium"></div>
+                    <hr className="red-line" />
                     <div className="columns">
                       <div className="column is-6">
                         <h4 className="title is-spaced is-4">Let's talk </h4>

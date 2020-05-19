@@ -141,6 +141,8 @@ $menu-item-hover-background-color: $black;
 $input-focus-border-color: $red;
 $input-arrow: $red;
 $input-color: $white;
+$gap: 250px;
+// $column-gap: 2rem;
 
 @import "../../node_modules/bulma/sass/base/_all.sass";
 @import "../../node_modules/bulma/sass/components/_all.sass";
@@ -168,16 +170,17 @@ body {
 }
 
 footer {
-  background-color: black;
   color: white;
   position: relative;
   left: 0px;
   bottom: 0px;
   width: 100%;
+  
 }
 
 .list-style {
   list-style: none;
+  padding-right: 30px;
 }
 
 .link-underline {
@@ -216,20 +219,22 @@ footer {
 }
 
 .translation {
-  color: #000000;
+  color: #FFFFFF;
   font-size: 30px;
+  text-decoration: underline;
 }
 
 .translation:hover {
-  font-size: 0;
-  color: #000000;
+  font-size: 0px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .translation:hover:after {
   content: attr(data-hover);
-  color: #000000;
-  font-size: 30px;
+  color: #9E221E;
+  font-size: 25px;
+  text-decoration: none;
 }
 
 .img-style {
@@ -266,9 +271,32 @@ button:focus {outline:0;}
 }
 
 .hr {
-  width: 10%;
+  background: #FFFFFF;
+}
+
+.red-line {
   background: #9E221E;
-  margin-bottom: 80px;
+  width: 30%;
+  margin: auto;
+  height: 10px;
+}
+
+.is-black {
+  background: #0e1111;
+}
+
+.is-red {
+  color: #9E221E;
+  font-weight: bold;
+}
+
+#space {
+  padding-bottom: 60px;
+}
+
+.box-style {
+  border: white 1px solid;
+  margin: 30px;
 }
 
 /* Blog Page Styling */
@@ -283,28 +311,91 @@ button:focus {outline:0;}
 
 .container-position {
   margin-top: 375px;
-  height: 500px;
+  margin-bottom: 200px;
 }
 
-.content-style {
+.blog-title {
+  padding-top: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  line-height: 1.0;
+  margin-bottom: 20px;
+}
+
+.blog-date {
+  font-weight: medium;
+  font-size: 20px;
+  color: black;
+
+}
+
+
+.blog-content-style {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black;
+  font-size: 18px;
+}
+
+
+.blog-post-title {
+  color: black;
+  font-size: 62px;
+  font-weight: bold;
+  padding-top: 70px;
+  line-height: 1.0;
+  margin-bottom: 20px;
+}
+
+.blog-post-date {
+  color: black;
+  font-weight: medium;
+  font-size: 31px;
+  margin-bottom: 50px;
+}
+
+.blog-post-content-style {
   padding: 50px;
   color: black;
   font-size: 18px;
 }
 
 @media only screen and (max-width: 600px) {
+  .logo-center{
+    margin-top: 50px;
+  }
   .blog-image {
     object-fit: cover;
     object-position: 100% 0;
     width: 100%;
-    height: 300px;
+    height: 400px;
     position: absolute;
   }
   .container-position {
-    margin-top: 150px;
-    height: 500px;
+    margin-top: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
   }
- 
+  .blog-post-title {
+    color: black;
+    font-size: 60px;
+    line-height: 1.0;
+    font-weight: bold;
+    padding-top: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .content-style {
+    padding: 20px;
+    color: black;
+    font-size: 18px;
+    text-align: left;
+  }
+  .footer-margin {
+    margin-top: 70px;
+  }
 }
 
 
@@ -379,7 +470,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Individual item */
 .bm-item {
-  text-align: center;
+  text-align: left;
   color: black;
 }
 

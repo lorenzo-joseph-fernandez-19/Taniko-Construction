@@ -8,8 +8,19 @@ const whoWeAre = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-            <section className="section is-large has-text-centered">
-                <h1 className="is-size-1 has-text-white">Who We Are</h1> 
+            <section className="section is-medium has-text-centered">
+                <h1 className="is-size-1 has-text-white">Who We Are</h1>
+                <hr className="red-line" />
+                    <div className="container">
+                        <div className="content has-text-justified">
+                            <p className="has-text-white is-size-5">Tāniko is a professional consultancy group that will reveal the hidden potential embedded in sacred  principals and make them relevant  in todays world. We collaborate with individuals and organisations by interweaving ancient pathways into modern business practice.</p>
+                            <p className="has-text-white is-size-5">The adoption of the Tāniko system will result in the enhancement of social, environmental, economic and cultural aspirations.</p>
+                            <p className="translation is-size-4" data-hover="With the red and black threads, the work will be completed.">
+                                <i>Mā whero, mā pango, ka oti ai te mahi</i>
+                            </p>
+                            <p className="has-text-white is-size-5">The above proverb is a powerful metaphor  for collaboration. Through principles of cooperation and inclusion the desired outcomes will be completed.</p>
+                        </div>
+                    </div>
             </section>
         </Layout>
     )

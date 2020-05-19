@@ -8,9 +8,9 @@ const Terms = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-        <section className="section is-large has-text-centered">
-            <h1 className="is-size-1 has-text-white">Terms & Conditions</h1> 
-    
+        <section className="section is-medium has-text-centered">
+            <h1 className="is-size-1 has-text-white">Terms & Conditions</h1>
+            <hr className="red-line" />
         </section>
         </Layout>
     )
