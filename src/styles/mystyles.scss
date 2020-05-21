@@ -188,6 +188,7 @@ h1 {
 .list-style {
   list-style: none;
   padding-right: 30px;
+  text-align: left;
 }
 
 .link-underline {
@@ -259,8 +260,13 @@ button:focus {outline:0;}
 .column-style {
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+}
+
+.footer-title {
+  color: white;
+  font-size: 30px;
+  font-weight: semi-bold;
+  padding-right: 30px;
 }
 
 .read-more {
@@ -318,12 +324,6 @@ button:focus {outline:0;}
 
 .box-style {
   margin-bottom: 30px;
-  // background-image: url("../images/construction.jpg"); 
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
-  // opacity: 1.5;
   background-color: white;
 }
 
@@ -368,7 +368,6 @@ button:focus {outline:0;}
 .mahi-spacing {
   margin: 50px;
   padding-left: 50px;
-  padding-right: 50px;
 }
 
 /* Blog Page Styling */

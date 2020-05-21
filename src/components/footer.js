@@ -15,17 +15,25 @@ const Footer = () => {
           <div className="columns">
             <div className="column column-style">
               <ul>
-                <li className="list-style line"><Link to="/our-values">Our Values</Link></li>
-                <li className="list-style line"><Link to="/our-mahi">Our Mahi</Link></li>
-                <li className="list-style line"><Link to="/what-we-do">What We Do</Link></li>
-                <li className="list-style line"><Link to="/who-we-are">Who We Are</Link></li>
+                <li className="list-style footer-title"><p>About Us</p></li>
+                <li className="list-style"><Link to="/our-values">Our Values</Link></li>
+                <li className="list-style"><Link to="/our-team">Our Team</Link></li>
+                <li className="list-style"><Link to="/our-mahi">Our Mahi</Link></li>
+                <li className="list-style"><Link to="/what-we-do">What We Do</Link></li>
+                <li className="list-style"><Link to="/who-we-are">Who We Are</Link></li>
                 </ul>
               </div>
               <div className="column column-style">
               <ul>
-                <li className="list-style line"><Link to="/our-clients">Our Clients</Link></li>
-                <li className="list-style line"><Link to="/blog">Our Blog</Link></li>
-                <li className="list-style line"><Link to="/contact">Contact Us</Link></li>
+                <li className="list-style footer-title"><p>Our Work</p></li>
+                <li className="list-style"><Link to="/our-clients">Our Clients</Link></li>
+                <li className="list-style"><Link to="/blog">Our Blog</Link></li>
+              </ul>
+              </div>
+              <div className="column column-style">
+              <ul>
+                <li className="list-style footer-title"><p>Get in Touch</p></li>
+                <li className="list-style"><Link to="/contact">Contact Us</Link></li>
               </ul>
               </div>
               <div className="column">
