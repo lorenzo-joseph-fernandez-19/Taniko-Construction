@@ -165,7 +165,8 @@ $gap: 250px;
 
 body {
   background-color: black;
-  // background-image: url('../images/keanu.png');
+  // background-image: url('../images/background.png');
+  // background-size: 1000px 1000px;
   font-family: 'Bahnschrift Regular';
 }
 
@@ -175,7 +176,13 @@ footer {
   left: 0px;
   bottom: 0px;
   width: 100%;
-  
+}
+
+h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: semi-bold;
+  text-align: center;
 }
 
 .list-style {
@@ -278,11 +285,24 @@ button:focus {outline:0;}
   background: #9E221E;
   width: 30%;
   margin: auto;
-  height: 10px;
+  height: 5px;
+}
+
+.red-line-title {
+  background: #9E221E;
+  width: 30%;
+  margin: auto;
+  height: 5px;
+  margin-bottom: 50px;
+}
+
+
+.text-is-black {
+  color: black;
 }
 
 .is-black {
-  background: #0e1111;
+  background: black;
 }
 
 .is-red {
@@ -294,12 +314,68 @@ button:focus {outline:0;}
   padding-bottom: 60px;
 }
 
+/* Our Values Page Styling */
+
 .box-style {
-  border: white 1px solid;
-  margin: 30px;
+  margin-bottom: 30px;
+  // background-image: url("../images/construction.jpg"); 
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  // opacity: 1.5;
+  background-color: white;
+}
+
+.box-style-black {
+  margin-bottom: 30px;
+  background-color: #000000;
+}
+
+.values-subtitle {
+  color: #9E221E;
+  font-size: 30px;
+}
+
+.values-text {
+  color: black;
+  font-size: 25px;
+}
+
+.mahi-title {
+  color: #9E221E;
+  font-size: 60px;
+  text-align: left;
+  font-weight: bolder;
+  line-height: 45px;
+  margin-top: 40px;
+}
+
+.mahi-subtitle {
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.mahi-text {
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  list-style: disc;
+}
+
+.mahi-spacing {
+  margin: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /* Blog Page Styling */
+.card-style {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 .blog-image {
   object-fit: cover;
@@ -330,14 +406,12 @@ button:focus {outline:0;}
 
 }
 
-
 .blog-content-style {
   padding-left: 20px;
   padding-right: 20px;
   color: black;
   font-size: 18px;
 }
-
 
 .blog-post-title {
   color: black;
@@ -396,6 +470,32 @@ button:focus {outline:0;}
   .footer-margin {
     margin-top: 70px;
   }
+  .mahi-title {
+    color: #9E221E;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 60px;
+    margin-top: 40px;
+  }
+  .mahi-subtitle {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+  
+  .mahi-text {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    list-style: disc;
+  }
+  .mahi-spacing {
+    margin: 20px;
+  }
+  
 }
 
 
@@ -446,7 +546,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu {
   background: white;
   padding: 2.5em 1.5em 0;
-  font-size: 2.5em;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -465,13 +565,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  padding: 0.8em;
+  padding: 50px;
 }
 
 /* Individual item */
 .bm-item {
   text-align: left;
   color: black;
+  font-weight: semi-bold;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .bm-item:hover {

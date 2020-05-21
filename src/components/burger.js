@@ -8,6 +8,7 @@ const burgerMenu = () => {
         <Menu width="30%" right>
             <Link activeClassName="active-list" to="/">Home</Link>
             <Link activeClassName="active-list" to="/our-values">Our Values</Link>
+            <Link activeClassName="active-list" to="/our-mahi">Our Mahi</Link>
             <Link activeClassName="active-list" to="/what-we-do">What We Do</Link>
             <Link activeClassName="active-list" to="/who-we-are">Who We Are</Link>
             <Link activeClassName="active-list" to="/our-clients">Our Clients</Link>

@@ -9,10 +9,10 @@ const whoWeAre = () => {
             description: "Taniko Construction"
         }}>
             <section className="section is-medium has-text-centered">
-                <h1 className="is-size-1 has-text-white">Who We Are</h1>
-                <hr className="red-line" />
+                <h1>Who We Are</h1>
+                <hr className="red-line-title" />
                     <div className="container">
-                        <div className="content has-text-justified">
+                        <div className="content">
                             <p className="has-text-white is-size-5">Tāniko is a professional consultancy group that will reveal the hidden potential embedded in sacred  principals and make them relevant  in todays world. We collaborate with individuals and organisations by interweaving ancient pathways into modern business practice.</p>
                             <p className="has-text-white is-size-5">The adoption of the Tāniko system will result in the enhancement of social, environmental, economic and cultural aspirations.</p>
                             <p className="translation is-size-4" data-hover="With the red and black threads, the work will be completed.">

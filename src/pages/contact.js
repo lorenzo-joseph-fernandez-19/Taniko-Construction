@@ -11,8 +11,8 @@ const contactPage = () => {
              <div className="container is-fluid has-text-white">
                 <section className="section is-medium has-text-centered">
                   <div className="container">
-                    <h2 className="is-size-1 has-text-white has-text-centered">Get in Touch</h2>
-                    <hr className="red-line" />
+                    <h1>Get In Touch</h1>
+                    <hr className="red-line-title" />
                     <div className="columns">
                       <div className="column is-6">
                         <h4 className="title is-spaced is-4">Let's talk </h4>

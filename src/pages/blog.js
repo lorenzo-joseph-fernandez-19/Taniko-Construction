@@ -28,13 +28,12 @@ const BlogPage = () => {
           description: "Taniko"
         }}>
           <div className="section is-medium has-text-centered">
-          <h1 className="is-size-1 has-text-white">Our Blog</h1>
-            <hr className="red-line" />
+          <h1>Our Blog</h1>
+          <hr className="red-line-title" />
                 <ol>{data.allWordpressPost.edges.map((edge) => { 
                 return (
-                  <div className="section is-medium">
                   <Link to={`/blog/${edge.node.slug}`}>
-                    <article className="columns">
+                    <article className="columns is-desktop">
                       <div className="column is-one-third">
                         <div className="card">
                           <div className="card-image">
@@ -60,7 +59,6 @@ const BlogPage = () => {
                       </div>
                     </article>
                 </Link>
-                </div>
                 )
               })}
               </ol>

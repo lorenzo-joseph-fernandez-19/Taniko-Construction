@@ -9,7 +9,8 @@ const whatWeDo = () => {
             description: "Taniko Construction"
         }}>
             <section className="section is-large has-text-centered">
-                <h1 className="is-size-1 has-text-white">What We Do</h1> 
+                <h1>What We Do</h1>
+                <hr className="red-line-title" />
             </section>
         </Layout>
     )

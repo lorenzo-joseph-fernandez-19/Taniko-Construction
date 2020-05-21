@@ -10,9 +10,8 @@ const PrivacyPolicy = () => {
             description: "Taniko Construction"
         }}>
         <section className="section is-medium has-text-white">
-            <h1 className="has-text-centered is-size-1">Privacy Policy</h1>
-            <hr className="red-line" />
-            <div className="section is-medium">
+            <h1>Privacy Policy</h1>
+            <hr className="red-line-title" />
                 <div className="container">
                     <div className="content">
                     <h2 className="has-text-white is-size-2">How we use your information</h2>
@@ -68,7 +67,6 @@ const PrivacyPolicy = () => {
                     <p>Taniko Construction does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
                     </div>
                     </div>
-                </div>
         </section>
         </Layout>
     )

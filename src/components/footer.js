@@ -10,13 +10,13 @@ import Logo from "../images/logo-white.svg"
 const Footer = () => {
   return (
     <footer className="footer has-background-black">
-    <hr className="hr"></hr>
       <div className="container has-text-centered">
         <div className="content">
           <div className="columns">
             <div className="column column-style">
               <ul>
                 <li className="list-style line"><Link to="/our-values">Our Values</Link></li>
+                <li className="list-style line"><Link to="/our-mahi">Our Mahi</Link></li>
                 <li className="list-style line"><Link to="/what-we-do">What We Do</Link></li>
                 <li className="list-style line"><Link to="/who-we-are">Who We Are</Link></li>
                 </ul>
