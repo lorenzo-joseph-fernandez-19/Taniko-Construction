@@ -8,10 +8,10 @@ const whoWeAre = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-            <section className="section is-medium has-text-centered">
+            <section className="section is-medium">
                 <h1>Who We Are</h1>
                 <hr className="red-line-title" />
-                    <div className="container">
+                    <div className="container contact-spacing">
                         <div className="content">
                             <p className="has-text-white is-size-5">Tāniko is a professional consultancy group that will reveal the hidden potential embedded in sacred  principals and make them relevant  in todays world. We collaborate with individuals and organisations by interweaving ancient pathways into modern business practice.</p>
                             <p className="has-text-white is-size-5">The adoption of the Tāniko system will result in the enhancement of social, environmental, economic and cultural aspirations.</p>

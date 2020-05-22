@@ -11,10 +11,10 @@ const ourMahi = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-        <section className="section is-medium has-text-centered">
+        <section className="section is-medium">
            <h1>Our Mahi</h1>
             <hr className="red-line-title" />
-            <p id="space" className="has-text-white is-size-4">Tāniko will deliver tailored consultancy services to your business. <br /> Our outcomes are linked to the core principles of the Tāniko system:</p>
+            <p id="space" className="has-text-white is-size-4 has-text-centered">Tāniko will deliver tailored consultancy services to your business. <br /> Our outcomes are linked to the core principles of the Tāniko system:</p>
             <div className="columns mahi-spacing">
                 <div className="column is-half">
                     <h2 className="mahi-title">Mauri Atua</h2>
@@ -25,7 +25,7 @@ const ourMahi = () => {
                             <li>Activating Māori design and knowledge to your built environment.</li>
                         </ul>
                 </div>
-                <div className="column is-half">
+                <div className="column is-half mahi-image">
                     <img src={Atua} alt="Mauri Atua Triangle" width="425" height="425" />
                 </div>
             </div>
@@ -39,7 +39,7 @@ const ourMahi = () => {
                             <li>Optimising your approach to sustainability through a Māori worldview.</li>
                         </ul>
                 </div>
-                <div className="column is-half">
+                <div className="column is-half mahi-image">
                     <img src={Whenua} alt="Mauri Whenua Triangle" width="450" height="450" />
                 </div>
             </div>
@@ -53,7 +53,7 @@ const ourMahi = () => {
                             <li>Implementing a cultural induction and internship program for your business.</li>
                         </ul>
                 </div>
-                <div className="column is-half">
+                <div className="column is-half mahi-image">
                     <img src={Tangata} alt="Mauri Tangata Triangle" width="450" height="450" />
                 </div>
             </div>

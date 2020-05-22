@@ -17,7 +17,7 @@ const Footer = () => {
               <ul>
                 <li className="list-style footer-title"><p>About Us</p></li>
                 <li className="list-style"><Link to="/our-values">Our Values</Link></li>
-                <li className="list-style"><Link to="/our-team">Our Team</Link></li>
+                <li className="list-style"><Link to="/our-people">Our People</Link></li>
                 <li className="list-style"><Link to="/our-mahi">Our Mahi</Link></li>
                 <li className="list-style"><Link to="/what-we-do">What We Do</Link></li>
                 <li className="list-style"><Link to="/who-we-are">Who We Are</Link></li>

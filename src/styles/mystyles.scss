@@ -152,7 +152,7 @@ $gap: 250px;
 @import "../../node_modules/bulma/sass/layout/_all.sass";
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 
-/* Styling */
+/* General Styling */
 
 ::selection {
   background-color: #9E221E;
@@ -180,9 +180,15 @@ footer {
 
 h1 {
   color: white;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: semi-bold;
   text-align: center;
+}
+
+.column-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .list-style {
@@ -222,10 +228,6 @@ h1 {
   transition: width .5s;
 }
 
-.active-list {
-  color: #9E221E;
-}
-
 .translation {
   color: #FFFFFF;
   font-size: 30px;
@@ -241,7 +243,7 @@ h1 {
 .translation:hover:after {
   content: attr(data-hover);
   color: #9E221E;
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: none;
 }
 
@@ -255,36 +257,6 @@ button:focus {outline:0;}
 
 .icon-style {
   margin: 0.5em;
-}
-
-.column-style {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-title {
-  color: white;
-  font-size: 30px;
-  font-weight: semi-bold;
-  padding-right: 30px;
-}
-
-.read-more {
-  color: #9E221E;
-}
-
-.button-style {
-  background-color: #9E221E;
-  color: white;
-}
-
-.button-style:hover {
-  background-color: #9E221E;
-  color: white;
-}
-
-.hr {
-  background: #FFFFFF;
 }
 
 .red-line {
@@ -301,7 +273,6 @@ button:focus {outline:0;}
   height: 5px;
   margin-bottom: 50px;
 }
-
 
 .text-is-black {
   color: black;
@@ -320,34 +291,86 @@ button:focus {outline:0;}
   padding-bottom: 60px;
 }
 
-/* Our Values Page Styling */
+/* Footer Styling */
 
-.box-style {
-  margin-bottom: 30px;
-  background-color: white;
+.column-style {
+  display: flex;
+  justify-content: center;
 }
 
-.box-style-black {
-  margin-bottom: 30px;
-  background-color: #000000;
+.footer-title {
+  color: white;
+  font-size: 30px;
+  font-weight: semi-bold;
+  padding-right: 30px;
+}
+
+/* Contact Page Styling */
+.label-style {
+  font-size: 20px;
+  color: white;
+  text-align: left;
+}
+
+.button-style {
+  background-color: #9E221E;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-style:hover {
+  background-color: #9E221E;
+  color: white;
+}
+
+.contact-spacing {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.contact-subtitle {
+  font-size: 25px;
+}
+/* Our Values Page Styling */
+
+.values-title {
+  color: #9E221E;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bolder;
+  line-height: 60px;
+  margin-top: 20px;
 }
 
 .values-subtitle {
-  color: #9E221E;
+  color: white;
   font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .values-text {
-  color: black;
-  font-size: 25px;
+  color: white;
+  font-size: 20px;
 }
+
+.values-spacing {
+  margin: 20px;
+}
+
+/* Our Mahi Page Styling */
 
 .mahi-title {
   color: #9E221E;
   font-size: 60px;
   text-align: left;
   font-weight: bolder;
-  line-height: 45px;
+  line-height: 50px;
   margin-top: 40px;
 }
 
@@ -366,11 +389,21 @@ button:focus {outline:0;}
 }
 
 .mahi-spacing {
-  margin: 50px;
-  padding-left: 50px;
+  margin: 60px;
+}
+
+.mahi-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /* Blog Page Styling */
+
+.read-more {
+  color: #9E221E;
+}
+
 .card-style {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -435,6 +468,9 @@ button:focus {outline:0;}
 }
 
 @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
   .logo-center{
     margin-top: 50px;
   }
@@ -472,19 +508,19 @@ button:focus {outline:0;}
   .mahi-title {
     color: #9E221E;
     font-size: 50px;
-    text-align: center;
+    text-align: left;
     font-weight: bolder;
     line-height: 60px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .mahi-subtitle {
     color: white;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
     line-height: 30px;
   }
-  
+
   .mahi-text {
     color: white;
     font-size: 20px;
@@ -493,10 +529,30 @@ button:focus {outline:0;}
   }
   .mahi-spacing {
     margin: 20px;
-  }
-  
+  } 
+  .column-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.list-style {
+  list-style: none;
+  padding-right: 30px;
+  text-align: center;
+}
+.contact-spacing {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.contact-subtitle {
+  font-size: 25px;
+}
+.mahi-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
 
 
 /* Navbar Styling */
@@ -553,7 +609,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 @media only screen and (max-width: 600px) {
   .bm-menu {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
