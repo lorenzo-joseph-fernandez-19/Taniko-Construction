@@ -25,7 +25,7 @@ const Slider = () => {
         settings={{
           slidingDuration: 400,
           slidingDelay: 100,
-          shouldAutoplay: false,
+          shouldAutoplay: true,
           shouldDisplayButtons: true,
           autoplayDuration: 4000,
           height: "100vh"
@@ -41,7 +41,7 @@ const Slider = () => {
             <div className="logo-center">
               <img src={Logo} width="750" height="750" alt="Taniko Logo"/>
             </div>
-            <Subtitle>Weaving a collective future</Subtitle>
+            {/* <Subtitle>Weaving a collective future</Subtitle> */}
           </Slide>
 
         <Slide
@@ -55,7 +55,7 @@ const Slider = () => {
             <hr className="hr" />
             <div className="columns">
               <div className="image-position column">
-                <img src={Atua} width="450" height="450" alt="Mauri Atua Triangle" />
+                <img src={Atua} width="400" height="400" alt="Mauri Atua Triangle" />
               </div>
               <div className="column">
                 <Subtitle>We acknowledge the spiritual essence that is intrinsically linked to everything that lives.</Subtitle>
@@ -78,7 +78,7 @@ const Slider = () => {
             <hr className="hr" />
             <div className="columns">
               <div className="image-position column">
-                <img src={Whenua} width="450" height="450" alt="Mauri Whenua Triangle" />
+                <img src={Whenua} width="400" height="400" alt="Mauri Whenua Triangle" />
               </div>
               <div className="column">
                 <Subtitle>We care for the life essence of our Earth Mother and all life that depends upon her.</Subtitle>
@@ -101,7 +101,7 @@ const Slider = () => {
             <hr className="hr" />
             <div className="columns">
               <div className="image-position column">
-                <img src={Tangata} width="450" height="450" alt="Mauri Tangata Triangle" />
+                <img src={Tangata} width="400" height="400" alt="Mauri Tangata Triangle" />
               </div>
               <div className="column">
                 <Subtitle>We care for and value the importance and sacredness of people.</Subtitle>
@@ -111,6 +111,25 @@ const Slider = () => {
           {/* <div className="translation" data-hover="While the land remains, people disappear.">
             <i>Toitū te whenua, whatu ngarongaro te tangata.</i>
           </div> */}
+        </Slide>
+
+        <Slide
+          background={{
+            backgroundAttachment: "fixed",
+            backgroundColor: "#000000",
+          }}>
+            <Wrapper>
+            <Title></Title>
+            <hr className="hr" />
+            <div className="columns">
+              <div className="image-position column">
+                <img src={Tangata} width="400" height="400" alt="Mauri Tangata Triangle" />
+              </div>
+              <div className="column">
+                <Subtitle></Subtitle>
+              </div>
+            </div>
+          </Wrapper>
         </Slide>
         <Nav />
       </HeroSlider>

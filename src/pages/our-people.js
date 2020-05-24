@@ -15,7 +15,6 @@ const ourTeam = () => {
                 <div className="columns">
                     <div className="column people-column-style">
                         <img className="people-image" src="" alt="Paora Puru"  />
-                        <h2>Hi</h2>
                     </div>
                     <div className="column people-column-style">
                         <img className="people-image" src="" alt="Aiedy Di" />
