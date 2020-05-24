@@ -16,6 +16,9 @@ const ourMahi = () => {
             <hr className="red-line-title" />
             <p id="space" className="has-text-white is-size-4 has-text-centered">Tāniko will deliver tailored consultancy services to your business. <br /> Our outcomes are linked to the core principles of the Tāniko system.</p>
             <div className="columns mahi-spacing">
+                <div className="column is-half mahi-image">
+                    <img src={Atua} alt="Mauri Atua Triangle" width="425" height="425" />
+                </div>
                 <div className="column is-half">
                     <h2 className="mahi-title">Mauri Atua</h2>
                         <p className="mahi-subtitle">Spiritual Life Essence</p>
@@ -25,12 +28,12 @@ const ourMahi = () => {
                             <li>Activating Māori design and knowledge to your built environment.</li>
                         </ul>
                 </div>
-                <div className="column is-half mahi-image">
-                    <img src={Atua} alt="Mauri Atua Triangle" width="425" height="425" />
-                </div>
             </div>
 
             <div className="columns mahi-spacing">
+                <div className="column is-half mahi-image">
+                    <img src={Whenua} alt="Mauri Whenua Triangle" width="450" height="450" />
+                </div>
                 <div className="column is-half">
                     <h2 className="mahi-title">Mauri Whenua</h2>
                         <p className="mahi-subtitle">Environmental Life Essence</p>
@@ -39,12 +42,12 @@ const ourMahi = () => {
                             <li>Optimising your approach to sustainability through a Māori worldview.</li>
                         </ul>
                 </div>
-                <div className="column is-half mahi-image">
-                    <img src={Whenua} alt="Mauri Whenua Triangle" width="450" height="450" />
-                </div>
             </div>
 
             <div className="columns mahi-spacing">
+                <div className="column is-half mahi-image">
+                    <img src={Tangata} alt="Mauri Tangata Triangle" width="450" height="450" />
+                </div>
                 <div className="column is-half">
                     <h2 className="mahi-title">Mauri Tangata</h2>
                         <p className="mahi-subtitle">People Life Essence</p>
@@ -52,9 +55,6 @@ const ourMahi = () => {
                             <li>Utilizing a relevant Māori supply chain in your business and measuring the impact your support has on local māori aspirations.</li>
                             <li>Implementing a cultural induction and internship program for your business.</li>
                         </ul>
-                </div>
-                <div className="column is-half mahi-image">
-                    <img src={Tangata} alt="Mauri Tangata Triangle" width="450" height="450" />
                 </div>
             </div>
         </section>

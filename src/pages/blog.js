@@ -23,17 +23,17 @@ const BlogPage = () => {
     `)
     return (
         <Layout pageMeta={{
-          title: "Blog",
+          title: "Our Blog",
           keywords: ["Taniko"],
-          description: "Taniko"
+          description: "Taniko Group"
         }}>
           <div className="section is-medium has-text-centered">
           <h1>Our Blog</h1>
           <hr className="red-line-title" />
-                <ol className="columns">{data.allWordpressPost.edges.map((edge) => { 
+                <ol className="columns blog-column">{data.allWordpressPost.edges.map((edge) => { 
                 return (
                   <Link to={`/blog/${edge.node.slug}`}>
-                    <article className="column is-narrow">
+                    <article className="column">
                         <div className="card">
                           <div className="card-image">
                             <figure className="image">

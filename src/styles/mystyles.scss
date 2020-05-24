@@ -428,11 +428,15 @@ button:focus {outline:0;}
 
 .mahi-image {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Blog Page Styling */
+.blog-column {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 .read-more {
   color: #9E221E;
