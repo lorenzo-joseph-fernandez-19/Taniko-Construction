@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="columns">
             <div className="column column-style">
               <ul>
-                <li className="list-style footer-title"><p>About Us</p></li>
+                <li className="footer-title"><p>About Us</p></li>
                 <li className="list-style"><Link to="/our-values">Our Values</Link></li>
                 <li className="list-style"><Link to="/our-people">Our People</Link></li>
                 <li className="list-style"><Link to="/our-mahi">Our Mahi</Link></li>
@@ -25,14 +25,14 @@ const Footer = () => {
               </div>
               <div className="column column-style">
               <ul>
-                <li className="list-style footer-title"><p>Our Work</p></li>
+                <li className="footer-title"><p>Our Work</p></li>
                 <li className="list-style"><Link to="/our-clients">Our Clients</Link></li>
                 <li className="list-style"><Link to="/blog">Our Blog</Link></li>
               </ul>
               </div>
               <div className="column column-style">
               <ul>
-                <li className="list-style footer-title"><p>Get in Touch</p></li>
+                <li className="footer-title"><p>Get in Touch</p></li>
                 <li className="list-style"><Link to="/contact">Contact Us</Link></li>
               </ul>
               </div>
@@ -43,13 +43,13 @@ const Footer = () => {
             <hr className="hr"></hr>
             <div className="level footer-margin">
               <div className="level-item">
-                <p>{`© ${new Date().getFullYear()} Taniko Group Limited`}</p>
+                <p className="footer-font">{`© ${new Date().getFullYear()} Taniko Group Limited`}</p>
               </div>
               <div className="level-item">
-                <Link className="line" to="/privacy-policy">Privacy Policy</Link>
+                <Link className="line footer-font" to="/privacy-policy">Privacy Policy</Link>
               </div>
               <div className="level-item">
-                <Link className="line" to="/terms-and-conditions">Terms & Conditions</Link>
+                <Link className="line footer-font" to="/terms-and-conditions">Terms & Conditions</Link>
               </div>
               <div className="level-item">
                 <OutboundLink className="line" href="https://www.facebook.com" rel="noreferrer noopener" target="_blank">

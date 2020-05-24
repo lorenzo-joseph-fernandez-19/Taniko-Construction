@@ -176,14 +176,11 @@ h1 {
   align-items: center;
 }
 
-.list-style {
-  list-style: none;
-  padding-right: 30px;
-  text-align: left;
-}
 
 .link-underline {
   text-decoration-line: underline;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .logo-center {
@@ -274,7 +271,7 @@ button:focus {outline:0;}
   width: 30%;
   margin: auto;
   height: 5px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .text-is-black {
@@ -305,6 +302,20 @@ button:focus {outline:0;}
   font-size: 30px;
   font-weight: semi-bold;
   padding-right: 30px;
+  text-decoration: underline;
+  list-style: none;
+}
+
+.footer-font {
+  font-size: 18px;
+  color: white;
+}
+
+.list-style {
+  list-style: none;
+  padding-right: 30px;
+  text-align: left;
+  font-size: 18px;
 }
 
 /* Contact Page Styling */
@@ -471,7 +482,7 @@ button:focus {outline:0;}
 }
 
 
-/* Our Values Page Styling */
+/* Privacy Policy Page Styling */
 
 .privacy-title {
   color: #9E221E;
@@ -485,11 +496,24 @@ button:focus {outline:0;}
   color: white;
   font-size: 20px;
   margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 .privacy-spacing {
   margin-left: 100px;
   margin-right: 100px;
+}
+
+ol {
+  padding-left: 40px;
+}
+
+.bold-subtitle {
+  font-weight: bold;
+  font-size: 22px;
+  color: #9E221E;
+  margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 @media only screen and (max-width: 600px) {

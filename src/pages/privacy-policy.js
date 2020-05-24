@@ -7,14 +7,14 @@ const PrivacyPolicy = () => {
         <Layout pageMeta={{
             title: "Privacy Policy",
             keywords: ["construction"],
-            description: "Taniko Group"
+            description: "Taniko Group Privacy Policy"
         }}>
         <section className="section is-medium">
             <h1>Privacy Policy</h1>
             <hr className="red-line-title" />
                 <div className="container privacy-spacing">
                     <h2 className="privacy-title">How we use your information</h2>
-                    <p className="privacy-text">We use the information we collect in various ways, including to:</p>
+                    <p className="bold-subtitle">We use the information we collect in various ways, including to:</p>
                     <ol className="privacy-text is-lower-roman">
                         <li>Provide, operate, and maintain our website.</li>
                         <li>Improve, personalize, and expand our website.</li>
@@ -24,8 +24,10 @@ const PrivacyPolicy = () => {
                         <li>Send you emails.</li>
                         <li>Find and prevent fraud.</li>
                     </ol>
+                    
                     <h2 className="privacy-title">Log Files</h2>
                     <p className="privacy-text">Taniko Group follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information. Our Privacy Policy was created with the help of the <OutboundLink className="link-underline" href="https://www.privacypolicygenerator.info" rel="noreferrer noopener" target="_blank">Privacy Policy Generator</OutboundLink> and the <OutboundLink className="link-underline" href="https://www.disclaimergenerator.org/" rel="noreferrer noopener" target="_blank">Disclaimer Generator</OutboundLink>.</p>
+                    
                     <h2 className="privacy-title">Cookies and Web Beacons</h2>
                     <p className="privacy-text">Like any other website, Taniko Group uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
                     <p className="privacy-text">For more general information on cookies, please read <OutboundLink className="link-underline" href="https://www.cookieconsent.com/what-are-cookies/" rel="noreferrer noopener" target="_blank">What Are Cookies"</OutboundLink></p>
@@ -40,7 +42,7 @@ const PrivacyPolicy = () => {
                     <p className="privacy-text">You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
 
                     <h2 className="privacy-title">CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
-                    <p className="privacy-text">Under the CCPA, among other rights, California consumers have the right to:</p>
+                    <p className="bold-subtitle">Under the CCPA, among other rights, California consumers have the right to:</p>
                     <ol className="privacy-text is-lower-roman">
                         <li>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</li>
                         <li>Request that a business delete any personal data about the consumer that a business has collected.</li>
@@ -49,7 +51,7 @@ const PrivacyPolicy = () => {
                     </ol>
 
                     <h2 className="privacy-title">GDPR Data Protection Rights</h2>
-                    <p className="privacy-text">We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+                    <p className="bold-subtitle">We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
                     <ol className="privacy-text is-lower-roman">
                         <li>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</li>
                         <li>The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</li>
