@@ -1,4 +1,4 @@
-/* Importing Font */
+/* Font */
 
 @font-face {
   font-family: 'Bahnschrift Regular';
@@ -126,8 +126,6 @@ $menu-item-hover-background-color: $black;
 $input-focus-border-color: $red;
 $input-arrow: $red;
 $input-color: $white;
-$gap: 250px;
-// $column-gap: 2rem;
 
 @import "../../node_modules/bulma/sass/base/_all.sass";
 @import "../../node_modules/bulma/sass/components/_all.sass";
@@ -137,7 +135,7 @@ $gap: 250px;
 @import "../../node_modules/bulma/sass/layout/_all.sass";
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 
-/* General Styling */
+/* Custom Styling */
 
 ::selection {
   background-color: #9E221E;
@@ -151,7 +149,6 @@ $gap: 250px;
 body {
   background-color: black;
   // background-image: url('../images/background.png');
-  // background-size: 1000px 1000px;
   font-family: 'Bahnschrift Regular';
 }
 
@@ -170,17 +167,11 @@ h1 {
   text-align: center;
 }
 
+
 .column-center {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-
-.link-underline {
-  text-decoration-line: underline;
-  font-weight: bold;
-  font-style: italic;
 }
 
 .logo-center {
@@ -189,47 +180,6 @@ h1 {
   align-items: center;
 }
 
-.image-position {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 150px;
-}
-
-.line::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #9E221E;
-  transition: width .5s;
-}
-
-.line:hover::after {
-  width: 100%;
-  transition: width .5s;
-}
-
-.maori-proverb {
-  color: #FFFFFF;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.translation {
-  color: #9E221E;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 1.0;
-}
-
-.proverb-spacing {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 // .translation:hover {
 //   font-size: 0px;
@@ -288,6 +238,32 @@ button:focus {outline:0;}
 
 #space {
   padding-bottom: 60px;
+  line-height: 1.2;
+}
+
+/* Who We Are Page Styling */
+
+.proverb-spacing {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 40px;
+}
+
+.maori-proverb {
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: left;
+  line-height: 1.0;
+}
+
+.translation {
+  color: #9E221E;
+  font-size: 25px;
+  font-weight: semi-bold;
+  text-align: left;
+  line-height: 1.0;
 }
 
 /* Footer Styling */
@@ -318,7 +294,48 @@ button:focus {outline:0;}
   font-size: 18px;
 }
 
+.image-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.line::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #9E221E;
+  transition: width .5s;
+}
+
+.line:hover::after {
+  width: 100%;
+  transition: width .5s;
+}
+
+.list-line::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #9E221E;
+  transition: width .5s;
+}
+
+.list-line:hover::after {
+  width: 80%;
+  transition: width .5s;
+}
+
 /* Contact Page Styling */
+
+.underline {
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
 
 .label-style {
   font-size: 20px;
@@ -404,7 +421,9 @@ button:focus {outline:0;}
 }
 
 .mahi-spacing {
-  margin: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 60px;
 }
 
 .mahi-image {
@@ -481,8 +500,28 @@ button:focus {outline:0;}
   font-size: 18px;
 }
 
+/* Our People Page Styling */
 
-/* Privacy Policy Page Styling */
+.people-image {
+  border: 1px solid white;
+  width: 400px;
+  height: 400px;
+  margin-top: 40px;
+}
+
+.people-column-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Privacy Policy and Terms & Conditions Page Styling */
+
+.link-underline {
+  text-decoration-line: underline;
+  font-weight: bold;
+  font-style: italic;
+}
 
 .privacy-title {
   color: #9E221E;
@@ -515,6 +554,7 @@ ol {
   margin-bottom: 20px;
   line-height: 1.4;
 }
+
 
 @media only screen and (max-width: 600px) {
   h1 {
@@ -576,7 +616,9 @@ ol {
     list-style: disc;
   }
   .mahi-spacing {
-    margin: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   } 
   .column-style {
   display: flex;
@@ -603,7 +645,7 @@ ol {
   .privacy-spacing {
     margin-left: 40px;
     margin-right: 40px;
-  }
+  } 
 }
 
 /* Navbar Styling */

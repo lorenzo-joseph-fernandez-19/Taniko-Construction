@@ -1,29 +1,33 @@
 import React from 'react'
 import Layout from '../components/layout'
-import People from '../images/photo.png'
+
 
 const ourTeam = () => {
     return (
         <Layout pageMeta={{
-            title: "Our Team",
+            title: "Our People",
             keywords: ["construction"],
-            description: "Taniko Construction"
+            description: "Taniko Group People"
         }}>
             <section className="section is-medium">
                 <h1>Our People</h1>
                 <hr className="red-line" />
-                <p id="space" className="contact-subtitle contact-spacing">Send us a message and we'll get back to you as soon as we can.</p>
                 <div className="columns">
-                    <div className="column column-style">
-                        <img src={People} alt="Paora Puru" />
+                    <div className="column people-column-style">
+                        <img className="people-image" src="" alt="Paora Puru"  />
+                        <h2>Hi</h2>
                     </div>
-                    <div className="column column-style">
-                        <img src={People} alt="Aiedy Di" />
+                    <div className="column people-column-style">
+                        <img className="people-image" src="" alt="Aiedy Di" />
                     </div>
-                    <div className="column column-style">
-                        <img src={People} alt="Maxim Wehi" />
+                    <div className="column people-column-style">
+                        <img className="people-image" src="" alt="Maxim Wehi" />
                     </div>
                 </div>
+                    <div className="has-text-centered">
+                        <i className="maori-proverb">He aha te mea nui o tēnei ao, he tangata, he tangata, he tangata</i> <br />
+                        <i className="translation">What is the most important thing in this world, it is people, it is people, it is people.</i>
+                    </div>
             </section>
         </Layout>
     )

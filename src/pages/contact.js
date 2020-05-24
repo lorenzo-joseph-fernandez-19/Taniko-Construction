@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const contactPage = () => {
     return (
@@ -13,9 +14,9 @@ const contactPage = () => {
                   <div className="container">
                     <h1>Get In Touch</h1>
                     <hr className="red-line-title" />
-                    <p id="space" className="contact-subtitle contact-spacing">Send us a message and we'll get back to you as soon as we can.</p>
+                    <p className="contact-subtitle">Send us an email <OutboundLink className="underline" href="mailto:tanikogroup@gmail.com?Subject=General%20Enquiry" rel="noreferrer noopener" target="_top">tanikogroup@gmail.com</OutboundLink></p>
                     <p className="has-text-white is-size-3">OR</p>
-                        <a href="mailto:tanikogroup@gmail.com?Subject=General%20Enquiry" target="_top">tanikogroup@gmail.com</a>
+                    <p id="space" className="contact-subtitle contact-spacing">Message us using the form below and we'll get back to you as soon as we can.</p>
                       <div className="contact-spacing">
                         <form name="contact" method="POST" data-netlify="true">
                             <div className="block">
@@ -40,7 +41,7 @@ const contactPage = () => {
 
                             <div className="field">
                             <div className="control">
-                              <button className="button button-style" type="submit">Submit</button>
+                              <button className="button button-style" type="submit">Send</button>
                             </div>
                           </div>
                         </form>

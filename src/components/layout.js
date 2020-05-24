@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet"
 const Layout = ({ pageMeta, children }) => (
     <>
       <Helmet>
-        <title>{`Taniko Construction | ${pageMeta.title}`}</title>
+        <title>{`Taniko Group | ${pageMeta.title}`}</title>
       
       {/* The charset, viewport and author meta tags will always have the same value, so we hard code them! */}
       <meta charset="UTF-8" />

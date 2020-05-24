@@ -1,12 +1,12 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-const About = () => {
+const ourValues = () => {
     return (
         <Layout pageMeta={{
             title: "Our Values",
             keywords: ["construction"],
-            description: "Taniko Construction"
+            description: "Taniko Group Values"
         }}>
             <section className="section is-medium has-text-centered">
                 <h1>Our Values</h1>
@@ -27,11 +27,10 @@ const About = () => {
                         <p className="values-subtitle">Innovation and Creativity</p>
                         <p className="values-text">We turn creative and innovative solutions into reality.</p>
                     </div>
-                {/* </div> */}
             </section>
             
         </Layout>
     )
 }
 
-export default About
+export default ourValues
