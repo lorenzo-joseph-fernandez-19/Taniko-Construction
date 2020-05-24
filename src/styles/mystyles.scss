@@ -1,13 +1,11 @@
 /* Importing Font */
 
-
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT\ 1.woff') format('woff');
-  }
-  
+  } 
   
 @font-face {
   font-family: 'Bahnschrift Regular';
@@ -16,87 +14,76 @@
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT\ 10.woff') format('woff');
   }
   
-  
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT\ 11.woff') format('woff');
   }
-  
-  
+   
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT\ 12.woff') format('woff');
   }
-  
-  
+   
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT\ 13.woff') format('woff');
   }
-  
-  
+   
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT\ 14.woff') format('woff');
   }
-  
-  
+    
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT\ 2.woff') format('woff');
   }
-  
-  
+   
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT\ 3.woff') format('woff');
   }
-  
-  
+   
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT\ 4.woff') format('woff');
   }
-  
-  
+    
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT\ 5.woff') format('woff');
   }
-  
-  
+   
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT\ 6.woff') format('woff');
   }
-  
-  
+   
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT\ 7.woff') format('woff');
   }
-  
-  
+   
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;
@@ -104,15 +91,13 @@
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT\ 8.woff') format('woff');
   }
   
-  
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT\ 9.woff') format('woff');
   }
-  
-  
+   
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;
@@ -120,8 +105,8 @@
   src: local('Bahnschrift Regular'), url('../fonts/BAHNSCHRIFT.woff') format('woff');
   }
 
+/* Bulma Styling */
 
-  /* Bulma Styling */
 @charset "utf-8";
 @import "../../node_modules/bulma/bulma.sass";
 @import 'bulma';
@@ -215,7 +200,7 @@ h1 {
 }
 
 .line::after {
-  content: " ";
+  content: "";
   display: block;
   width: 0;
   height: 2px;
@@ -228,24 +213,42 @@ h1 {
   transition: width .5s;
 }
 
-.translation {
+.maori-proverb {
   color: #FFFFFF;
-  font-size: 30px;
-  text-decoration: underline;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
 }
 
-.translation:hover {
-  font-size: 0px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.translation:hover:after {
-  content: attr(data-hover);
+.translation {
   color: #9E221E;
-  font-size: 30px;
-  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.0;
 }
+
+.proverb-spacing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// .translation:hover {
+//   font-size: 0px;
+//   cursor: text;
+//   text-decoration: none;
+//   margin-bottom: 20px;
+// }
+
+// .translation:hover:after {
+//   content: attr(data-hover);
+//   color: #9E221E;
+//   font-size: 25px;
+//   font-weight: bold;
+//   text-decoration: none;
+//   font-style: italic;
+// }
 
 .img-style {
   display: flex;
@@ -271,20 +274,19 @@ button:focus {outline:0;}
   width: 30%;
   margin: auto;
   height: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .text-is-black {
   color: black;
 }
 
-.is-black {
-  background: black;
+.text-is-red {
+  color: #9E221E;
 }
 
-.is-red {
-  color: #9E221E;
-  font-weight: bold;
+.is-black {
+  background: black;
 }
 
 #space {
@@ -306,6 +308,7 @@ button:focus {outline:0;}
 }
 
 /* Contact Page Styling */
+
 .label-style {
   font-size: 20px;
   color: white;
@@ -336,11 +339,12 @@ button:focus {outline:0;}
 .contact-subtitle {
   font-size: 25px;
 }
+
 /* Our Values Page Styling */
 
 .values-title {
   color: #9E221E;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   font-weight: bolder;
   line-height: 60px;
@@ -389,7 +393,7 @@ button:focus {outline:0;}
 }
 
 .mahi-spacing {
-  margin: 60px;
+  margin: 100px;
 }
 
 .mahi-image {
@@ -435,7 +439,6 @@ button:focus {outline:0;}
   font-weight: medium;
   font-size: 20px;
   color: black;
-
 }
 
 .blog-content-style {
@@ -465,6 +468,28 @@ button:focus {outline:0;}
   padding: 50px;
   color: black;
   font-size: 18px;
+}
+
+
+/* Our Values Page Styling */
+
+.privacy-title {
+  color: #9E221E;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.0;
+  margin-bottom: 20px;
+}
+
+.privacy-text {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.privacy-spacing {
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -520,7 +545,6 @@ button:focus {outline:0;}
     margin-bottom: 20px;
     line-height: 30px;
   }
-
   .mahi-text {
     color: white;
     font-size: 20px;
@@ -534,26 +558,29 @@ button:focus {outline:0;}
   display: flex;
   align-items: center;
   justify-content: center;
+  }
+  .list-style {
+    list-style: none;
+    padding-right: 30px;
+    text-align: center;
+  }
+  .contact-spacing {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .contact-subtitle {
+    font-size: 25px;
+  }
+  .mahi-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .privacy-spacing {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
-.list-style {
-  list-style: none;
-  padding-right: 30px;
-  text-align: center;
-}
-.contact-spacing {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.contact-subtitle {
-  font-size: 25px;
-}
-.mahi-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-}
-
 
 /* Navbar Styling */
 

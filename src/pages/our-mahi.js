@@ -14,7 +14,7 @@ const ourMahi = () => {
         <section className="section is-medium">
            <h1>Our Mahi</h1>
             <hr className="red-line-title" />
-            <p id="space" className="has-text-white is-size-4 has-text-centered">Tāniko will deliver tailored consultancy services to your business. <br /> Our outcomes are linked to the core principles of the Tāniko system:</p>
+            <p id="space" className="has-text-white is-size-4 has-text-centered">Tāniko will deliver tailored consultancy services to your business. <br /> Our outcomes are linked to the core principles of the Tāniko system.</p>
             <div className="columns mahi-spacing">
                 <div className="column is-half">
                     <h2 className="mahi-title">Mauri Atua</h2>

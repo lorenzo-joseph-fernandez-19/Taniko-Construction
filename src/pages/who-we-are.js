@@ -11,14 +11,18 @@ const whoWeAre = () => {
             <section className="section is-medium">
                 <h1>Who We Are</h1>
                 <hr className="red-line-title" />
-                    <div className="container contact-spacing">
-                        <div className="content">
-                            <p className="has-text-white is-size-5">Tāniko is a professional consultancy group that will reveal the hidden potential embedded in sacred  principals and make them relevant  in todays world. We collaborate with individuals and organisations by interweaving ancient pathways into modern business practice.</p>
-                            <p className="has-text-white is-size-5">The adoption of the Tāniko system will result in the enhancement of social, environmental, economic and cultural aspirations.</p>
-                            <p className="translation is-size-4" data-hover="With the red and black threads, the work will be completed.">
-                                <i>Mā whero, mā pango, ka oti ai te mahi</i>
-                            </p>
-                            <p className="has-text-white is-size-5">The above proverb is a powerful metaphor  for collaboration. Through principles of cooperation and inclusion the desired outcomes will be completed.</p>
+                    <div className="columns contact-spacing">
+                        <div className="column is-half content has-text-white is-size-5">
+                            <p>Tāniko is a professional consultancy group that will reveal the hidden potential embedded in sacred  principals and make them relevant in today's world.</p>
+                            <p>We collaborate with individuals and organisations by interweaving ancient pathways into modern business practice.</p>
+                            <p>The adoption of the Tāniko system will result in the enhancement of social, environmental, economic and cultural aspirations.</p>
+                            <p>The above proverb is a powerful metaphor  for collaboration. Through principles of cooperation and inclusion the desired outcomes will be completed.</p>
+                        </div>
+                        <div className="proverb-spacing">
+                            <div className="column has-text-centered">
+                                <i className="maori-proverb">Mā whero, mā pango, ka oti ai te mahi</i> <br />
+                                <i className="translation">With the red and black threads, the work will be completed.</i>
+                            </div>
                         </div>
                     </div>
             </section>
