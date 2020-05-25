@@ -8,8 +8,10 @@ const Clients = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-       
-                <h1 className="is-size-1 has-text-black">Our Clients</h1> 
+            <section className="section is-large has-text-centered">
+                <h1>Our Clients</h1>
+                <hr className="red-line-title" />
+            </section>
         </Layout>
     )
 }

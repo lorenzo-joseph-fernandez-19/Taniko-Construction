@@ -13,13 +13,9 @@ const HomePage = () => {
         <div>
           {typeof window !== 'undefined' && <Slider />}
         </div>
-                <section className="section has-background-black">
-                    
-                </section>
-                    <div className="translation" data-hover="The tapestry of understanding cannot be woven by one strand alone, but only by the working together of weavers will such a tapestry be completed.">
-                        <i>E kore e taea whenu kotahi te whāriki te raranga, heoi anō, mā te mahi ngātahi o ngā kairaranga, ka oti ai tēnei whāriki</i>
-                    </div>
-    
+            {/* <div className="translation has-text-centered" data-hover="The tapestry of understanding cannot be woven by one strand alone, but only by the working together of weavers will such a tapestry be completed.">
+                <i>E kore e taea whenu kotahi te whāriki te raranga, heoi anō, mā te mahi ngātahi o ngā kairaranga, ka oti ai tēnei whāriki</i>
+            </div> */}
         </Layout>
     )
 }
