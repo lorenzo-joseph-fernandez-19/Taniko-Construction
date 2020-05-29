@@ -18,28 +18,29 @@ const contactPage = () => {
                     <p className="has-text-white is-size-3">OR</p>
                     <p id="space" className="contact-subtitle contact-spacing">Message us using the form below and we'll get back to you as soon as we can.</p>
                       <div className="contact-spacing">
-                        <form name="contact" method="POST" data-netlify="true">
+                        <form name="contact" data-netlify-recaptcha="true" method="POST" data-netlify="true">
                             <div className="block">
                                 <label className="label label-style">Full Name</label>
-                                <input className="input has-background-black" type="text" placeholder="" required="required"/>
+                                <input className="input input-style" type="text" placeholder="" required="required"/>
                             </div>
 
                             <div className="block">
                                 <label className="label label-style">Phone</label>
-                                <input className="input has-background-black" type="text" placeholder="" required="required"/>
+                                <input className="input input-style" type="text" placeholder="" required="required"/>
                             </div>
 
                             <div className="block">
                                 <label className="label label-style">Email</label>
-                                <input className="input has-background-black" type="email" placeholder="" required="required"/>
+                                <input className="input input-style" type="email" placeholder="" required="required"/>
                             </div>
 
                             <div className="block">
                                 <label className="label label-style">Message</label>
-                                <textarea className="textarea has-background-black" rows="5" placeholder="" required="required"></textarea>
+                                <textarea className="textarea input-style" rows="5" placeholder="" required="required"></textarea>
                             </div>
 
                             <div className="field">
+                            <div data-netlify-recaptcha="true"></div>
                             <div className="control">
                               <button className="button button-style" type="submit">Send</button>
                             </div>

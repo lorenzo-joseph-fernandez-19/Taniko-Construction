@@ -147,7 +147,8 @@ $input-color: $white;
 }
 
 body {
-  background-color: black;
+  background-color: white;
+  color: black;
   // background-image: url('../images/background.png');
   font-family: 'Bahnschrift Regular';
 }
@@ -161,12 +162,47 @@ footer {
 }
 
 h1 {
-  color: white;
+  color: black ;
   font-size: 60px;
   font-weight: semi-bold;
   text-align: center;
 }
 
+button {
+  text-align: center;
+  color: #9E221E;
+  font-size: 25px;
+  border: 3px #9E221E solid;
+  border-radius: 15px;
+  width: 200px;
+  height: 50px;
+}
+
+button:hover {
+  background: #9E221E;
+  color: white;
+  cursor: pointer;
+}
+
+.has-background-image {
+  background-image: url('../images/background.png');
+  background-size: 1450px;
+  background-repeat: no-repeat;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
 
 .column-center {
   display: flex;
@@ -251,7 +287,7 @@ button:focus {outline:0;}
 }
 
 .maori-proverb {
-  color: #FFFFFF;
+  color: black;
   font-size: 30px;
   font-weight: bolder;
   text-align: left;
@@ -339,15 +375,21 @@ button:focus {outline:0;}
 
 .label-style {
   font-size: 20px;
-  color: white;
+  color: black;
   text-align: left;
 }
 
+.input-style {
+  border: 2px solid black;
+  color: black;
+}
+
 .button-style {
-  background-color: #9E221E;
-  color: white;
+  text-align: center;
+  color: #9E221E;
   font-size: 20px;
-  font-weight: bolder;
+  border: 2px #9E221E solid;
+  border-radius: 15px;
   width: 100px;
   display: flex;
   justify-content: center;
@@ -356,6 +398,8 @@ button:focus {outline:0;}
 
 .button-style:hover {
   background-color: #9E221E;
+  border-radius: 15px;
+  border: 3px #9E221E solid;
   color: white;
 }
 
@@ -366,6 +410,7 @@ button:focus {outline:0;}
 
 .contact-subtitle {
   font-size: 25px;
+  color: black;
 }
 
 /* Our Values Page Styling */
@@ -507,9 +552,10 @@ button:focus {outline:0;}
 /* Our People Page Styling */
 
 .people-image {
+  object-fit: cover;
   border: 1px solid white;
   width: 400px;
-  height: 400px;
+  height: 500px;
   margin-top: 40px;
 }
 
@@ -524,6 +570,7 @@ button:focus {outline:0;}
 .link-underline {
   text-decoration-line: underline;
   font-weight: bold;
+  color: #9E221E;
 }
 
 .privacy-title {
@@ -535,7 +582,7 @@ button:focus {outline:0;}
 }
 
 .privacy-text {
-  color: white;
+  color: black;
   font-size: 20px;
   margin-bottom: 20px;
   line-height: 1.4;
