@@ -20,22 +20,22 @@ const contactPage = () => {
                       <div className="contact-spacing">
                         <form name="contact" data-netlify-recaptcha="true" method="POST" data-netlify="true">
                             <div className="block">
-                                <label className="label label-style">Full Name</label>
+                                <label className="label label-style">Full Name<span className="text-is-red">*</span></label>
                                 <input className="input input-style" type="text" placeholder="" required="required"/>
                             </div>
 
                             <div className="block">
-                                <label className="label label-style">Phone</label>
-                                <input className="input input-style" type="text" placeholder="" required="required"/>
+                                <label className="label label-style">Phone<span className="text-is-red">*</span></label>
+                                <input className="input input-style" type="text" placeholder="" required="required"></input>
                             </div>
 
                             <div className="block">
-                                <label className="label label-style">Email</label>
+                                <label className="label label-style">Email<span className="text-is-red">*</span></label>
                                 <input className="input input-style" type="email" placeholder="" required="required"/>
                             </div>
 
                             <div className="block">
-                                <label className="label label-style">Message</label>
+                                <label className="label label-style">Message<span className="text-is-red">*</span></label>
                                 <textarea className="textarea input-style" rows="5" placeholder="" required="required"></textarea>
                             </div>
 

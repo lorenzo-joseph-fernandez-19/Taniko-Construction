@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
-import Atua from '../images/mauri-atua.svg'
-import Whenua from '../images/mauri-whenua.svg'
-import Tangata from '../images/mauri-tangata.svg'
+import Atua from '../images/mauri-atua_black.svg'
+import Whenua from '../images/mauri-whenua_black.svg'
+import Tangata from '../images/mauri-tangata_black.svg'
 
 const ourMahi = () => {
     return (
@@ -14,7 +14,7 @@ const ourMahi = () => {
         <section className="section is-medium">
            <h1>Our Mahi</h1>
             <hr className="red-line-title" />
-            <p id="space" className="has-text-white is-size-4 has-text-centered">Tāniko will deliver tailored consultancy services to your business. <br /> Our outcomes are linked to the core principles of the Tāniko system.</p>
+            <p id="space" className="has-text-black is-size-4 has-text-centered">Tāniko will deliver tailored consultancy services to your business. <br /> Our outcomes are linked to the core principles of the Tāniko system.</p>
             <div className="columns mahi-spacing">
                 <div className="column is-half mahi-image">
                     <img src={Atua} alt="Mauri Atua Triangle" width="425" height="425" />

@@ -216,7 +216,6 @@ button:hover {
   align-items: center;
 }
 
-
 // .translation:hover {
 //   font-size: 0px;
 //   cursor: text;
@@ -276,8 +275,6 @@ button:focus {outline:0;}
   padding-bottom: 60px;
   line-height: 1.2;
 }
-
-/* Who We Are Page Styling */
 
 .proverb-spacing {
   display: flex;
@@ -452,14 +449,14 @@ button:focus {outline:0;}
 }
 
 .mahi-subtitle {
-  color: white;
+  color: black;
   font-size: 30px;
   text-align: left;
   margin-bottom: 20px;
 }
 
 .mahi-text {
-  color: white;
+  color: black;
   font-size: 20px;
   text-align: left;
   list-style: disc;
@@ -551,9 +548,48 @@ button:focus {outline:0;}
 
 /* Our People Page Styling */
 
+.image-container {
+  position: relative;
+  width: 400px;
+}
+
+.image-overlay {
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 500px;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #9E221E;
+}
+
+.image-container:hover .overlay {
+  opacity: 0.5;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .people-image {
   object-fit: cover;
-  border: 1px solid white;
   width: 400px;
   height: 500px;
   margin-top: 40px;
@@ -610,6 +646,9 @@ ol {
   h1 {
     font-size: 50px;
   }
+  ol {
+    padding-left: 20px;
+  }
   .logo-center{
     margin-top: 50px;
   }
@@ -653,14 +692,14 @@ ol {
     margin-top: 20px;
   }
   .mahi-subtitle {
-    color: white;
+    color: black;
     font-size: 30px;
     text-align: left;
     margin-bottom: 20px;
     line-height: 30px;
   }
   .mahi-text {
-    color: white;
+    color: black;
     font-size: 20px;
     text-align: left;
     list-style: disc;
