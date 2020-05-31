@@ -113,24 +113,6 @@ const Slider = () => {
           </div> */}
         </Slide>
 
-        <Slide
-          background={{
-            backgroundAttachment: "fixed",
-            backgroundColor: "#000000",
-          }}>
-            <Wrapper>
-            <Title></Title>
-            <hr className="hr" />
-            <div className="columns">
-              <div className="image-position column">
-                <img src={Tangata} width="400" height="400" alt="Mauri Tangata Triangle" />
-              </div>
-              <div className="column">
-                <Subtitle></Subtitle>
-              </div>
-            </div>
-          </Wrapper>
-        </Slide>
         <Nav />
       </HeroSlider>
     );

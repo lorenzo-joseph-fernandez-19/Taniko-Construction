@@ -11,9 +11,10 @@ const Terms = () => {
             keywords: ["construction"],
             description: "Taniko Group Terms and Conditions"
         }}>
-       <section className="section is-medium">
-            <h1>Terms & Conditions</h1>
-            <hr className="red-line-title" />
+            <div className="section is-medium has-background-black">
+                <h1 className="has-text-white">Terms & Conditions</h1>
+            </div>
+        <section className="section is-medium">
                 <div className="container privacy-spacing">
                     <h2 className="privacy-title">Welcome to our Website!</h2>
                     <p className="privacy-text">These terms and conditions outline the rules and regulations for the use of our website, located at www.tanikogroup.co.nz.</p>

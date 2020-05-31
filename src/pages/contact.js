@@ -8,7 +8,7 @@ const contactPage = () => {
         <Layout pageMeta={{
             title: "Contact Us",
             keywords: ["construction"],
-            description: "Taniko Construction"
+            description: "Taniko Group"
         }}>
                 <div className="hero-image">
                     <h1 className="hero-image-text">Contact Us</h1>
@@ -26,7 +26,7 @@ const contactPage = () => {
                   <div className="container">
                     <p id="space" className="contact-subtitle contact-spacing">Send us a message and we'll get back to you as soon as we can.</p>
                       <div className="contact-spacing">
-                        <form name="contact" data-netlify-recaptcha="true" method="POST" data-netlify="true">
+                        <form name="contact" data-netlify-recaptcha="true" method="POST" data-netlify="true" action="/thank-you">
                             <div className="block">
                                 <label className="label label-style">Full Name<span className="text-is-red">*</span></label>
                                 <input className="input input-style" type="text" placeholder="" required="required"/>
