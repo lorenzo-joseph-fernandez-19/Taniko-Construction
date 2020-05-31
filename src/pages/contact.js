@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
+
 const contactPage = () => {
     return (
         <Layout pageMeta={{
@@ -9,14 +10,21 @@ const contactPage = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-             <div className="container has-text-white">
-                <section className="section is-medium has-text-centered">
+                <div className="hero-image">
+                    <h1 className="hero-image-text">Contact Us</h1>
+                    <div className="media">
+                      <div className="media-content">
+                        <div className="content centered">
+                          <OutboundLink className="contact-button" href="tel:+62896706255135" rel="noreferrer noopener">Call us at +62-896-7062-55135</OutboundLink>
+                          <OutboundLink className="contact-button" href="mailto:tanikogroup@gmail.com?Subject=General%20Enquiry" rel="noreferrer noopener" target="_top">tanikogroup@gmail.com</OutboundLink>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <section className="section has-text-centered">
                   <div className="container">
-                    <h1>Get In Touch</h1>
-                    <hr className="red-line-title" />
-                    <p className="contact-subtitle">Send us an email <OutboundLink className="underline" href="mailto:tanikogroup@gmail.com?Subject=General%20Enquiry" rel="noreferrer noopener" target="_top">tanikogroup@gmail.com</OutboundLink></p>
-                    <p className="has-text-white is-size-3">OR</p>
-                    <p id="space" className="contact-subtitle contact-spacing">Message us using the form below and we'll get back to you as soon as we can.</p>
+                    <p id="space" className="contact-subtitle contact-spacing">Send us a message and we'll get back to you as soon as we can.</p>
                       <div className="contact-spacing">
                         <form name="contact" data-netlify-recaptcha="true" method="POST" data-netlify="true">
                             <div className="block">
@@ -49,7 +57,6 @@ const contactPage = () => {
                       </div>
                     </div>
                 </section>
-              </div>
         </Layout>
     )
 }

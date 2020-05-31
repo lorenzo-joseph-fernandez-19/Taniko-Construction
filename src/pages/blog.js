@@ -34,7 +34,7 @@ const BlogPage = () => {
                 return (
                   <Link to={`/blog/${edge.node.slug}`}>
                     <article className="column">
-                        <div className="card">
+                        <div className="card card-style">
                           <div className="card-image">
                             <figure className="image">
                               <img src={edge.node.featured_media.source_url} alt={edge.node.title}/>
