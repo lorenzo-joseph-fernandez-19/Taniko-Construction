@@ -173,7 +173,7 @@ button {
   color: #9E221E;
   font-size: 25px;
   border: 3px #9E221E solid;
-  border-radius: 15px;
+  border-radius: 10px;
   width: 200px;
   height: 50px;
 }
@@ -189,8 +189,8 @@ button:hover {
   justify-content: center;
   align-items: center;
   color: white;
-  margin-bottom: 180px;
   margin-top: 180px;
+  margin-bottom: 20px;
 
 }
 
@@ -206,7 +206,8 @@ button:hover {
 
 .contact-button {
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid white;
+  border-radius: 10px;
   color: #FFFFFF;
   padding: 15px 32px;
   text-align: center;
@@ -215,11 +216,13 @@ button:hover {
   font-family: $family-sans-serif;
   font-weight: bold;
   font-size: 1rem;
+  margin: 15px;
 }
 
 .contact-button:hover {
   background: white;
   color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .index-spacing {
@@ -237,6 +240,18 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.is-flexstart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.is-flexend {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .h2 {
@@ -819,7 +834,19 @@ ol {
     margin-left: 40px;
     margin-right: 40px;
   }
-  
+  .is-flexstart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .is-flexend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-button {
+    margin: 0px;
+  }
 }
 
 /* Navbar Styling */

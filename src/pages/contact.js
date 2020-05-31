@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const contactPage = () => {
     return (
@@ -12,15 +12,15 @@ const contactPage = () => {
         }}>
                 <div className="hero-image">
                     <h1 className="hero-image-text">Contact Us</h1>
-                    <div className="media">
-                      <div className="media-content">
-                        <div className="content centered">
-                          <OutboundLink className="contact-button" href="tel:+62896706255135" rel="noreferrer noopener">Call us at +62-896-7062-55135</OutboundLink>
-                          <OutboundLink className="contact-button" href="mailto:tanikogroup@gmail.com?Subject=General%20Enquiry" rel="noreferrer noopener" target="_top">tanikogroup@gmail.com</OutboundLink>
+                      <div className="level">
+                        <div className="level-item is-flexend">
+                          <OutboundLink className="contact-button" href="tel:+64" rel="noreferrer noopener"><FontAwesomeIcon icon={['fas', 'phone']} rotation={90} /> 09 123 456</OutboundLink>
+                        </div>                        
+                        <div className="level-item is-flexstart">
+                          <OutboundLink className="contact-button" href="mailto:tanikogroup@gmail.com?Subject=General%20Enquiry" rel="noreferrer noopener" target="_top"><FontAwesomeIcon icon={['fas', 'envelope']} />  tanikogroup@gmail.com</OutboundLink>
                         </div>
                       </div>
                     </div>
-                </div>
 
                 <section className="section has-text-centered">
                   <div className="container">
