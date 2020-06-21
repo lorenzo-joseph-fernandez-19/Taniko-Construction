@@ -9,7 +9,7 @@ const thankYou = () => {
             description: "Taniko Group"
         }}>
             <section className="section is-medium">
-                <h1>Thank you for your submission</h1>
+                <h1>Thank you for your message. We'll be in touch</h1>
             </section>
         </Layout>
     )

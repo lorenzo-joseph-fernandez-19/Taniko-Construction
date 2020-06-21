@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 
+
 const Terms = () => {
     return (
         <Layout pageMeta={{

@@ -3,6 +3,18 @@ import Layout from '../components/layout'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+// function filter (inputxt) {
+//   let phoneNumber = /^\d{10}$/
+//   if (typeof phoneNumber !== number)
+//   return alert("Please enter a valid number")
+//   else true 
+// }
+
+function messageAlert () {
+  (alert("Thank you for your message. We'll be in touch"))
+}
+
+
 const contactPage = () => {
     return (
         <Layout pageMeta={{
@@ -26,7 +38,7 @@ const contactPage = () => {
                   <div className="container">
                     <p id="space" className="contact-subtitle contact-spacing">Send us a message and we'll get back to you as soon as we can.</p>
                       <div className="contact-spacing">
-                        <form name="contact" data-netlify-recaptcha="true" method="POST" data-netlify="true" action="/thank-you">
+                        <form name="contact" data-netlify-recaptcha="true" method="POST" data-netlify="true" action="/thank">
                             <div className="block">
                                 <label className="label label-style">Full Name<span className="text-is-red">*</span></label>
                                 <input className="input input-style" type="text" placeholder="" required="required"/>
@@ -50,7 +62,7 @@ const contactPage = () => {
                             <div className="field">
                             <div data-netlify-recaptcha="true"></div>
                             <div className="control">
-                              <button className="button button-style" type="submit">Send</button>
+                              <button className="button button-style" type="submit" onClick={messageAlert}>Send</button>
                             </div>
                           </div>
                         </form>

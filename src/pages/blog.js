@@ -30,7 +30,9 @@ const BlogPage = () => {
           <div className="section is-medium has-background-black">
             <h1 className="has-text-white">Our Blog</h1>
           </div>
-          <div className="section has-text-centered">
+          <div className="section people-spacing">
+            <h1 className="has-text-black">Our Blog</h1>
+              <hr className="red-line-title" />
               <ol className="columns blog-column">{data.allWordpressPost.edges.map((edge) => { 
                 return (
                   <Link to={`/blog/${edge.node.slug}`}>
@@ -44,16 +46,13 @@ const BlogPage = () => {
                           <div className="card-content">
                             <div className="media">
                               <div className="media-content">
-                                <p className="blog-title has-text-centered">{edge.node.title}</p>
-                                <div class="is-centered level-item">
+                              <div class="">
                                   <span class="blog-date">{edge.node.date}</span>
                                 </div>
+                                <p className="blog-title">{edge.node.title}</p>
                               </div>
                             </div>
-                            <div className="content blog-content-style">
-                              <p dangerouslySetInnerHTML={{ __html:edge.node.excerpt}} />
-                            </div>
-                              <p className="read-more">Read More...</p>
+                              <button className="blog-button">Read More</button>                         
                           </div>
                         </div>
                     </article>

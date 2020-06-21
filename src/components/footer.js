@@ -16,14 +16,12 @@ const Footer = () => {
             <div className="column column-style">
               <ul>
                 <li className="footer-title"><p>About Us</p></li>
-                <li className="list-style"><Link to="/our-values">Our Values</Link></li>
                 <li className="list-style"><Link to="/our-mahi">Our Mahi</Link></li>
                 </ul>
               </div>
               <div className="column column-style">
               <ul>
-                <li className="footer-title"><p>Our Work</p></li>
-                <li className="list-style"><Link to="/our-clients">Our Clients</Link></li>
+                <li className="footer-title"><p>News</p></li>
                 <li className="list-style"><Link to="/blog">Our Blog</Link></li>
               </ul>
               </div>

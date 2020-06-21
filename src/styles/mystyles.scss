@@ -149,7 +149,6 @@ $input-color: $white;
 body {
   background-color: white;
   color: black;
-  // background-image: url('../images/background.png');
   font-family: 'Bahnschrift Regular';
 }
 
@@ -170,6 +169,7 @@ h1 {
 
 button {
   text-align: center;
+  background-color: white;
   color: #9E221E;
   font-size: 25px;
   border: 3px #9E221E solid;
@@ -182,7 +182,14 @@ button:hover {
   background: #9E221E;
   color: white;
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.background-img {
+  display: table;
+  height: 300px;
+  width: 100%;
+  background: black url("../images/background.png") center / cover;
+  background-position: center top;
 }
 
 .index-text {
@@ -230,7 +237,6 @@ button:hover {
   background: #9E221E;
   border: 2px solid #9E221E;
   color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .index-spacing {
@@ -282,21 +288,32 @@ button:hover {
   align-items: center;
 }
 
-// .translation:hover {
-//   font-size: 0px;
-//   cursor: text;
-//   text-decoration: none;
-//   margin-bottom: 20px;
-// }
+.translation-spacing {
+  padding-left: 200px;
+  padding-right: 200px;
+}
 
-// .translation:hover:after {
-//   content: attr(data-hover);
-//   color: #9E221E;
-//   font-size: 25px;
-//   font-weight: bold;
-//   text-decoration: none;
-//   font-style: italic;
-// }
+.translation {
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.0;
+}
+
+.translation:hover {
+  font-size: 0px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.translation:hover:after {
+  content: attr(data-hover);
+  color: #9E221E;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: italic;
+}
 
 .img-style {
   display: flex;
@@ -346,21 +363,13 @@ button:focus {outline:0;}
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 .maori-proverb {
   color: black;
   font-size: 30px;
   font-weight: bolder;
-  text-align: center;
-  line-height: 1.0;
-}
-
-.translation {
-  color: #9E221E;
-  font-size: 25px;
-  font-weight: semi-bold;
   text-align: center;
   line-height: 1.0;
 }
@@ -479,24 +488,27 @@ button:focus {outline:0;}
 /* Our Values Page Styling */
 
 .values-title {
-  color: #9E221E;
-  font-size: 50px;
-  text-align: center;
+  color: black;
+  font-size: 40px;
+  text-align: left;
   font-weight: bolder;
   line-height: 50px;
   margin-top: 20px;
 }
 
 .values-subtitle {
-  color: white;
+  color: #9E221E;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
 }
 
 .values-text {
-  color: white;
-  font-size: 25px;
+  color: black;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: left;
 }
 
 .values-spacing {
@@ -553,7 +565,6 @@ button:focus {outline:0;}
 .card-style {
   margin-top: 30px;
   margin-bottom: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blog-image {
@@ -570,12 +581,10 @@ button:focus {outline:0;}
 }
 
 .blog-title {
-  padding-top: 30px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   color: black;
   line-height: 1.0;
-  margin-bottom: 20px;
 }
 
 .blog-date {
@@ -585,8 +594,6 @@ button:focus {outline:0;}
 }
 
 .blog-content-style {
-  padding-left: 20px;
-  padding-right: 20px;
   color: black;
   font-size: 18px;
 }
@@ -613,6 +620,24 @@ button:focus {outline:0;}
   font-size: 18px;
 }
 
+
+.blog-button {
+  text-align: center;
+  background-color: white;
+  color: #9E221E;
+  font-size: 20px;
+  border: 3px #9E221E solid;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+}
+
+.blog-button:hover {
+  background: #9E221E;
+  color: white;
+  cursor: pointer;
+}
+
 /* People Styling */
 
 .people-spacing {
@@ -636,18 +661,74 @@ button:focus {outline:0;}
   font-style: italic;
 }
 
+.people-image-wrapper {
+  background-color: #9E221E;
+}
+
+.people-image-wrapper:hover img {
+  opacity: 0.5;
+  background-color: #9E221E;
+  cursor: pointer;
+}
+
+.name-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.name-wrapper-inner {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 550px;
+  padding: 15px 20px;
+  -webkit-transition: 0.1s;
+
+  -moz-transition: 0.1s;
+  transition: 0.1s;
+  // background: rgba(158, 34, 30, 1.0);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.name-wrapper:hover .name-wrapper-inner {
+  top: 0;
+  cursor: pointer;
+}
+
+.name-wrapper-title {
+  font-size: 30px;
+  color: white;
+}
+
+.name-wrapper-subtitle {
+  font-weight: bold;
+  font-size: 20px;
+  color: #9E221E;
+  line-height: 1.0;
+}
+
+.name-wrapper-description {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: semi-bold;
+}
+
+.name-wrapper-quote {
+  font-weight: bolder;
+  color: white;
+}
+
+.name-wrapper-pepeha {
+  line-height: 1.3;
+  font-weight: bolder;
+  color: white;
+}
 
 .people-image {
   object-fit: cover;
-  width: 400px;
-  height: 500px;
   margin-top: 40px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.people-image:hover {
-  background: #9E221E;
-  transition: 0.3s;
 }
 
 .people-center {
@@ -698,9 +779,9 @@ ol {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   ol {
     padding-left: 20px;
@@ -821,93 +902,96 @@ ol {
   .index-text {
     text-align: center;
   }
+  .translation-spacing {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .translation {
+    font-size: 20px;
+  }
+  .translation:hover:after {
+    font-size: 20px;
+  }
+  .red-line-title {
+    background: #9E221E; 
+    width: 60%;
+    margin: auto;
+    height: 5px;
+    margin-bottom: 20px;
+  }
+  .h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+  }
+  .name-wrapper-subtitle {
+    line-height: 0.5;
+  }
+  .name-wrapper-description {
+    line-height: 1.2;
+  }
+  .name-wrapper-quote {
+    line-height: 0.5;
+  }
 }
 
 /* Navbar Styling */
 
-/* Position and sizing of burger button */
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  right: 36px;
-  top: 36px;
-  float: right;
-}
-
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-  background: black;
-}
-
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-  background: black;
-}
-
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 36px;
-  width: 36px;
-}
-
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #000000;
-}
-
-/*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-*/
-.bm-menu-wrap {
-  position: fixed;
-  height: 100%;
-}
-
-/* General sidebar styles */
-.bm-menu {
-  background: white;
-  padding: 2.5em 1.5em 0;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media only screen and (max-width: 600px) {
-  .bm-menu {
-    font-size: 20px;
-    width: 100%;
+@media only screen and (max-width: 768px) {
+  .bm-burger-button {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+    float: right;
   }
-}
-
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: white;
-}
-
-/* Wrapper for item list */
-.bm-item-list {
-  padding: 50px;
-}
-
-/* Individual item */
-.bm-item {
-  text-align: left;
-  color: black;
-  font-weight: semi-bold;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.bm-item:hover {
-  color: #9E221E;
-  font-weight: bolder;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  .bm-burger-bars {
+    background: #FFFFFF;
+  }
+  .bm-burger-bars-hover {
+    background: #9E221E;
+  }
+  .bm-cross-button {
+    height: 36px;
+    width: 36px;
+  }
+  .bm-cross {
+    background: #000000;
+  }
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+  .bm-menu {
+    background: white;
+    padding: 2.5em 1.5em 0;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bm-morph-shape {
+    fill: white;
+  }
+  .bm-item-list {
+    padding: 50px;
+  }
+  .bm-item {
+    text-align: left;
+    color: black;
+    font-weight: semi-bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .bm-item:hover {
+    color: #9E221E;
+    font-weight: bolder;
+  }
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
 }
 
