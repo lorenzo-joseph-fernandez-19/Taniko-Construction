@@ -35,7 +35,7 @@ export const query = graphql`
                     <div className="is-centered level-item">
                       <span className="blog-post-date">{data.wordpressPost.date}</span>
                     </div>
-                    <hr className="red-line" />
+                    <hr className="red-line-title" />
                   </div>
                 </div>
                 <div className="content blog-post-content-style">

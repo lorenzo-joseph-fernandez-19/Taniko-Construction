@@ -8,7 +8,7 @@ const burgerMenu = () => {
         <Menu width="100%" right>
             <Link to="/our-mahi">Our Mahi</Link>
             <Link to="/blog">Our Blog</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Contact Us</Link>
         </Menu>
     )
 }

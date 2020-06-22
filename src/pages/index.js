@@ -92,7 +92,7 @@ const HomePage = () => {
                                     <OutboundLink href="https://www.linkedin.com" rel="noreferrer noopener" target="_blank">
                                         <FontAwesomeIcon className="icon icon-style is-medium" icon={['fas', 'envelope']} />
                                     </OutboundLink>
-                                    <OutboundLink href="https://www.linkedin.com" rel="noreferrer noopener" target="_blank">
+                                    <OutboundLink href="https://www.linkedin.com/in/aiedy-di/" rel="noreferrer noopener" target="_blank">
                                         <FontAwesomeIcon className="icon icon-style is-medium" icon={['fab', 'linkedin']} />
                                     </OutboundLink>
                                 </div>
@@ -126,7 +126,7 @@ const HomePage = () => {
                                     <OutboundLink href="https://www.linkedin.com" rel="noreferrer noopener" target="_blank">
                                         <FontAwesomeIcon className="icon icon-style is-medium" icon={['fas', 'envelope']} />
                                     </OutboundLink>
-                                    <OutboundLink href="https://www.linkedin.com" rel="noreferrer noopener" target="_blank">
+                                    <OutboundLink href="https://www.linkedin.com/in/maxim-wehi-715339142/" rel="noreferrer noopener" target="_blank">
                                         <FontAwesomeIcon className="icon icon-style is-medium" icon={['fab', 'linkedin']} />
                                     </OutboundLink>
                                 </div>

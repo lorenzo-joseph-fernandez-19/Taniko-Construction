@@ -5,16 +5,14 @@ import Logo from "../images/logo-white.svg"
 const Header = () => {
     return (
         <header className="header-spacing">
-            <div className="level-left">
+            <div className="level">
                 <div className="level-item">
                     <Link to="/"><img src={Logo} height="150" width="150" alt="Taniko Logo"/></Link>
                 </div>
-            </div>
-            <div className="level-right">
                 <div className="level-item">
-                    <Link className="header-font "to="/our-mahi">Our Mahi</Link>
-                    <Link className="header-font "to="/blog">Our Blog</Link>
-                    <Link className="header-font "to="/contact"><button className="header-button">Get in Touch</button></Link>
+                    <Link className="header-font line"to="/our-mahi">Our Mahi</Link>
+                    <Link className="header-font line "to="/blog">Our Blog</Link>
+                    <Link className="header-font"to="/contact"><button className="header-button">Get in Touch</button></Link>
                 </div>
             </div>
         </header>

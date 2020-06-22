@@ -22,7 +22,7 @@ const contactPage = () => {
             keywords: ["construction"],
             description: "Taniko Group"
         }}>
-                <div className="background-img">
+                <div className="section is-medium background-img">
                     <h1 className="hero-image-text">Contact Us</h1>
                       <div className="level">
                         <div className="level-item is-flexend">
