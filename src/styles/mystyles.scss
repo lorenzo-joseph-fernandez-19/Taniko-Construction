@@ -196,6 +196,7 @@ button:hover {
 
 .header-font {
   font-size: 18px;
+  margin: 20px;
 }
 
 .header-font-spacing {
@@ -204,7 +205,7 @@ button:hover {
 
 .header-button {
   background-color: transparent;
-  border: 2px solid #9E221E;
+  border: 2px solid $white;
   border-radius: 10px;
   color: #FFFFFF;
   padding: 15px 32px;
@@ -212,10 +213,9 @@ button:hover {
   text-decoration: none;
   size: 40px;
   font-family: $family-sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
+  font-size: 18px;
   margin: 15px;
-  width: 90%;
+  width: 180px;
 }
 
 .header-button:hover {
@@ -248,7 +248,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top: 180px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -332,8 +332,8 @@ button:hover {
 }
 
 .translation-spacing {
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 .translation {
@@ -730,7 +730,6 @@ button:focus {outline:0;}
 
   -moz-transition: 0.1s;
   transition: 0.1s;
-  // background: rgba(158, 34, 30, 1.0);
   background: rgba(0, 0, 0, 0.9);
 }
 
@@ -984,7 +983,7 @@ ol {
     display: none;
   }
   .header-spacing {
-    position: sticky;
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -995,7 +994,7 @@ ol {
   }
   .background-img {
     display: table;
-    height: 150px;
+    height: 200px;
     width: 100%;
     background: black url("../images/background.png") center / cover;
     background-position: center bottom;
@@ -1007,19 +1006,16 @@ ol {
     font-weight: bold;
     line-height: 50px;
   }
-  
   .values-subtitle {
     color: #9E221E;
     font-size: 20px;
     text-align: left;
   }
-  
   .values-text {
     color: black;
     font-size: 20px;
     text-align: left;
   }
-  
   .values-spacing {
     margin: 10px;
   }
@@ -1027,10 +1023,21 @@ ol {
 
 /* Navbar Styling */
 
-@media only screen and (max-width: 1024px) {
+.bm-burger-button {
+  display: none;
+}
+
+.bm-menu {
+  display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
   .bm-burger-button {
-    display: border-box;
-    position: sticky;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    position: absolute;
     width: 36px;
     height: 30px;
     right: 36px;
@@ -1056,7 +1063,6 @@ ol {
   }
   .bm-menu {
     background: white;
-    background-position: center bottom;
     padding: 2.5em 1.5em 0;
     font-size: 30px;
     display: flex;

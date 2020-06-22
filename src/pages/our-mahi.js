@@ -11,10 +11,11 @@ const ourMahi = () => {
             keywords: ["construction"],
             description: "Taniko Construction"
         }}>
-        <section className="section is-medium">
-           <h1>Our Mahi</h1>
-            <hr className="red-line-title" />
-            <p id="space" className="has-text-black is-size-4 has-text-centered">Tāniko will deliver tailored consultancy services to your business. <br /> Our outcomes are linked to the core principles of the Tāniko system.</p>
+        <div className="section is-medium background-img">
+           <h1 className="has-text-white">Our Mahi</h1>
+        </div>
+        <section className="section container">
+            <p id="space" className="contact-subtitle has-text-centered">Tāniko will deliver tailored consultancy services to your business. <br /> Our outcomes are linked to the core principles of the Tāniko system.</p>
             <div className="columns mahi-spacing">
                 <div className="column is-half mahi-image">
                     <img src={Atua} alt="Mauri Atua Triangle" width="425" height="425" />
@@ -56,7 +57,7 @@ const ourMahi = () => {
                             <li>Implementing a cultural induction and internship program for your business.</li>
                         </ul>
                 </div>
-            </div>
+                </div>
         </section>
         </Layout>
     )

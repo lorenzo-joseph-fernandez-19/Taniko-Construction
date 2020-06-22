@@ -12,11 +12,11 @@ const Terms = () => {
             keywords: ["construction"],
             description: "Taniko Group Terms and Conditions"
         }}>
-            <div className="section is-medium has-background-black">
+            <div className="section is-medium background-img">
                 <h1 className="has-text-white">Terms & Conditions</h1>
             </div>
         <section className="section is-medium">
-                <div className="container privacy-spacing">
+                <div className="container index-spacing">
                     <h2 className="privacy-title">Welcome to our Website!</h2>
                     <p className="privacy-text">These terms and conditions outline the rules and regulations for the use of our website, located at www.tanikogroup.co.nz.</p>
                     <p className="privacy-text">By accessing this website we assume you accept these terms and conditions. Do not continue to use Taniko Group if you do not agree to take all of the terms and conditions stated on this page. Our Terms and Conditions were created with the help of the <OutboundLink className="link-underline" href="https://www.termsandconditionsgenerator.com" rel="noreferrer noopener" target="_blank">Terms And Conditions Generator</OutboundLink> and the <OutboundLink className="link-underline" href="https://www.privacypolicyonline.com/terms-conditions-generator/" rel="noreferrer noopener" target="_blank">Free Terms & Conditions Generator.</OutboundLink></p>
