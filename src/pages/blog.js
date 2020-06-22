@@ -27,12 +27,10 @@ const BlogPage = () => {
           keywords: ["Taniko"],
           description: "Taniko Group"
         }}>
-          <div className="section is-medium has-background-black">
+          <div className="section is-medium background-img">
             <h1 className="has-text-white">Our Blog</h1>
           </div>
           <div className="section people-spacing">
-            <h1 className="has-text-black">Our Blog</h1>
-              <hr className="red-line-title" />
               <ol className="columns blog-column">{data.allWordpressPost.edges.map((edge) => { 
                 return (
                   <Link to={`/blog/${edge.node.slug}`}>

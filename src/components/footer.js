@@ -9,7 +9,7 @@ import Logo from "../images/logo-white.svg"
 
 const Footer = () => {
   return (
-    <footer className="footer has-background-black">
+    <footer className="footer background-is-black">
       <div className="container has-text-centered">
         <div className="content">
           <div className="columns">

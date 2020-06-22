@@ -1,22 +1,5 @@
 .Container {
-    margin: 0 auto;
-    padding-bottom: 80px;
-    padding: 0;
-    text-transform: uppercase;
-    width: 90%;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 60px;
     color: white;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .Container {
-      margin: 0 auto;
-      padding: 0;
-      text-transform: uppercase;
-      width: 90%;
-      text-align: center;
-      font-size: 3.5rem;
-      color: white;
-    }
   }

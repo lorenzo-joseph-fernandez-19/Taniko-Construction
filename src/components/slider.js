@@ -3,10 +3,9 @@ import HeroSlider, { Slide, Nav } from "hero-slider"
 import Wrapper from "../components/UI/Wrapper/wrapper.js"
 import Title from "../components/UI/Title/title.js"
 import Subtitle from "../components/UI/Subtitle/subtitle.js"
-import Atua from "../images/mauri-atua.svg"
-import Whenua from "../images/mauri-whenua.svg"
-import Tangata from "../images/mauri-tangata.svg"
 import Logo from "../images/logo-white.svg"
+import Background from "../images/background.png"
+
 
 const Slider = () => {
     return (
@@ -37,11 +36,57 @@ const Slider = () => {
           background={{
             backgroundAttachment: "fixed",
             backgroundColor: "#000000",
+            backgroundImage: Background
           }}> 
             <div className="logo-center">
-              <img src={Logo} width="750" height="750" alt="Taniko Logo"/>
+              <img src={Logo} width="700" height="700" alt="Taniko Logo"/>
             </div>
         </Slide>
+
+        <Slide
+          navDescription= "Rangitiranga"
+          background={{
+            backgroundAttachment: "fixed",
+            backgroundColor: "#000000",
+            backgroundImage: Background
+          }}> 
+            <Wrapper>
+             <Title>Rangatiranga</Title>
+             <Subtitle>Leadership, Independence and Self-Determination.</Subtitle>
+             <p className="has-text-white">We lead ourselves and others, enhancing self-efficacy.</p>
+            </Wrapper>
+        </Slide>
+
+        <Slide
+          navDescription= "Tika"
+          background={{
+            backgroundAttachment: "absolute",
+            backgroundColor: "#000000",
+            backgroundImage: Background
+
+          }}> 
+            <Wrapper>
+             <Title>Tika</Title>
+             <Subtitle>Righteousness, Being Correct and Doing the Right Thing.</Subtitle>
+             <p className="has-text-white">We are professional and we always do what is right, and correct.</p>
+            </Wrapper>
+        </Slide>
+
+        <Slide
+          navDescription= "Auahatanga"
+          background={{
+            backgroundAttachment: "fixed",
+            backgroundColor: "#000000",
+            backgroundImage: Background
+
+          }}> 
+            <Wrapper>
+             <Title>Auahatanga</Title>
+             <Subtitle>Innovation and Creativity.</Subtitle>
+             <p className="has-text-white">We turn creative and innovative solutions into reality.</p>
+            </Wrapper>
+        </Slide>
+
         <Nav />
       </HeroSlider>
     );

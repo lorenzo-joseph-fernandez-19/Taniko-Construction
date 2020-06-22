@@ -184,12 +184,56 @@ button:hover {
   cursor: pointer;
 }
 
+.header-spacing {
+  position: sticky;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: black;
+}
+
+.header-font {
+  font-size: 18px;
+}
+
+.header-font-spacing {
+  margin-left: 100px;
+}
+
+.header-button {
+  background-color: transparent;
+  border: 2px solid #9E221E;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  size: 40px;
+  font-family: $family-sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 15px;
+  width: 90%;
+}
+
+.header-button:hover {
+  background: #9E221E;
+  border: 2px solid #9E221E;
+  color: white;
+}
+
 .background-img {
   display: table;
   height: 300px;
   width: 100%;
   background: black url("../images/background.png") center / cover;
-  background-position: center top;
+  background-position: center bottom;
+}
+
+.background-is-black {
+  background-color: black;
 }
 
 .index-text {
@@ -211,7 +255,7 @@ button:hover {
 .hero-image {
   display: table;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/contact2.jpg") center / cover;
+  background: black url("../images/background.png") center / cover;
   background-position: center top;
   height: 500px;
   color: white;
@@ -245,7 +289,6 @@ button:hover {
 }
 
 .has-background-image {
-  background-image: url('../images/contact.jpg');
   background-size: 1450px;
   background-repeat: no-repeat;
 }
@@ -336,10 +379,10 @@ button:focus {outline:0;}
 
 .red-line-title {
   background: #9E221E;
-  width: 30%;
+  width: 150px;
   margin: auto;
-  height: 5px;
-  margin-bottom: 60px;
+  height: 10px;
+  margin-bottom: 40px;
 }
 
 .text-is-black {
@@ -488,25 +531,26 @@ button:focus {outline:0;}
 /* Our Values Page Styling */
 
 .values-title {
-  color: black;
+  color: #9E221E;
   font-size: 40px;
   text-align: left;
-  font-weight: bolder;
+  font-weight: bold;
   line-height: 50px;
   margin-top: 20px;
 }
 
 .values-subtitle {
-  color: #9E221E;
+  color: black;
+  font-weight: bold;
   font-size: 20px;
   text-align: left;
   margin-bottom: 10px;
+  line-height: 20px;
 }
 
 .values-text {
   color: black;
   font-size: 20px;
-  margin-top: 40px;
   margin-bottom: 40px;
   text-align: left;
 }
@@ -619,7 +663,6 @@ button:focus {outline:0;}
   color: black;
   font-size: 18px;
 }
-
 
 .blog-button {
   text-align: center;
@@ -778,7 +821,6 @@ ol {
   line-height: 1.4;
 }
 
-
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 40px;
@@ -787,7 +829,10 @@ ol {
     padding-left: 20px;
   }
   .logo-center{
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
   }
   .blog-image {
     object-fit: cover;
@@ -900,11 +945,11 @@ ol {
     margin: 0px;
   }
   .index-text {
-    text-align: center;
+    text-align: left;
   }
   .translation-spacing {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .translation {
     font-size: 20px;
@@ -935,13 +980,57 @@ ol {
   .name-wrapper-quote {
     line-height: 0.5;
   }
+  .header-font {
+    display: none;
+  }
+  .header-spacing {
+    position: sticky;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    width: 100%;
+  }
+  .background-img {
+    display: table;
+    height: 150px;
+    width: 100%;
+    background: black url("../images/background.png") center / cover;
+    background-position: center bottom;
+  }
+  .values-title {
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 50px;
+  }
+  
+  .values-subtitle {
+    color: #9E221E;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .values-text {
+    color: black;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .values-spacing {
+    margin: 10px;
+  }
 }
 
 /* Navbar Styling */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .bm-burger-button {
-    position: absolute;
+    display: border-box;
+    position: sticky;
     width: 36px;
     height: 30px;
     right: 36px;
@@ -967,6 +1056,7 @@ ol {
   }
   .bm-menu {
     background: white;
+    background-position: center bottom;
     padding: 2.5em 1.5em 0;
     font-size: 30px;
     display: flex;
