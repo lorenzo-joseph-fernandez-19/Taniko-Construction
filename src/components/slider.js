@@ -24,7 +24,7 @@ const Slider = () => {
         settings={{
           slidingDuration: 400,
           slidingDelay: 100,
-          shouldAutoplay: false,
+          shouldAutoplay: true,
           shouldDisplayButtons: true,
           autoplayDuration: 4000,
           height: "100vh"

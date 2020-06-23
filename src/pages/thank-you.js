@@ -9,7 +9,10 @@ const thankYou = () => {
             description: "Taniko Group"
         }}>
             <section className="section is-medium">
-                <h1>Thank you for your message. We'll be in touch</h1>
+                <div className="thank-you-spacing has-text-centered">
+                    <h2 className="thank-you-title">Thanks for getting in touch!</h2>
+                    <p className="index-text">Our Team will get back to you in the next 2-3 business days.</p> 
+                </div>
             </section>
         </Layout>
     )

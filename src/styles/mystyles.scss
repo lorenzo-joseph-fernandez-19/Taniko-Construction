@@ -527,6 +527,18 @@ button:focus {outline:0;}
   color: black;
 }
 
+.thank-you-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.thank-you-spacing {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
 /* Our Values Page Styling */
 
 .values-title {
@@ -988,7 +1000,6 @@ ol {
     align-items: flex-start;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 50px;
     width: 100%;
   }
   .background-img {
@@ -1050,12 +1061,11 @@ ol {
   display: none;
 }
 
-
 @media only screen and (max-width: 768px) {
   .bm-burger-button {
     display: flex;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     position: absolute;
     width: 36px;
     height: 30px;
