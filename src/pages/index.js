@@ -29,11 +29,11 @@ const HomePage = () => {
             </div>
         </div>
     
-
-            <div className="section is-medium translation translation-spacing has-text-centered background-img" data-hover="With the red and black threads, the work will be completed."> 
+        <div className="section is-medium background-img">
+            <div className="translation translation-spacing has-text-centered" data-hover="With the red and black threads, the work will be completed."> 
                 <i>"Mā whero, mā pango, ka oti ai te mahi"</i>
             </div>
-
+        </div>
 
         <div className="index-spacing">
             <div className="index-text section">
@@ -65,7 +65,7 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <p className="name-wrapper-description">Maxim’s family came to Auckland from Opotiki in the 1960’s, eventually settling in Mangere. The wider Wehi whanau are well known for their exploits in kapa haka performing arts, a path Maxim followed to University, studying a bachelors degree in Music. Maxim has spent most of his professional career in construction and is a qualified carpenter. He also completed a graduate diploma in Construction Project Management. </p>
-                            <i className="name-wrapper-quote">“Building taught me to think methodically, Music taught me to think creatively, an awesome mix for innovation, problem solving and getting things done.”</i>
+                            <p className="name-wrapper-quote">“Building taught me to think methodically, Music taught me to think creatively, an awesome mix for innovation, problem solving and getting things done.”</p>
                             <p className="name-wrapper-description">He is married with two children and lives on a lifestyle block near Clevedon.</p>
                             <ul className="name-wrapper-pepeha">
                                 <li>Ko Matītī te maunga</li>
@@ -98,7 +98,7 @@ const HomePage = () => {
                                 </div>
                             </div>
                                 <p className="name-wrapper-description">Maxim’s family came to Auckland from Opotiki in the 1960’s, eventually settling in Mangere. The wider Wehi whanau are well known for their exploits in kapa haka performing arts, a path Maxim followed to University, studying a bachelors degree in Music. Maxim has spent most of his professional career in construction and is a qualified carpenter. He also completed a graduate diploma in Construction Project Management. </p>
-                                <i className="name-wrapper-quote">“Building taught me to think methodically, Music taught me to think creatively, an awesome mix for innovation, problem solving and getting things done.”</i>
+                                <p className="name-wrapper-quote">“Building taught me to think methodically, Music taught me to think creatively, an awesome mix for innovation, problem solving and getting things done.”</p>
                                 <p className="name-wrapper-description">He is married with two children and lives on a lifestyle block near Clevedon.</p>
                                 <ul className="name-wrapper-pepeha">
                                     <li>Ko Matītī te maunga</li>
@@ -133,7 +133,7 @@ const HomePage = () => {
                             </div>
 
                             <p className="name-wrapper-description">Maxim’s family came to Auckland from Opotiki in the 1960’s, eventually settling in Mangere. The wider Wehi whanau are well known for their exploits in kapa haka performing arts, a path Maxim followed to University, studying a bachelors degree in Music. Maxim has spent most of his professional career in construction and is a qualified carpenter. He also completed a graduate diploma in Construction Project Management. </p>
-                            <i className="name-wrapper-quote">“Building taught me to think methodically, Music taught me to think creatively, an awesome mix for innovation, problem solving and getting things done.”</i>
+                            <p className="name-wrapper-quote">“Building taught me to think methodically, Music taught me to think creatively, an awesome mix for innovation, problem solving and getting things done.”</p>
                             <p className="name-wrapper-description">He is married with two children and lives on a lifestyle block near Clevedon.</p>
                             <ul className="name-wrapper-pepeha">
                                 <li>Ko Matītī te maunga</li>
@@ -149,8 +149,8 @@ const HomePage = () => {
             </div>
         </div>
             
-        <div className="background-img">
-            <div className="section is-medium translation translation-spacing has-text-centered" data-hover="What is the most important thing in this world, it is people, it is people, it is people.">
+        <div className="section is-medium background-img">
+            <div className="translation translation-spacing has-text-centered" data-hover="What is the most important thing in this world, it is people, it is people, it is people.">
                 <i>He aha te mea nui o tēnei ao, he tangata, he tangata, he tangata</i>
             </div>
         </div>

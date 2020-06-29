@@ -11,7 +11,7 @@ const thankYou = () => {
             <section className="section is-medium">
                 <div className="thank-you-spacing has-text-centered">
                     <h2 className="thank-you-title">Thanks for getting in touch!</h2>
-                    <p className="index-text">Our Team will get back to you in the next 2-3 business days.</p> 
+                    <p className="thank-you-text">Our Team will get back to you <br/> in the next 2-3 business days.</p> 
                 </div>
             </section>
         </Layout>

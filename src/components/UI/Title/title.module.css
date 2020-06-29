@@ -3,3 +3,9 @@
     font-size: 60px;
     color: white;
   }
+
+@media only screen and (max-width: 768px) {
+  .Container {
+    font-size: 40px;
+  }
+}

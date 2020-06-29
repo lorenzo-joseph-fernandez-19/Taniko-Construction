@@ -19,7 +19,7 @@ const Slider = () => {
         onChange={nextSlide => console.log("onChange", nextSlide)}
         onAfterChange={nextSlide => console.log("onAfterChange", nextSlide)}
         style={{
-          backgroundColor: "#000"
+          backgroundColor: "#000",
         }}
         settings={{
           slidingDuration: 400,
@@ -36,7 +36,7 @@ const Slider = () => {
           background={{
             backgroundAttachment: "fixed",
             backgroundColor: "#000000",
-            backgroundImage: Background
+            backgroundImage: Background,
           }}> 
             <div className="logo-center">
               <img src={Logo} width="700" height="700" alt="Taniko Logo"/>
@@ -48,7 +48,7 @@ const Slider = () => {
           background={{
             backgroundAttachment: "fixed",
             backgroundColor: "#000000",
-            backgroundImage: Background
+            backgroundImage: Background,
           }}> 
             <Wrapper>
              <Title>Rangatiranga</Title>
@@ -60,10 +60,9 @@ const Slider = () => {
         <Slide
           navDescription= "Tika"
           background={{
-            backgroundAttachment: "absolute",
+            backgroundAttachment: "fixed",
             backgroundColor: "#000000",
-            backgroundImage: Background
-
+            backgroundImage: Background,
           }}> 
             <Wrapper>
              <Title>Tika</Title>
@@ -77,8 +76,7 @@ const Slider = () => {
           background={{
             backgroundAttachment: "fixed",
             backgroundColor: "#000000",
-            backgroundImage: Background
-
+            backgroundImage: Background,
           }}> 
             <Wrapper>
              <Title>Auahatanga</Title>

@@ -534,6 +534,13 @@ button:focus {outline:0;}
   color: black;
 }
 
+.thank-you-text {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
 .thank-you-spacing {
   padding-left: 200px;
   padding-right: 200px;
@@ -589,16 +596,15 @@ button:focus {outline:0;}
 }
 
 .mahi-text {
-  color: black;
+  color: white;
   font-size: 20px;
   text-align: left;
   list-style: disc;
 }
 
 .mahi-spacing {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 60px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .mahi-image {
@@ -738,7 +744,6 @@ button:focus {outline:0;}
   top: 550px;
   padding: 15px 20px;
   -webkit-transition: 0.1s;
-
   -moz-transition: 0.1s;
   transition: 0.1s;
   background: rgba(0, 0, 0, 0.9);
@@ -801,7 +806,7 @@ button:focus {outline:0;}
 
 .privacy-title {
   color: #9E221E;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   line-height: 1.0;
   margin-bottom: 20px;
@@ -809,7 +814,7 @@ button:focus {outline:0;}
 
 .privacy-text {
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 20px;
   line-height: 1.4;
 }
@@ -837,6 +842,10 @@ ol {
   }
   ol {
     padding-left: 20px;
+  }
+  button {
+    font-size: 20px;
+    width: 150px;
   }
   .logo-center{
     display: flex;
@@ -960,6 +969,8 @@ ol {
   .translation-spacing {
     padding-left: 100px;
     padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .translation {
     font-size: 20px;
@@ -986,9 +997,12 @@ ol {
   }
   .name-wrapper-description {
     line-height: 1.2;
+    
   }
   .name-wrapper-quote {
-    line-height: 0.5;
+    line-height: 1;
+    font-style: italic;
+    color: #9E221E;
   }
   .header-font {
     display: none;
@@ -1004,11 +1018,12 @@ ol {
   }
   .background-img {
     display: table;
-    height: 200px;
+    height: 300px;
     width: 100%;
     background: black url("../images/background.png") center / cover;
     background-position: center bottom;
   }
+
   .values-title {
     color: black;
     font-size: 30px;
@@ -1048,6 +1063,29 @@ ol {
     color: black;
     font-size: 18px;
     text-align: left;
+  }
+  .thank-you-title {
+    font-size: 30px;
+  }
+  .thank-you-spacing {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .thank-you-text {
+    text-align: center;
+    font-size: 18px;
+  }
+  .footer-title {
+    font-size: 20px;
+  }
+  .contact-subtitle {
+    font-size: 20px;
+  }
+  .privacy-title {
+    font-size: 30px;
+  }
+  .bold-subtitle {
+    font-size: 20px;
   }
 }
 
@@ -1091,6 +1129,8 @@ ol {
     height: 100%;
   }
   .bm-menu {
+    position: relative;
+
     background: white;
     padding: 2.5em 1.5em 0;
     font-size: 30px;

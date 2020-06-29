@@ -10,10 +10,10 @@ const PrivacyPolicy = () => {
             description: "Taniko Group Privacy Policy"
         }}>
             <div className="section is-medium background-img">
-                <h1 className="has-text-white">Privacy Policy</h1>
+                <h1 className="has-text-white translation-spacing">Privacy Policy</h1>
             </div>
         <section className="section">
-                <div className="container content index-spacing">
+                <div className="container index-spacing">
                     <h2 className="privacy-title">How we use your information</h2>
                     <p className="bold-subtitle">We use the information we collect in various ways, including to:</p>
                     <ol className="privacy-text is-lower-roman">
