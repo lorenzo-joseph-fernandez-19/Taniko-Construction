@@ -14,10 +14,10 @@ const contactPage = () => {
                     <h1 className="hero-image-text">Contact Us</h1>
                       <div className="level">
                         <div className="level-item is-flexend">
-                          <OutboundLink className="contact-button" href="tel:+64" rel="noreferrer noopener"><FontAwesomeIcon icon={['fas', 'phone']} rotation={90} /> 09 123 456</OutboundLink>
+                          <OutboundLink className="contact-button" href="tel:+6427 515 6058" rel="noreferrer noopener"><FontAwesomeIcon icon={['fas', 'phone']} rotation={90} className="icon-style" />027 515 6058</OutboundLink>
                         </div>                        
                         <div className="level-item is-flexstart">
-                          <OutboundLink className="contact-button" href="mailto:tanikogroup@gmail.com?Subject=General%20Enquiry" rel="noreferrer noopener" target="_top"><FontAwesomeIcon icon={['fas', 'envelope']} />  tanikogroup@gmail.com</OutboundLink>
+                          <OutboundLink className="contact-button" href="mailto:info@taniko.co.nz?Subject=General%20Enquiry" rel="noreferrer noopener" target="_top"><FontAwesomeIcon icon={['fas', 'envelope']} className="icon-style" />  info@taniko.co.nz</OutboundLink>
                         </div>
                       </div>
                     </div>

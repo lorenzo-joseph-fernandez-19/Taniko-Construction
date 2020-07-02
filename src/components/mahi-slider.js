@@ -3,7 +3,7 @@ import HeroSlider, { Slide, Nav } from "hero-slider"
 import Wrapper from "../components/UI/Wrapper/wrapper.js"
 import Title from "../components/UI/Title/title.js"
 import Subtitle from "../components/UI/Subtitle/subtitle.js"
-import Background from "../images/background.png"
+import Background from "../images/mobile-background.png"
 import Atua from "../images/mauri-atua.svg"
 import Whenua from "../images/mauri-whenua.svg"
 import Tangata from "../images/mauri-tangata.svg"
@@ -41,7 +41,7 @@ const mahiSlider = () => {
           }}> 
             <Wrapper>
                 <Title>Our Mahi</Title>
-                <Subtitle>Tāniko will deliver tailored consultancy services to your business. <br/> Our outcomes are linked to the core principles of the Tāniko system.</Subtitle>
+                <p className="mahi-text">Tāniko will deliver tailored consultancy services to your business. Our outcomes are linked to the core principles of the Tāniko system.</p>
             </Wrapper>
         </Slide>
 
@@ -99,7 +99,7 @@ const mahiSlider = () => {
             </div>
              <Title>Mauri Tangata</Title>
              <Subtitle>People Life Essence</Subtitle>
-                <ul className="mahi-tex">
+                <ul className="mahi-text">
                     <li>Utilizing a relevant Māori supply chain in your business and measuring the impact your support has on local māori aspirations.</li>
                     <li>Implementing a cultural induction and internship program for your business.</li>
                 </ul>

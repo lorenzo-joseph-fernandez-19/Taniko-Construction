@@ -28,7 +28,9 @@ const BlogPage = () => {
           description: "Taniko Group"
         }}>
           <div className="section is-medium background-img">
-            <h1 className="has-text-white">Our Blog</h1>
+            <div className="translation-spacing">
+              <h1 className="has-text-white">Our Blog</h1>
+            </div>
           </div>
           <div className="section people-spacing">
               <ol className="columns blog-column">{data.allWordpressPost.edges.map((edge) => { 

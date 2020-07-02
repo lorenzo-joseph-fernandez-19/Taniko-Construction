@@ -4,7 +4,7 @@ import Wrapper from "../components/UI/Wrapper/wrapper.js"
 import Title from "../components/UI/Title/title.js"
 import Subtitle from "../components/UI/Subtitle/subtitle.js"
 import Logo from "../images/logo-white.svg"
-import Background from "../images/background.png"
+import Background from "../images/mobile-background.png"
 
 
 const Slider = () => {
@@ -32,7 +32,7 @@ const Slider = () => {
       >
 
         <Slide
-          navDescription= "Taniko Principles"
+          navDescription= "Taniko Logo"
           background={{
             backgroundAttachment: "fixed",
             backgroundColor: "#000000",
@@ -53,7 +53,7 @@ const Slider = () => {
             <Wrapper>
              <Title>Rangatiranga</Title>
              <Subtitle>Leadership, Independence and Self-Determination.</Subtitle>
-             <p className="has-text-white">We lead ourselves and others, enhancing self-efficacy.</p>
+             <p className="slider-text">We lead ourselves and others, enhancing self-efficacy.</p>
             </Wrapper>
         </Slide>
 
@@ -67,7 +67,7 @@ const Slider = () => {
             <Wrapper>
              <Title>Tika</Title>
              <Subtitle>Righteousness, Being Correct and Doing the Right Thing.</Subtitle>
-             <p className="has-text-white">We are professional and we always do what is right, and correct.</p>
+             <p className="slider-text">We are professional and we always do what is right, and correct.</p>
             </Wrapper>
         </Slide>
 
@@ -81,7 +81,7 @@ const Slider = () => {
             <Wrapper>
              <Title>Auahatanga</Title>
              <Subtitle>Innovation and Creativity.</Subtitle>
-             <p className="has-text-white">We turn creative and innovative solutions into reality.</p>
+             <p className="slider-text">We turn creative and innovative solutions into reality.</p>
             </Wrapper>
         </Slide>
 

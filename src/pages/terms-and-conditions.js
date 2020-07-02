@@ -15,7 +15,7 @@ const Terms = () => {
             <div className="section is-medium background-img">
                 <h1 className="has-text-white translation-spacing">Terms & Conditions</h1>
             </div>
-        <section className="section is-medium">
+        <section className="section">
                 <div className="container index-spacing">
                     <h2 className="privacy-title">Welcome to our Website!</h2>
                     <p className="privacy-text">These terms and conditions outline the rules and regulations for the use of our website, located at www.taniko.co.nz.</p>

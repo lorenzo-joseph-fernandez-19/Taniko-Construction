@@ -47,18 +47,18 @@ const Footer = () => {
                 <Link className="footer-font" to="/terms-and-conditions">Terms & Conditions</Link>
               </div>
               <div className="level-item">
-                <OutboundLink href="https://www.facebook.com" rel="noreferrer noopener" target="_blank">
+                {/* <OutboundLink href="https://www.facebook.com" rel="noreferrer noopener" target="_blank">
                   <FontAwesomeIcon className="icon icon-style is-medium" icon={['fab', 'facebook-square']} />
                 </OutboundLink>
                 <OutboundLink href="https://www.linkedin.com" rel="noreferrer noopener" target="_blank">
                   <FontAwesomeIcon className="icon icon-style is-medium" icon={['fab', 'linkedin']} />
-                </OutboundLink>
-                <OutboundLink href="https://www.instagram.com" rel="noreferrer noopener" target="_blank">
+                </OutboundLink> */}
+                <OutboundLink href="https://www.instagram.com/taniko_nz/" rel="noreferrer noopener" target="_blank">
                   <FontAwesomeIcon className="icon icon-style is-medium" icon={['fab', 'instagram']} />
                 </OutboundLink>
-                <OutboundLink href="https://www.twitter.com" rel="noreferrer noopener" target="_blank">
+                {/* <OutboundLink href="https://www.twitter.com" rel="noreferrer noopener" target="_blank">
                   <FontAwesomeIcon className="icon icon-style is-medium" icon={['fab', 'twitter']} />
-                </OutboundLink>
+                </OutboundLink> */}
                 </div>
               </div>
           </div>
