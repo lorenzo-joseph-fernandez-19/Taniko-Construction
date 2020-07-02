@@ -27,7 +27,7 @@ export const query = graphql`
        </div>
        <div className="container container-position">
           <div className="column is-8 is-offset-2">
-            <div className="card">
+            <div className="card card-style">
               <div className="card-content">
                 <div className="media">
                   <div className="media-content has-text-centered">
@@ -35,7 +35,7 @@ export const query = graphql`
                     <div className="is-centered level-item">
                       <span className="blog-post-date">{data.wordpressPost.date}</span>
                     </div>
-                    <hr className="red-line" />
+                    <hr className="red-line-title" />
                   </div>
                 </div>
                 <div className="content blog-post-content-style">

@@ -9,7 +9,7 @@ module.exports = {
     resolve: `gatsby-plugin-google-analytics`,
     options: {
       // The property ID; the tracking code won't be generated without it
-      trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+      trackingId: "UA-170917636-1",
       // Defines where to place the tracking script - `true` in the head and `false` in the body
       head: true,
       // Setting this parameter is optional
@@ -65,6 +65,22 @@ module.exports = {
         normalizer: function ({ entities }) {
           return entities
         }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+          threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
+          once: false, // Defines if animation needs to be launched once
+          disable: false, // Flag for disabling animations
+          
+          // Advanced Options
+          selector: '[data-sal]', // Selector of the elements to be animated
+          animateClassName: 'sal-animate', // Class name which triggers animation
+          disabledClassName: 'sal-disabled', // Class name which defines the disabled state
+          rootMargin: '0% 50%', // Corresponds to root's bounding box margin
+          enterEventName: 'sal:in', // Enter event name
+          exitEventName: 'sal:out', // Exit event name
       }
     }
   ],

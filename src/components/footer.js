@@ -9,30 +9,26 @@ import Logo from "../images/logo-white.svg"
 
 const Footer = () => {
   return (
-    <footer className="footer has-background-black">
+    <footer className="footer background-is-black">
       <div className="container has-text-centered">
         <div className="content">
           <div className="columns">
             <div className="column column-style">
               <ul>
                 <li className="footer-title"><p>About Us</p></li>
-                <li className="list-line list-style"><Link to="/our-values">Our Values</Link></li>
-                <li className="list-line list-style"><Link to="/our-people">Our People</Link></li>
-                <li className="list-line list-style"><Link to="/our-mahi">Our Mahi</Link></li>
-                <li className="list-line list-style"><Link to="/who-we-are">Who We Are</Link></li>
+                <li className="list-style"><Link to="/our-mahi">Our Mahi</Link></li>
                 </ul>
               </div>
               <div className="column column-style">
               <ul>
-                <li className="footer-title"><p>Our Work</p></li>
-                <li className="list-line list-style"><Link to="/our-clients">Our Clients</Link></li>
-                <li className="list-line list-style"><Link to="/blog">Our Blog</Link></li>
+                <li className="footer-title"><p>News</p></li>
+                <li className="list-style"><Link to="/blog">Our Blog</Link></li>
               </ul>
               </div>
               <div className="column column-style">
               <ul>
                 <li className="footer-title"><p>Get in Touch</p></li>
-                <li className="list-line list-style"><Link to="/contact">Contact Us</Link></li>
+                <li className="list-style"><Link to="/contact">Contact Us</Link></li>
               </ul>
               </div>
               <div className="column">
@@ -45,24 +41,24 @@ const Footer = () => {
                 <p className="footer-font">{`© ${new Date().getFullYear()} Taniko Group Limited`}</p>
               </div>
               <div className="level-item">
-                <Link className="line footer-font" to="/privacy-policy">Privacy Policy</Link>
+                <Link className="footer-font" to="/privacy-policy">Privacy Policy</Link>
               </div>
               <div className="level-item">
-                <Link className="line footer-font" to="/terms-and-conditions">Terms & Conditions</Link>
+                <Link className="footer-font" to="/terms-and-conditions">Terms & Conditions</Link>
               </div>
               <div className="level-item">
-                <OutboundLink className="line" href="https://www.facebook.com" rel="noreferrer noopener" target="_blank">
-                  <FontAwesomeIcon className="icon icon-style is-medium has-text-light" icon={['fab', 'facebook-square']} />
+                {/* <OutboundLink href="https://www.facebook.com" rel="noreferrer noopener" target="_blank">
+                  <FontAwesomeIcon className="icon icon-style is-medium" icon={['fab', 'facebook-square']} />
                 </OutboundLink>
-                <OutboundLink className="line" href="https://www.linkedin.com" rel="noreferrer noopener" target="_blank">
-                  <FontAwesomeIcon className="icon icon-style is-medium has-text-light" icon={['fab', 'linkedin']} />
+                <OutboundLink href="https://www.linkedin.com" rel="noreferrer noopener" target="_blank">
+                  <FontAwesomeIcon className="icon icon-style is-medium" icon={['fab', 'linkedin']} />
+                </OutboundLink> */}
+                <OutboundLink href="https://www.instagram.com/taniko_nz/" rel="noreferrer noopener" target="_blank">
+                  <FontAwesomeIcon className="icon icon-style is-medium" icon={['fab', 'instagram']} />
                 </OutboundLink>
-                <OutboundLink className="line" href="https://www.instagram.com" rel="noreferrer noopener" target="_blank">
-                  <FontAwesomeIcon className="icon icon-style is-medium has-text-light" icon={['fab', 'instagram']} />
-                </OutboundLink>
-                <OutboundLink className="line" href="https://www.twitter.com" rel="noreferrer noopener" target="_blank">
-                  <FontAwesomeIcon className="icon icon-style is-medium has-text-light" icon={['fab', 'twitter']} />
-                </OutboundLink>
+                {/* <OutboundLink href="https://www.twitter.com" rel="noreferrer noopener" target="_blank">
+                  <FontAwesomeIcon className="icon icon-style is-medium" icon={['fab', 'twitter']} />
+                </OutboundLink> */}
                 </div>
               </div>
           </div>

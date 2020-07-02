@@ -1,7 +1,9 @@
 import React from 'react'
 import NavBar from './burger'
+import Header from './header'
 import Footer from './footer'
 import { Helmet } from "react-helmet"
+
 
 const Layout = ({ pageMeta, children }) => (
     <>
@@ -17,6 +19,7 @@ const Layout = ({ pageMeta, children }) => (
       <meta name="keywords" content={pageMeta.keywords.join(',')} />
       </Helmet>
       <div className="is-family-primary">
+        <Header />
         <NavBar />
         {children}
         <Footer />

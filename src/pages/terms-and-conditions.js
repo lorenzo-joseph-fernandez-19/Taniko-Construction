@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 
+
 const Terms = () => {
     return (
         <Layout pageMeta={{
@@ -11,12 +12,13 @@ const Terms = () => {
             keywords: ["construction"],
             description: "Taniko Group Terms and Conditions"
         }}>
-       <section className="section is-medium">
-            <h1>Terms & Conditions</h1>
-            <hr className="red-line-title" />
-                <div className="container privacy-spacing">
+            <div className="section is-medium background-img">
+                <h1 className="has-text-white translation-spacing">Terms & Conditions</h1>
+            </div>
+        <section className="section">
+                <div className="container index-spacing">
                     <h2 className="privacy-title">Welcome to our Website!</h2>
-                    <p className="privacy-text">These terms and conditions outline the rules and regulations for the use of our website, located at www.tanikogroup.co.nz.</p>
+                    <p className="privacy-text">These terms and conditions outline the rules and regulations for the use of our website, located at www.taniko.co.nz.</p>
                     <p className="privacy-text">By accessing this website we assume you accept these terms and conditions. Do not continue to use Taniko Group if you do not agree to take all of the terms and conditions stated on this page. Our Terms and Conditions were created with the help of the <OutboundLink className="link-underline" href="https://www.termsandconditionsgenerator.com" rel="noreferrer noopener" target="_blank">Terms And Conditions Generator</OutboundLink> and the <OutboundLink className="link-underline" href="https://www.privacypolicyonline.com/terms-conditions-generator/" rel="noreferrer noopener" target="_blank">Free Terms & Conditions Generator.</OutboundLink></p>
                     <p className="privacy-text">The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
                     
