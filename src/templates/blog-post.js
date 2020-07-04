@@ -1,8 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-// import Img from "gatsby-image"
-
 
 export const query = graphql`
   query($slug: String!) {
@@ -20,7 +18,7 @@ export const query = graphql`
       <Layout pageMeta={{
         title: `${data.wordpressPost.title}`,
         keywords: ["Taniko"],
-        description: "Taniko Blogs"
+        description: `${data.wordpressPost.content}`
       }}>
       <div className="hero is-medium is-bold">
          <img className="blog-image" src={data.wordpressPost.featured_media.source_url} alt={data.wordpressPost.title} width="2000" height="400" />
@@ -35,7 +33,6 @@ export const query = graphql`
                     <div className="is-centered level-item">
                       <span className="blog-post-date">{data.wordpressPost.date}</span>
                     </div>
-                    <hr className="red-line-title" />
                   </div>
                 </div>
                 <div className="content blog-post-content-style">

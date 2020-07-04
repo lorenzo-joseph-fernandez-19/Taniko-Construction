@@ -6,8 +6,8 @@ const PrivacyPolicy = () => {
     return (
         <Layout pageMeta={{
             title: "Privacy Policy",
-            keywords: ["construction"],
-            description: "Taniko Group Privacy Policy"
+            keywords: ["privacy policy"],
+            description: "This privacy policy explains how we may collect, store, use, and disclose any personal information that you provide to us when using our website..."
         }}>
             <div className="section is-medium background-img">
                 <h1 className="has-text-white translation-spacing">Privacy Policy</h1>
@@ -66,7 +66,7 @@ const PrivacyPolicy = () => {
                     <h2 className="privacy-title">Children's Information</h2>
                     <p className="privacy-text">Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
                     <p className="privacy-text">Taniko Group does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
-                    </div>
+                </div>
         </section>
         </Layout>
     )

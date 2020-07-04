@@ -43,8 +43,8 @@ const HomePage = () => {
             </div>
         </div>
 
-        <div className="section people-spacing">
-            <h2 className="h2">Ngā Kaimahi - Our Tāniko People</h2>
+        <div className="people-spacing">
+            <h2 className="h2">Ngā Kaimahi <br /> Our Tāniko People</h2>
             <hr className="red-line-title" />
 
             <div className="columns">

@@ -25,7 +25,7 @@ const BlogPage = () => {
         <Layout pageMeta={{
           title: "Our Blog",
           keywords: ["Taniko"],
-          description: "Taniko Group"
+          description: "Taniko Group Blog"
         }}>
           <div className="section is-medium background-img">
             <div className="translation-spacing">

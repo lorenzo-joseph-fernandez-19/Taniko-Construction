@@ -8,7 +8,7 @@ const contactPage = () => {
         <Layout pageMeta={{
             title: "Contact Us",
             keywords: ["construction"],
-            description: "Taniko Group"
+            description: "Contact Us. We are here to help. Send us a message using the form below and we'll get back to you as soon as we can."
         }}>
                 <div className="section is-medium background-img">
                     <h1 className="hero-image-text">Contact Us</h1>
