@@ -9,8 +9,8 @@ const Terms = () => {
     return (
         <Layout pageMeta={{
             title: "Terms & Conditions",
-            keywords: ["construction"],
-            description: "Taniko Group Terms and Conditions"
+            keywords: ["terms and conditions"],
+            description: "By accessing our website we assume you accept these terms and conditions."
         }}>
             <div className="section is-medium background-img">
                 <h1 className="has-text-white translation-spacing">Terms & Conditions</h1>

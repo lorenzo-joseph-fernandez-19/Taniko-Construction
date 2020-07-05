@@ -40,7 +40,7 @@ const mahiSlider = () => {
             backgroundImage: Background,
           }}> 
             <Wrapper>
-                <Title>Our Mahi</Title>
+                <Title className="mahi-title">Our Mahi</Title>
                 <p className="mahi-text">Tāniko will deliver tailored consultancy services to your business. Our outcomes are linked to the core principles of the Tāniko system.</p>
             </Wrapper>
         </Slide>
@@ -60,7 +60,9 @@ const mahiSlider = () => {
              <Subtitle>Spirit Life Essence</Subtitle>
              <ul className="mahi-text">
                  <li>Applying a Māori worldview and knowledge to your business philosophy.</li>
+                 <hr className="mahi-line"/>
                  <li>Indigenisation strategies that inform innovation.</li>
+                 <hr className="mahi-line"/>
                  <li>Activating Māori design and knowledge to your built environment.</li>
              </ul>
             </Wrapper>
@@ -81,6 +83,7 @@ const mahiSlider = () => {
              <Subtitle>Environmental Life Essence</Subtitle>
              <ul className="mahi-text">
                 <li>Interaction with local Māori with education on the land you stand on.</li>
+                <hr className="mahi-line"/>
                 <li>Optimising your approach to sustainability through a Māori worldview.</li>
             </ul>
             </Wrapper>
@@ -101,6 +104,7 @@ const mahiSlider = () => {
              <Subtitle>People Life Essence</Subtitle>
                 <ul className="mahi-text">
                     <li>Utilizing a relevant Māori supply chain in your business and measuring the impact your support has on local māori aspirations.</li>
+                    <hr className="mahi-line"/>
                     <li>Implementing a cultural induction and internship program for your business.</li>
                 </ul>
             </Wrapper>

@@ -33,7 +33,7 @@ const HomePage = () => {
     
         <div className="section is-medium background-img">
             <div className="translation translation-spacing has-text-centered" data-hover="With the red and black threads, the work will be completed."> 
-                <i>"Mā whero, mā pango, ka oti ai te mahi"</i>
+                <p>Mā whero, mā pango, ka oti ai te mahi</p>
             </div>
         </div>
 
@@ -43,8 +43,8 @@ const HomePage = () => {
             </div>
         </div>
 
-        <div className="section people-spacing">
-            <h2 className="h2">Ngā Kaimahi - Our Tāniko People</h2>
+        <div className="people-spacing">
+            <h2 className="h2">Ngā Kaimahi <br /> Our Tāniko People</h2>
             <hr className="red-line-title" />
 
             <div className="columns">
@@ -168,7 +168,7 @@ const HomePage = () => {
             
         <div className="section is-medium background-img">
             <div className="translation translation-spacing has-text-centered" data-hover="What is the most important thing in this world, it is people, it is people, it is people.">
-                <i>He aha te mea nui o tēnei ao, he tangata, he tangata, he tangata</i>
+                <p>He aha te mea nui o tēnei ao, he tangata, he tangata, he tangata</p>
             </div>
         </div>
 
@@ -179,7 +179,7 @@ const HomePage = () => {
 
             <div className="section is-medium background-img">
                 <div className="translation-spacing translation has-text-centered" data-hover="The tapestry of understanding cannot be woven by one strand alone, but only by the working together of weavers will such a tapestry be completed.">
-                    <i>"E kore e taea whenu kotahi te whāriki te raranga, heoi anō, mā te mahi ngātahi o ngā kairaranga, ka oti ai tēnei whāriki"</i>
+                    <p>E kore e taea whenu kotahi te whāriki te raranga, heoi anō, mā te mahi ngātahi o ngā kairaranga, ka oti ai tēnei whāriki</p>
                 </div>
             </div>
 
