@@ -39,7 +39,7 @@ const Slider = () => {
             backgroundImage: Background,
           }}> 
             <div className="logo-center">
-              <img src={Logo} width="700" height="700" alt="Taniko Logo"/>
+              <img src={Logo} width="650" height="650" alt="Taniko Logo"/>
             </div>
         </Slide>
 
@@ -52,7 +52,7 @@ const Slider = () => {
           }}> 
             <Wrapper>
              <Title>Rangatiranga</Title>
-             <Subtitle>Leadership, Independence and Self-Determination.</Subtitle>
+             <Subtitle>Leadership, Independence & Self-Determination</Subtitle>
              <p className="slider-text">We lead ourselves and others, enhancing self-efficacy.</p>
             </Wrapper>
         </Slide>
@@ -66,7 +66,7 @@ const Slider = () => {
           }}> 
             <Wrapper>
              <Title>Tika</Title>
-             <Subtitle>Righteousness, Being Correct and Doing the Right Thing.</Subtitle>
+             <Subtitle>Righteousness, Being Correct & Doing the Right Thing</Subtitle>
              <p className="slider-text">We are professional and we always do what is right, and correct.</p>
             </Wrapper>
         </Slide>
@@ -80,7 +80,7 @@ const Slider = () => {
           }}> 
             <Wrapper>
              <Title>Auahatanga</Title>
-             <Subtitle>Innovation and Creativity.</Subtitle>
+             <Subtitle>Innovation & Creativity</Subtitle>
              <p className="slider-text">We turn creative and innovative solutions into reality.</p>
             </Wrapper>
         </Slide>

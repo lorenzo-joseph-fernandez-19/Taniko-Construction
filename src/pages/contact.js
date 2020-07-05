@@ -11,16 +11,18 @@ const contactPage = () => {
             description: "Contact Us. We are here to help. Send us a message using the form below and we'll get back to you as soon as we can."
         }}>
                 <div className="section is-medium background-img">
+                  <div className="contact-button-spacing">
                     <h1 className="hero-image-text">Contact Us</h1>
-                      <div className="level">
-                        <div className="level-item is-flexend">
-                          <OutboundLink className="contact-button" href="tel:+6427 515 6058" rel="noreferrer noopener"><FontAwesomeIcon icon={['fas', 'phone']} rotation={90} className="icon-style" />027 515 6058</OutboundLink>
+                      <div className="columns">
+                        <div className="column">
+                          <OutboundLink className="contact-button level-item" href="tel:+6427 515 6058" rel="noreferrer noopener"><FontAwesomeIcon icon={['fas', 'phone']} rotation={90} className="icon-style" />027 515 6058</OutboundLink>
                         </div>                        
-                        <div className="level-item is-flexstart">
-                          <OutboundLink className="contact-button" href="mailto:info@taniko.co.nz?Subject=General%20Enquiry" rel="noreferrer noopener" target="_top"><FontAwesomeIcon icon={['fas', 'envelope']} className="icon-style" />  info@taniko.co.nz</OutboundLink>
+                        <div className="column level">
+                          <OutboundLink className="contact-button level-item" href="mailto:info@taniko.co.nz?Subject=General%20Enquiry" rel="noreferrer noopener" target="_top"><FontAwesomeIcon icon={['fas', 'envelope']} className="icon-style" />  info@taniko.co.nz</OutboundLink>
                         </div>
                       </div>
-                    </div>
+                  </div>
+                </div>
 
                 <section className="section has-text-centered">
                   <div className="container">
