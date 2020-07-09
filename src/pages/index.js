@@ -12,12 +12,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const HomePage = () => {
     return (
         <Layout pageMeta={{
-            title: "Weaving a collective future",
+            title: "Weaving a collective Future",
             keywords: ["maori enablement consultants, taniko, "],
             description: "Tāniko is a professional consultancy group that will reveal the hidden potential embedded in sacred  principals and make them relevant in today's world. We collaborate with individuals and organisations by interweaving ancient pathways into modern business practice."
         }}>
         <div>
           {typeof window !== 'undefined' && <Slider />}
+          <hr className="has-text-white" />
         </div>
 
         <div className="index-spacing">
@@ -31,7 +32,7 @@ const HomePage = () => {
             </div>
         </div>
     
-        <div className="section is-medium background-img">
+        <div className="section">
             <div className="translation translation-spacing has-text-centered" data-hover="With the red and black threads, the work will be completed."> 
                 <p>Mā whero, mā pango, ka oti ai te mahi</p>
             </div>
@@ -43,6 +44,7 @@ const HomePage = () => {
             </div>
         </div>
 
+        <hr className="has-text-white" />
         <div className="people-spacing">
             <h2 className="h2">Ngā Kaimahi <br /> Our Tāniko People</h2>
             <hr className="red-line-title" />
@@ -165,23 +167,30 @@ const HomePage = () => {
                 </div>
             </div>
         </div>
+
+        <hr className="has-text-white" />
             
-        <div className="section is-medium background-img">
+        <div className="section">
             <div className="translation translation-spacing has-text-centered" data-hover="What is the most important thing in this world, it is people, it is people, it is people.">
                 <p>He aha te mea nui o tēnei ao, he tangata, he tangata, he tangata</p>
             </div>
         </div>
+
+        <hr className="has-text-white" />
 
             <div className="section is-medium has-text-centered">
                 <h2 className="h2">Our Clients</h2>
                 <hr className="red-line-title" />
             </div>
 
-            <div className="section is-medium background-img">
-                <div className="translation-spacing translation has-text-centered" data-hover="The tapestry of understanding cannot be woven by one strand alone, but only by the working together of weavers will such a tapestry be completed.">
+            <hr className="has-text-white" />
+            <div className="section">
+                <div className="translation translation-spacing has-text-centered" data-hover="The tapestry of understanding cannot be woven by one strand alone, but only by the working together of weavers will such a tapestry be completed.">
                     <p>E kore e taea whenu kotahi te whāriki te raranga, heoi anō, mā te mahi ngātahi o ngā kairaranga, ka oti ai tēnei whāriki</p>
                 </div>
             </div>
+
+            <hr className="has-text-white" />
 
             <div className="section is-medium">
                 <h2 className="h2">Ready to work with us?</h2>

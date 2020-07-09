@@ -10,9 +10,10 @@ const contactPage = () => {
             keywords: ["construction"],
             description: "Contact Us. We are here to help. Send us a message using the form below and we'll get back to you as soon as we can."
         }}>
-                <div className="section is-medium background-img">
-                  <div className="contact-button-spacing">
-                    <h1 className="hero-image-text">Contact Us</h1>
+                <div className="section is-medium has-text-centered">
+                  <div className="">
+                    <h2 className="h2">Contact Us</h2>
+                    <hr className="red-line-title" />
                       <div className="columns">
                         <div className="column">
                           <OutboundLink className="contact-button level-item" href="tel:+6427 515 6058" rel="noreferrer noopener"><FontAwesomeIcon icon={['fas', 'phone']} rotation={90} className="icon-style" />027 515 6058</OutboundLink>
@@ -22,10 +23,10 @@ const contactPage = () => {
                         </div>
                       </div>
                   </div>
+                  <hr className="has-background-white" />
                 </div>
 
                 <section className="section has-text-centered">
-                  <div className="container">
                     <p id="space" className="contact-subtitle contact-spacing">Send us a message and we'll get back to you as soon as we can.</p>
                       <div className="contact-spacing">
                         <form name="contact" data-netlify-recaptcha="true" method="POST" data-netlify="true" action="/thank-you">
@@ -52,12 +53,11 @@ const contactPage = () => {
                             <div className="field">
                             <div data-netlify-recaptcha="true"></div>
                             <div className="control">
-                              <button className="button button-style" type="submit">Send</button>
+                              <button className="button-style" type="submit">Send</button>
                             </div>
                           </div>
                         </form>
                       </div>
-                    </div>
                 </section>
         </Layout>
     )

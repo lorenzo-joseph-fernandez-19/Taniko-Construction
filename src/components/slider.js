@@ -4,7 +4,6 @@ import Wrapper from "../components/UI/Wrapper/wrapper.js"
 import Title from "../components/UI/Title/title.js"
 import Subtitle from "../components/UI/Subtitle/subtitle.js"
 import Logo from "../images/logo-white.svg"
-import Background from "../images/mobile-background.png"
 
 
 const Slider = () => {
@@ -24,26 +23,24 @@ const Slider = () => {
         settings={{
           slidingDuration: 400,
           slidingDelay: 100,
-          shouldAutoplay: true,
-          shouldDisplayButtons: true,
+          shouldAutoplay: false,
+          shouldDisplayButtons: false,
           autoplayDuration: 4000,
-          height: "100vh"
+          height: "100vh",
         }}
       >
-
         <Slide
           navDescription= "Taniko Logo"
           background={{
             backgroundAttachment: "fixed",
             backgroundColor: "#000000",
-            backgroundImage: Background,
           }}> 
             <div className="logo-center">
               <img src={Logo} width="650" height="650" alt="Taniko Logo"/>
             </div>
+            <Subtitle>Weaving a collective Future.</Subtitle>
         </Slide>
-
-        <Slide
+        {/* <Slide
           navDescription= "Rangitiranga"
           background={{
             backgroundAttachment: "fixed",
@@ -83,7 +80,7 @@ const Slider = () => {
              <Subtitle>Innovation & Creativity</Subtitle>
              <p className="slider-text">We turn creative and innovative solutions into reality.</p>
             </Wrapper>
-        </Slide>
+        </Slide> */}
 
         <Nav />
       </HeroSlider>

@@ -3,7 +3,6 @@ import HeroSlider, { Slide, Nav } from "hero-slider"
 import Wrapper from "../components/UI/Wrapper/wrapper.js"
 import Title from "../components/UI/Title/title.js"
 import Subtitle from "../components/UI/Subtitle/subtitle.js"
-import Background from "../images/mobile-background.png"
 import Atua from "../images/mauri-atua.svg"
 import Whenua from "../images/mauri-whenua.svg"
 import Tangata from "../images/mauri-tangata.svg"
@@ -37,7 +36,6 @@ const mahiSlider = () => {
           background={{
             backgroundAttachment: "fixed",
             backgroundColor: "#000000",
-            backgroundImage: Background,
           }}> 
             <Wrapper>
                 <Title className="mahi-title">Our Mahi</Title>
@@ -50,7 +48,6 @@ const mahiSlider = () => {
           background={{
             backgroundAttachment: "fixed",
             backgroundColor: "#000000",
-            backgroundImage: Background,
           }}> 
             <Wrapper>
             <div className="logo-center">
@@ -73,7 +70,6 @@ const mahiSlider = () => {
           background={{
             backgroundAttachment: "fixed",
             backgroundColor: "#000000",
-            backgroundImage: Background,
           }}> 
              <Wrapper>
              <div className="logo-center">
@@ -94,7 +90,6 @@ const mahiSlider = () => {
           background={{
             backgroundAttachment: "fixed",
             backgroundColor: "#000000",
-            backgroundImage: Background,
           }}> 
              <Wrapper>
              <div className="logo-center">
