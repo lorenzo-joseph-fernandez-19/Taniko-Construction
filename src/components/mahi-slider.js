@@ -36,8 +36,7 @@ const mahiSlider = () => {
           navDescription= "Our Mahi"
           background={{
             backgroundAttachment: "fixed",
-            backgroundColor: "#000000",
-            backgroundImage: Background,
+            backgroundColor: "#000000"
           }}> 
             <Wrapper>
                 <Title className="mahi-title">Our Mahi</Title>
@@ -50,21 +49,20 @@ const mahiSlider = () => {
           background={{
             backgroundAttachment: "fixed",
             backgroundColor: "#000000",
-            backgroundImage: Background,
           }}> 
             <Wrapper>
-            <div className="logo-center">
-              <img src={Atua} width="300" height="300" alt="Mauri Atua"/>
-            </div>
-             <Title>Mauri Atua</Title>
-             <Subtitle>Spirit Life Essence</Subtitle>
-             <ul className="mahi-text">
-                 <li>Applying a Māori worldview and knowledge to your business philosophy.</li>
-                 <hr className="mahi-line"/>
-                 <li>Indigenisation strategies that inform innovation.</li>
-                 <hr className="mahi-line"/>
-                 <li>Activating Māori design and knowledge to your built environment.</li>
-             </ul>
+                <div className="logo-center">
+                  <img src={Atua} width="300" height="300" alt="Mauri Atua"/>
+                  <Title>Mauri Atua</Title>
+                  <Subtitle>Spirit Life Essence</Subtitle>
+                </div>
+              <ul className="mahi-text">
+                  <li>Applying a Māori worldview and knowledge to your business philosophy.</li>
+                  <hr className="mahi-line"/>
+                  <li>Indigenisation strategies that inform innovation.</li>
+                  <hr className="mahi-line"/>
+                  <li>Activating Māori design and knowledge to your built environment.</li>
+              </ul>
             </Wrapper>
         </Slide>
 

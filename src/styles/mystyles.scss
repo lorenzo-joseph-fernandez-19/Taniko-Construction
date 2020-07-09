@@ -766,6 +766,45 @@ $input-color: $white;
     display: none;
   }
 
+@media only screen and (max-width: 1024px) {
+  .logo-center {
+    margin-top: 150px;
+  }
+  .index-spacing {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .translation-spacing {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .translation {
+    font-size: 25px;
+  }
+  .translation:hover:after {
+    font-size: 25px;
+  }
+  .h2 {
+    font-size: 30px;
+  }
+  .footer-title {
+    text-align: center;
+  }
+  .list-style {
+    text-align: center;
+  }
+  .contact-button-spacing {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+}
+  .contact-spacing {
+    margin-left: 100px;
+    margin-right: 100px;
+  } 
+
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 40px;
@@ -1014,8 +1053,8 @@ $input-color: $white;
     font-size: 20px;
   }
   .contact-button-spacing {
-    margin-left: 120px;
-    margin-right: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -1088,5 +1127,5 @@ $input-color: $white;
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
   }
+  }
 }
-
