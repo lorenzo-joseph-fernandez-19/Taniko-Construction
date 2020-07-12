@@ -810,7 +810,21 @@ $input-color: $white;
     font-size: 18px;
     text-align: left;
   }
+  .name-wrapper-title {
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+  .index-spacing {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 
+@media (min-width: 768px) and (max-width: 1023px){
+  .index-spacing {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 
@@ -926,8 +940,10 @@ $input-color: $white;
     margin-top: -100px;
   }
   .index-spacing {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .is-flexstart {
     display: flex;
@@ -968,6 +984,9 @@ $input-color: $white;
     font-weight: bold;
     color: white;
     margin-bottom: 20px;
+  }
+  .name-wrapper-inner {
+    width: 400px
   }
   .name-wrapper-subtitle {
     line-height: 0.5;
@@ -1085,6 +1104,11 @@ $input-color: $white;
   .slide-spacing {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .people-column-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
