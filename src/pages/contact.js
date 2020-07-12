@@ -10,23 +10,22 @@ const contactPage = () => {
             keywords: ["construction"],
             description: "Contact Us. We are here to help. Send us a message using the form below and we'll get back to you as soon as we can."
         }}>
-                <div className="section is-medium has-text-centered">
+                <div className="section has-text-centered">
                   <div className="">
                     <h2 className="h2">Contact Us</h2>
                     <hr className="red-line-title" />
                       <div className="columns">
-                        <div className="column">
+                        <div className="column phone-button">
                           <OutboundLink className="contact-button level-item" href="tel:+6427 515 6058" rel="noreferrer noopener"><FontAwesomeIcon icon={['fas', 'phone']} rotation={90} className="icon-style" />027 515 6058</OutboundLink>
                         </div>                        
-                        <div className="column level">
+                        <div className="column mail-button">
                           <OutboundLink className="contact-button level-item" href="mailto:info@taniko.co.nz?Subject=General%20Enquiry" rel="noreferrer noopener" target="_top"><FontAwesomeIcon icon={['fas', 'envelope']} className="icon-style" />  info@taniko.co.nz</OutboundLink>
                         </div>
                       </div>
                   </div>
-                  <hr className="has-background-white" />
                 </div>
 
-                <section className="section has-text-centered">
+                <section className="has-text-centered">
                     <p id="space" className="contact-subtitle contact-spacing">Send us a message and we'll get back to you as soon as we can.</p>
                       <div className="contact-spacing">
                         <form name="contact" data-netlify-recaptcha="true" method="POST" data-netlify="true" action="/thank-you">

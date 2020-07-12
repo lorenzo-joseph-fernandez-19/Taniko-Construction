@@ -6,7 +6,8 @@ import { push as Menu } from 'react-burger-menu'
 const burgerMenu = () => {
     return (
         <Menu width="100%" right>
-            <Link to="/our-mahi">Our Mahi</Link>
+            <Link to="/our-mahi">Our Work</Link>
+            <Link to="/our-values">Our Values</Link>
             <Link to="/blog">Our Blog</Link>
             <Link to="/contact">Contact Us</Link>
         </Menu>
