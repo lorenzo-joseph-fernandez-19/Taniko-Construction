@@ -12,8 +12,9 @@ const Terms = () => {
             keywords: ["terms and conditions"],
             description: "By accessing our website we assume you accept these terms and conditions."
         }}>
-            <div className="section is-medium background-img">
-                <h1 className="has-text-white translation-spacing">Terms & Conditions</h1>
+            <div className="section">
+                <h2 className="h2">Terms & Conditions</h2>
+                <hr className="red-line-title" />
             </div>
         <section className="section">
                 <div className="container index-spacing">

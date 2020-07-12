@@ -16,7 +16,8 @@ const Footer = () => {
             <div className="column column-style">
               <ul>
                 <li className="footer-title"><p>About Us</p></li>
-                <li className="list-style"><Link to="/our-mahi">Our Mahi</Link></li>
+                <li className="list-style"><Link to="/our-mahi">Our Work</Link></li>
+                <li className="list-style"><Link to="/our-values">Our Values</Link></li>
                 </ul>
               </div>
               <div className="column column-style">
@@ -38,7 +39,7 @@ const Footer = () => {
             <hr className="hr"></hr>
             <div className="level footer-margin">
               <div className="level-item">
-                <p className="footer-font">{`© ${new Date().getFullYear()} Taniko Group Limited`}</p>
+                <p className="footer-font">{`© ${new Date().getFullYear()} Tāniko Group Limited`}</p>
               </div>
               <div className="level-item">
                 <Link className="footer-font" to="/privacy-policy">Privacy Policy</Link>

@@ -4,7 +4,6 @@ import Wrapper from "../components/UI/Wrapper/wrapper.js"
 import Title from "../components/UI/Title/title.js"
 import Subtitle from "../components/UI/Subtitle/subtitle.js"
 import Logo from "../images/logo-white.svg"
-import Background from "../images/mobile-background.png"
 
 
 const Slider = () => {
@@ -24,67 +23,25 @@ const Slider = () => {
         settings={{
           slidingDuration: 400,
           slidingDelay: 100,
-          shouldAutoplay: true,
-          shouldDisplayButtons: true,
+          shouldAutoplay: false,
+          shouldDisplayButtons: false,
           autoplayDuration: 4000,
-          height: "100vh"
+          height: '90vh',
         }}
       >
-
         <Slide
           navDescription= "Taniko Logo"
           background={{
             backgroundAttachment: "fixed",
             backgroundColor: "#000000",
-            backgroundImage: Background,
-          }}> 
+          }}>
+          <div className="slide-spacing">
             <div className="logo-center">
               <img src={Logo} width="650" height="650" alt="Taniko Logo"/>
             </div>
+            <Subtitle>Weaving a collective Future</Subtitle>
+          </div>
         </Slide>
-
-        <Slide
-          navDescription= "Rangitiranga"
-          background={{
-            backgroundAttachment: "fixed",
-            backgroundColor: "#000000",
-            backgroundImage: Background,
-          }}> 
-            <Wrapper>
-             <Title>Rangatiranga</Title>
-             <Subtitle>Leadership, Independence & Self-Determination</Subtitle>
-             <p className="slider-text">We lead ourselves and others, enhancing self-efficacy.</p>
-            </Wrapper>
-        </Slide>
-
-        <Slide
-          navDescription= "Tika"
-          background={{
-            backgroundAttachment: "fixed",
-            backgroundColor: "#000000",
-            backgroundImage: Background,
-          }}> 
-            <Wrapper>
-             <Title>Tika</Title>
-             <Subtitle>Righteousness, Being Correct & Doing the Right Thing</Subtitle>
-             <p className="slider-text">We are professional and we always do what is right, and correct.</p>
-            </Wrapper>
-        </Slide>
-
-        <Slide
-          navDescription= "Auahatanga"
-          background={{
-            backgroundAttachment: "fixed",
-            backgroundColor: "#000000",
-            backgroundImage: Background,
-          }}> 
-            <Wrapper>
-             <Title>Auahatanga</Title>
-             <Subtitle>Innovation & Creativity</Subtitle>
-             <p className="slider-text">We turn creative and innovative solutions into reality.</p>
-            </Wrapper>
-        </Slide>
-
         <Nav />
       </HeroSlider>
     );
