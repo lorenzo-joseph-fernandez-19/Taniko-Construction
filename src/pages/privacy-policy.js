@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
     return (
         <Layout pageMeta={{
             title: "Privacy Policy",
-            keywords: ["privacy policy"],
+            keywords: ["tāniko group privacy policy"],
             description: "This privacy policy explains how we may collect, store, use, and disclose any personal information that you provide to us when using our website..."
         }}>
             <div className="section">

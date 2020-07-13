@@ -12,8 +12,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const HomePage = () => {
     return (
         <Layout pageMeta={{
-            title: "Weaving a collective Future",
-            keywords: ["maori enablement consultants, taniko, "],
+            title: "Weaving a collective future together",
+            keywords: ["maori enablement consultants, tāniko group, professional consultancy group"],
             description: "Tāniko is a professional consultancy group that will reveal the hidden potential embedded in sacred  principals and make them relevant in today's world. We collaborate with individuals and organisations by interweaving ancient pathways into modern business practice."
         }}>
         <div>
@@ -55,7 +55,7 @@ const HomePage = () => {
                                     <p className="name-wrapper-subtitle">Te Ngākau</p>
                                 </div>
                                 <div className="column">
-                                    <OutboundLink href="https://www.linkedin.com" rel="noreferrer noopener" target="_blank">
+                                    <OutboundLink href="mailto:info@taniko.co.nz?Subject=General%20Enquiry" rel="noreferrer noopener" target="_top">
                                         <FontAwesomeIcon className="icon icon-style is-medium" icon={['fas', 'envelope']} />
                                     </OutboundLink>
                                     <OutboundLink href="https://www.linkedin.com/in/paul-puru-208ab5164/" rel="noreferrer noopener" target="_blank">
@@ -94,7 +94,7 @@ const HomePage = () => {
                                     <p className="name-wrapper-subtitle">Te Tinana</p>
                                 </div>
                                 <div className="column">
-                                    <OutboundLink href="https://www.linkedin.com" rel="noreferrer noopener" target="_blank">
+                                    <OutboundLink href="mailto:info@taniko.co.nz?Subject=General%20Enquiry" rel="noreferrer noopener" target="_top">
                                         <FontAwesomeIcon className="icon icon-style is-medium" icon={['fas', 'envelope']} />
                                     </OutboundLink>
                                     <OutboundLink href="https://www.linkedin.com/in/aiedy-di/" rel="noreferrer noopener" target="_blank">
@@ -132,7 +132,7 @@ const HomePage = () => {
                                     <p className="name-wrapper-subtitle">Te Ihomatua</p>
                                 </div>
                                 <div className="column">
-                                    <OutboundLink href="https://www.linkedin.com" rel="noreferrer noopener" target="_blank">
+                                    <OutboundLink href="mailto:info@taniko.co.nz?Subject=General%20Enquiry" rel="noreferrer noopener" target="_top">
                                         <FontAwesomeIcon className="icon icon-style is-medium" icon={['fas', 'envelope']} />
                                     </OutboundLink>
                                     <OutboundLink href="https://www.linkedin.com/in/maxim-wehi-715339142/" rel="noreferrer noopener" target="_blank">

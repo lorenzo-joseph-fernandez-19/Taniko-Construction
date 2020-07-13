@@ -39,7 +39,7 @@ const Slider = () => {
             <div className="logo-center">
               <img src={Logo} width="650" height="650" alt="Taniko Logo"/>
             </div>
-            <Subtitle>Weaving a collective Future</Subtitle>
+            <Subtitle>Weaving a collective future together</Subtitle>
           </div>
         </Slide>
         <Nav />
