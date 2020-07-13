@@ -7,8 +7,8 @@ import Tangata from "../images/mauri-tangata.svg"
 const ourMahi = () => {
     return (
         <Layout pageMeta={{
-            title: "Our Mahi",
-            keywords: ["mauri atua, mauri whenua, mauri tangata, tāniko"],
+            title: "Our Work",
+            keywords: ["mauri atua, mauri whenua, mauri tangata, tāniko group work"],
             description: "Tāniko will deliver tailored consultancy services to your business. Our outcomes are linked to the core principles of the Tāniko system."
         }}>
         <div className="section">

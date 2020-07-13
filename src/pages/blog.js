@@ -24,8 +24,8 @@ const BlogPage = () => {
     return (
         <Layout pageMeta={{
           title: "Our Blog",
-          keywords: ["Taniko"],
-          description: "Taniko Group Blog"
+          keywords: ["tāniko group blog"],
+          description: "Keep informed with our latest blogs."
         }}>
           <div className="section">
             <div className="people-spacing">
