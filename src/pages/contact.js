@@ -28,7 +28,7 @@ const contactPage = () => {
                 <section className="has-text-centered">
                     <p id="space" className="contact-subtitle contact-spacing">Send us a message and we'll get back to you as soon as we can.</p>
                       <div className="contact-spacing">
-                        <form name="contact" data-netlify-recaptcha="true" method="POST" data-netlify="true" action="/thank-you/">
+                        <form name="contact" data-netlify-recaptcha="true" method="POST" data-netlify="true" action="thank-you">
                             <div className="block">
                                 <label className="label label-style">Full Name<span className="text-is-red">*</span></label>
                                 <input className="input input-style" type="text" placeholder="" required="required"/>
