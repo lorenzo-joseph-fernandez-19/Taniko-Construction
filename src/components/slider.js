@@ -26,7 +26,7 @@ const Slider = () => {
           shouldAutoplay: false,
           shouldDisplayButtons: false,
           autoplayDuration: 4000,
-          height: '90vh',
+          height: '100vh',
         }}
       >
         <Slide
