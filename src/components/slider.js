@@ -1,7 +1,5 @@
 import React from 'react'
 import HeroSlider, { Slide, Nav } from "hero-slider"
-import Wrapper from "../components/UI/Wrapper/wrapper.js"
-import Title from "../components/UI/Title/title.js"
 import Subtitle from "../components/UI/Subtitle/subtitle.js"
 import Logo from "../images/logo-white.svg"
 

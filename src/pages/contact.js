@@ -28,25 +28,31 @@ const contactPage = () => {
                 <section className="has-text-centered">
                     <p id="space" className="contact-subtitle contact-spacing">Send us a message and we'll get back to you as soon as we can.</p>
                       <div className="contact-spacing">
-                        <form name="Contact Form" data-netlify-recaptcha="true" method="POST" data-netlify="true" action="thank-you">
+                        <form name="Contact Form" data-netlify-honeypot="bot-field" data-netlify-recaptcha="true" method="POST" data-netlify="true" action="/thank-you">
+                        <input type="hidden" name="bot-field" />
+                        <input type="hidden" name="form-name" value="Contact Form" />
                             <div className="block">
-                                <label className="label label-style">Full Name<span className="text-is-red">*</span></label>
+                              <label className="label label-style">Full Name<span className="text-is-red">*</span>
                                 <input className="input input-style" type="text" name="Full Name" required="required"/>
+                              </label>
                             </div>
 
                             <div className="block">
-                                <label className="label label-style">Phone<span className="text-is-red">*</span></label>
+                              <label className="label label-style">Phone<span className="text-is-red">*</span>
                                 <input className="input input-style" type="text" name="Phone" required="required"></input>
+                              </label>
                             </div>
 
                             <div className="block">
-                                <label className="label label-style">Email<span className="text-is-red">*</span></label>
+                              <label className="label label-style">Email<span className="text-is-red">*</span>
                                 <input className="input input-style" type="email" name="Email" required="required"/>
+                              </label>
                             </div>
 
                             <div className="block">
-                                <label className="label label-style">Message<span className="text-is-red">*</span></label>
-                                <textarea className="textarea input-style" rows="5" name="Message" required="required"></textarea>
+                                <label className="label label-style">Message<span className="text-is-red">*</span>
+                                  <textarea className="textarea input-style" rows="5" name="Message" required="required"></textarea>
+                                </label>
                             </div>
                             <div data-netlify-recaptcha="true"></div>
                             <button className="button-style" type="submit">Send</button>
