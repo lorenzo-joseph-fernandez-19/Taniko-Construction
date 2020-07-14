@@ -1,0 +1,12 @@
+.Container {
+    padding-left: 550px;
+    padding-right: 550px;
+    pointer-events: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .Container {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
