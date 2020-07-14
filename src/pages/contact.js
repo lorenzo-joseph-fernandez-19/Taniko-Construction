@@ -31,14 +31,14 @@ const contactPage = () => {
                         <form 
                           name="contact" 
                           method="POST"
-                          netlify="true"
+                          data-netlify="true"
                           data-netlify-honeypot="bot-field" 
                           data-netlify-recaptcha="true"
-                          action="/thanks"
+                          action="/thanks/"
                           >   
-                        <input type="hidden" name="bot-field" />
                         <input type="hidden" name="form-name" value="contact" />
-
+                        <input type="hidden" name="bot-field" />
+                      
                             <div className="block">
                               <label className="label label-style">Full Name<span className="text-is-red">*</span>
                                 <input className="input input-style" type="text" name="Full Name" id="Full Name"required="required"/>
