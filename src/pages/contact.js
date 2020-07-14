@@ -28,16 +28,7 @@ const contactPage = () => {
                 <section className="has-text-centered">
                     <p id="space" className="contact-subtitle contact-spacing">Send us a message and we'll get back to you as soon as we can.</p>
                       <div className="contact-spacing">
-                        <form 
-                          name="contact" 
-                          method="POST"
-                          netlify
-                          data-netlify-honeypot="bot-field" 
-                          action="thanks"
-                          >   
-                        <input type="hidden" name="form-name" value="contact" />
-                        <input type="hidden" name="bot-field" />
-                      
+                        <form action="https://getform.io/f/faa4e5b2-0bf7-43a4-828d-f5bce25bdfd3" method="POST">   
                             <div className="block">
                               <label className="label label-style">Full Name<span className="text-is-red">*</span>
                                 <input className="input input-style" type="text" name="Full Name" id="Full Name"required="required"/>
