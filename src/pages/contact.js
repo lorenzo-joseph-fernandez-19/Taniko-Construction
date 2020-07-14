@@ -29,15 +29,15 @@ const contactPage = () => {
                     <p id="space" className="contact-subtitle contact-spacing">Send us a message and we'll get back to you as soon as we can.</p>
                       <div className="contact-spacing">
                         <form 
-                          name="Contact Form" 
+                          name="contact" 
                           method="POST"
                           netlify="true"
                           data-netlify-honeypot="bot-field" 
                           data-netlify-recaptcha="true"
-                          action="/thank-you"
+                          action="/thanks"
                           >   
                         <input type="hidden" name="bot-field" />
-                        <input type="hidden" name="form-name" value="Contact Form" />
+                        <input type="hidden" name="form-name" value="contact" />
 
                             <div className="block">
                               <label className="label label-style">Full Name<span className="text-is-red">*</span>
