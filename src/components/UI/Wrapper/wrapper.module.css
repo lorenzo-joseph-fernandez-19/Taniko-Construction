@@ -1,7 +1,9 @@
 .Container {
-    padding-left: 550px;
-    padding-right: 550px;
-    pointer-events: none;
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
   }
 
   @media only screen and (max-width: 768px) {

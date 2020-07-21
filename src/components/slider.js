@@ -1,7 +1,8 @@
 import React from 'react'
 import HeroSlider, { Slide, Nav } from "hero-slider"
 import Subtitle from "../components/UI/Subtitle/subtitle.js"
-import Logo from "../images/logo-white.svg"
+import Wrapper from '../components/UI/Wrapper/wrapper'
+import Image from "../images/homepage.jpg"
 
 
 const Slider = () => {
@@ -32,12 +33,13 @@ const Slider = () => {
           background={{
             backgroundAttachment: "fixed",
             backgroundColor: "#000000",
+            backgroundImage: Image,
+            backgroundBlendMode: '#000000',
           }}>
-          <div className="slide-spacing">
-            <div className="logo-center">
-              <img src={Logo} width="650" height="650" alt="Taniko Logo"/>
+          <div className="columns">
+            <div className="column is-4">
+              <Subtitle>Tāniko is a professional consultancy group that will reveal the hidden potential embedded in sacred  principles, making them relevant  in today's world. We collaborate with individuals and organisations by interweaving ancient pathways into modern business practice.  The adoption of the Tāniko system will result in the enhancement of social, environmental, economic and cultural aspirations'</Subtitle>
             </div>
-            <Subtitle>Weaving a collective future together</Subtitle>
           </div>
         </Slide>
         <Nav />

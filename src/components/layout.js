@@ -17,6 +17,7 @@ const Layout = ({ pageMeta, children }) => (
       <html lang="en"/>
       <meta name="description" content={pageMeta.description} />
       <meta name="keywords" content={pageMeta.keywords.join(',')} />
+      <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet"></link>
       </Helmet>
       <div className="is-family-primary">
         <Header />

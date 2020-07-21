@@ -10,13 +10,12 @@ const ourValues = () => {
         }}>
         <div className="section">
             <h2 className="h2">Our Values</h2>
-            <hr className="red-line-title" />
         </div>
         <div className="section mahi-spacing">
             <div className="columns">
                 <div className="column values-spacing">
                     <h2 className="values-title">Rangitiranga</h2>
-                    <hr className="values-line" />
+                    <hr className="vertical-line" />
                     <p className="values-subtitle">Leadership, Independence & Self-Determination</p>
                     <p className="values-text">We lead ourselves and others, enhancing self-efficacy.</p>
                 </div>

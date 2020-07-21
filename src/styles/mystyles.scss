@@ -178,6 +178,56 @@ $input-color: $white;
     color: white;
     cursor: pointer;
   }
+  .vertical-line {
+    border-left: 6px solid #9E221E;
+    height: 40px;
+  }
+  .rounded {
+    border-radius: 10px;
+  }
+  .img-module {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url("../images/homepage.jpg");
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    margin: 10px 0 0 10px;
+    position: relative;
+    float: left;
+  }
+  .img-text {
+    font-family: 'Alfa Slab One', cursive;
+    color: white;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+  }
+  .img-button {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 2px white solid;
+    border-radius: 5px;
+    width: 180px;
+    height: 50px;
+  }
+
+  .img-button:hover {
+    border: transparent;
+    cursor: pointer;
+  }
+
+
+
   .error-spacing {
     padding-left: 300px;
     padding-right: 300px;
@@ -223,15 +273,15 @@ $input-color: $white;
     position: relative;
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
     width: 100%;
-    background-color: black;
-    border-bottom: 1px solid white;
-  }
+    background-color: rgba(0, 0, 0, 1);
+    }
   .header-font {
     font-size: 20px;
     margin: 20px;
+    font-family: 'Alfa Slab One', cursive;
   }
   .header-font:hover {
     color: white;
@@ -252,14 +302,6 @@ $input-color: $white;
     color: white;
     cursor: pointer;
   }
-  .background-img {
-    position: sticky;
-    display: table;
-    height: 300px;
-    width: 100%;
-    background: black url("../images/background.png") center / cover;
-    background-position: center bottom;
-  }
   .background-is-black {
     background-color: black;
     border-top: 1px solid white;
@@ -276,12 +318,12 @@ $input-color: $white;
   }
   .values-title {
     text-align: left;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 30px;
     color: white;
     margin-top: 40px;
     margin-bottom: 20px;
     line-height: 1.1;
+    font-family: 'Alfa Slab One', cursive;  
   }
   .values-line {
     background: #9E221E;
@@ -312,9 +354,9 @@ $input-color: $white;
   .hero-image {
     display: table;
     width: 100%;
-    background: black url("../images/background.png") center / cover;
     background-position: center top;
-    height: 500px;
+    background-image: url("../images/homepage.jpg");
+    height: 400px;
     color: white;
     object-position: cover;
   }
@@ -476,11 +518,11 @@ $input-color: $white;
   }
   .footer-title {
     color: white;
-    font-size: 30px;
-    font-weight: semi-bold;
+    font-size: 25px;
     padding-right: 30px;
     text-decoration: underline;
     list-style: none;
+    font-family: 'Alfa Slab One', cursive;
   }
   .footer-font {
     font-size: 18px;
@@ -502,7 +544,7 @@ $input-color: $white;
     content: "";
     display: block;
     width: 0;
-    height: 2px;
+    height: 6px;
     background: #9E221E;
     transition: width .5s;
   }
@@ -1178,7 +1220,7 @@ $input-color: $white;
     margin-top: 30px;
     margin-bottom: 30px;
     position: absolute;
-    width: 36px;
+    width: 30px;
     height: 30px;
     right: 36px;
     top: 36px;
