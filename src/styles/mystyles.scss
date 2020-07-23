@@ -182,23 +182,8 @@ $input-color: $white;
     border-left: 6px solid #9E221E;
     height: 40px;
   }
-  .rounded {
-    border-radius: 10px;
-  }
-  .img-module {
-    background: 
-      linear-gradient(
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
-      ),
-      url("../images/homepage.jpg");
-    background-size: cover;
-    width: 500px;
-    height: 300px;
-    margin: 10px 0 0 10px;
-    position: relative;
-    float: left;
-  }
+
+  /* Index Page Styling */
   .img-text {
     font-family: 'Alfa Slab One', cursive;
     color: white;
@@ -208,26 +193,175 @@ $input-color: $white;
     left: 50%;
     font-size: 30px;
     transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: top .5s ease;
   }
-  .img-button {
+  .img-container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+  }
+  .img-container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+  }
+  .img-styling {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+  }
+  .img-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+    font-size: 25px;
+    font-weight: 100px;
+    font-family: 'Alfa Slab One', cursive;
     text-align: center;
-    background-color: transparent;
     color: white;
-    font-size: 14px;
+    z-index: 1;
+    transition: top .5s ease;
+  }
+  .img-container:hover .img-title {
+    top: 90px;
+  }
+  
+  .img-button {
+    position: absolute;
+    top: 180px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+    color: white;
+    border: solid 2px white;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 400px;
     text-transform: uppercase;
-    border: 2px white solid;
     border-radius: 5px;
     width: 180px;
     height: 50px;
+    z-index: 1;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 40px;
   }
-
   .img-button:hover {
-    border: transparent;
     cursor: pointer;
+    border: transparent;
   }
 
+  .img-container:hover .img-button {
+    opacity: 1;
+  }
+  
+/* Hero Image Styling */
 
+  .who-hero-image {
+    display: table;
+    width: 100%;
+    background-position: center;
+    background-image: url("../images/muriwai.jpg");
+    height: 600px;
+    color: white;
+  }
+  .who-img-module {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url("../images/muriwai.jpg");
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    margin: 10px 0 0 10px;
+    position: relative;
+    float: left;
+  }
+  .values-hero-image {
+    display: table;
+    width: 100%;
+    background-position: center;
+    background-image: url("../images/flax.jpg");
+    height: 600px;
+    color: white;
+  }
+  .values-img-module {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url("../images/flax.jpg");
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    margin: 10px 0 0 10px;
+    position: relative;
+    float: left;
+  }
+  .services-hero-image {
+    display: table;
+    width: 100%;
+    background-position: center;
+    background-image: url("../images/grass.jpg");
+    height: 600px;
+    color: white;
+  }
+  .services-img-module {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url("../images/grass.jpg");
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    margin: 10px 0 0 10px;
+    position: relative;
+    float: left;
+  }
+  .contact-hero-image {
+    display: table;
+    width: 100%;
+    background-position: center;
+    background-image: url("../images/piha.jpg");
+    height: 600px;
+    color: white;
+  }
+  .contact-img-module {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url("../images/piha.jpg");
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    margin: 10px 0 0 10px;
+    position: relative;
+    float: left;
+  }
 
+  /* 404 Page Styling */
+  
   .error-spacing {
     padding-left: 300px;
     padding-right: 300px;
@@ -317,11 +451,10 @@ $input-color: $white;
     padding-right: 80px;
   }
   .values-title {
-    text-align: left;
+    text-align: center;
     font-size: 30px;
     color: white;
     margin-top: 40px;
-    margin-bottom: 20px;
     line-height: 1.1;
     font-family: 'Alfa Slab One', cursive;  
   }
@@ -333,6 +466,7 @@ $input-color: $white;
   }
   .values-subtitle {
     color: #9E221E;
+    text-align: center;
     font-size: 20px;
     line-height: 1.2;
     font-weight: bolder;
@@ -342,23 +476,6 @@ $input-color: $white;
     color: white;
     font-size: 18px;
     line-height: 1.2;
-  }
-  .hero-image-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-  .hero-image {
-    display: table;
-    width: 100%;
-    background-position: center top;
-    background-image: url("../images/homepage.jpg");
-    height: 400px;
-    color: white;
-    object-position: cover;
   }
   .phone-button {
     display: flex;
@@ -473,42 +590,11 @@ $input-color: $white;
   .icon-style:hover {
     cursor: pointer;
   }
-  .red-line {
-    background: #9E221E;
-    width: 30%;
-    margin: auto;
-    height: 5px;
-    margin-bottom: 20px;
-  }
-  .red-line-title {
-    background: #9E221E;
-    width: 150px;
-    margin: auto;
-    height: 10px;
-    margin-bottom: 20px;
-  }
   .text-is-black {
     color: black;
   }
   .text-is-red {
     color: #9E221E;
-  }
-  #space {
-    padding-bottom: 60px;
-    line-height: 1.2;
-  }
-  .proverb-spacing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-  }
-  .maori-proverb {
-    color: black;
-    font-size: 30px;
-    font-weight: bolder;
-    text-align: center;
-    line-height: 1.0;
   }
 
   /* Footer Styling */
@@ -520,7 +606,6 @@ $input-color: $white;
     color: white;
     font-size: 25px;
     padding-right: 30px;
-    text-decoration: underline;
     list-style: none;
     font-family: 'Alfa Slab One', cursive;
   }
@@ -550,18 +635,6 @@ $input-color: $white;
   }
   .line:hover::after {
     width: 100%;
-    transition: width .5s;
-  }
-  .list-line::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #9E221E;
-    transition: width .5s;
-  }
-  .list-line:hover::after {
-    width: 80%;
     transition: width .5s;
   }
 
@@ -840,8 +913,8 @@ $input-color: $white;
   }
   .privacy-title {
     color: white;
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Alfa Slab One', cursive;
     line-height: 1.0;
     margin-bottom: 20px;
   }
@@ -1106,14 +1179,12 @@ $input-color: $white;
   .values-title {
     color: white;
     font-size: 30px;
-    text-align: left;
-    font-weight: bold;
+    text-align: center;
   }
   .values-subtitle {
     color: #9E221E;
     font-size: 20px;
-    text-align: left;
-    margin-top: 40px;
+    text-align: center;
   }
   .values-text {
     color: white;
@@ -1220,8 +1291,8 @@ $input-color: $white;
     margin-top: 30px;
     margin-bottom: 30px;
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 25px;
     right: 36px;
     top: 36px;
     float: right;
@@ -1257,7 +1328,7 @@ $input-color: $white;
     display: table;
     background: white;
     font-size: 25px;
-    font-weight: semi-bold;
+    font-family: 'Alfa Slab One', cursive;
     padding-top: 100px;
     padding-bottom: 400px;
   }
@@ -1270,16 +1341,27 @@ $input-color: $white;
   .bm-item {
     text-align: left;
     color: black;
-    font-weight: semi-bold;
     margin-bottom: 20px;
     text-align: center;
-  }
-  .bm-item:hover {
-    color: #9E221E;
-    font-weight: bolder;
   }
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
   }
+}
+.list-line {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.list-line::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 6px;
+  background: #9E221E;
+  transition: width .5s;
+}
+.list-line:hover::after {
+  width: 100%;
+  transition: width .5s;
 }
 

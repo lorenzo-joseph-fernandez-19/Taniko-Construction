@@ -3,7 +3,10 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import '../styles/mystyles.scss'
 import Slider from '../components/slider'
-import Image from '../images/homepage.jpg'
+import Flax from '../images/flax.jpg'
+import Grass from '../images/grass.jpg'
+import Piha from '../images/piha.jpg'
+import Muriwai from '../images/muriwai.jpg'
 
 const HomePage = () => {
     return (
@@ -18,38 +21,40 @@ const HomePage = () => {
 
         <div className="section columns is-multiline index-spacing">
             <div className="column is-6 centered">
-                <div className="img-module rounded">
-                    <div className="img-text">
-                        <h2>Who We Are</h2>
+                <div className="img-container">
+                    <img className="img-styling" src={Muriwai} alt="Muriwai Beach" />
+                    <p className="img-title">Who We Are</p>
+                    <div className="overlay"></div>
                         <Link to="/who-we-are"><button className="img-button">Learn more</button></Link>
-                    </div>
                 </div>
             </div>
             <div className="column is-6 centered">
-                <div className="img-module rounded">
-                    <div className="img-text">
-                        <h2>Our Values</h2>
+                <div className="img-container">
+                    <img className="img-styling" src={Flax} alt="New Zealand Flax" />
+                    <p className="img-title">Our Values</p>
+                    <div className="overlay"></div>
                         <Link to="/our-values"><button className="img-button">Learn more</button></Link>
-                    </div>
                 </div>
             </div>
             <div className="column is-6 centered">
-                <div className="img-module rounded">
-                    <div className="img-text">
-                        <h2>Our Services</h2>
-                        <Link to="/our-services"><button className="img-button">Learn more</button></Link>
-                    </div>
+                <div className="img-container">
+                    <img className="img-styling" src={Grass} alt="New Zealand Grass" />
+                    <p className="img-title">Our Services</p>
+                    <div className="overlay"></div>
+                    <Link to="/our-services"><button className="img-button">Learn more</button></Link>
                 </div>
             </div>
             <div className="column is-6 centered">
-                <div className="img-module rounded">
-                    <div className="img-text">
-                        <h2>Contact Us</h2>
-                        <Link to="/contact"><button className="img-button">Get in Touch</button></Link>
-                    </div>
+                <div className="img-container">
+                    <img className="img-styling" src={Piha} alt="Piha Beach" />
+                    <p className="img-title">Contact Us</p>
+                    <div className="overlay"></div>
+                    <Link to="/contact"><button className="img-button">Get in Touch</button></Link>
                 </div>
             </div>
-           
+
+
+          
         </div>
             
         </Layout>
