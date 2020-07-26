@@ -178,56 +178,154 @@ $input-color: $white;
     color: white;
     cursor: pointer;
   }
-  .vertical-line {
-    border-left: 6px solid #9E221E;
-    height: 40px;
-  }
-  .rounded {
-    border-radius: 10px;
-  }
-  .img-module {
-    background: 
-      linear-gradient(
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
-      ),
-      url("../images/homepage.jpg");
-    background-size: cover;
-    width: 500px;
+  .red-border {
+    border: 1px solid #9E221E;
     height: 300px;
-    margin: 10px 0 0 10px;
-    position: relative;
-    float: left;
+    margin-top: 20px;
   }
+
+  .font {
+    font-family: 'Alfa Slab One', cursive;
+  }
+
+  /* Index Page Styling */
   .img-text {
     font-family: 'Alfa Slab One', cursive;
     color: white;
     margin-bottom: 20px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     font-size: 30px;
     transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: top .5s ease;
+  }
+  .img-container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+  }
+  .img-container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+  }
+  .img-styling {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+  }
+  .img-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+    font-size: 25px;
+    font-weight: 100px;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    transition: top .5s ease;
+  }
+  .img-container:hover .img-title {
+    top: 90px;
   }
   .img-button {
+    position: absolute;
+    top: 180px;
     text-align: center;
-    background-color: transparent;
+    opacity: 0;
+    transition: opacity .35s ease;
     color: white;
-    font-size: 14px;
+    border: solid 2px white;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 400px;
     text-transform: uppercase;
-    border: 2px white solid;
     border-radius: 5px;
     width: 180px;
     height: 50px;
+    z-index: 1;
+    margin-left: 155px;
+    margin-right: 155px;
+    margin-bottom: 40px;
   }
-
   .img-button:hover {
-    border: transparent;
     cursor: pointer;
+    border: transparent;
   }
 
+  .img-container:hover .img-button {
+    opacity: 1;
+  }
+  
+/* Hero Image Styling */
 
+  .who-hero-image {
+    display: table;
+    width: 100%;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/homepage.jpg") center;
+    height: 400px;
+    color: white;
+  }
+  .values-hero-image {
+    display: table;
+    width: 100%;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/muriwai.jpg") center;
+    height: 400px;
+    color: white;
+  }
+  .services-hero-image {
+    display: table;
+    width: 100%;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/grass.jpg") center;
+    height: 400px;
+    color: white;
+  }
+  .contact-hero-image {
+    display: table;
+    width: 100%;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/piha.jpg") center;
+    height: 400px;
+    color: white;
+  }
+  .contact-hero-image {
+    display: table;
+    width: 100%;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/piha.jpg") bottom;
+    height: 400px;
+    color: white;
+  }
+.blog-hero-image {
+  display: table;
+    width: 100%;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/piha.jpg") center;
+    height: 400px;
+    color: white;
+}
 
+  /* 404 Page Styling */
+  
   .error-spacing {
     padding-left: 300px;
     padding-right: 300px;
@@ -311,18 +409,21 @@ $input-color: $white;
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.2;
+    padding-left: 200px;
+    padding-right: 200px;
   }
   .values-spacing {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
   .values-title {
-    text-align: left;
+    text-align: center;
     font-size: 30px;
     color: white;
     margin-top: 40px;
     margin-bottom: 20px;
     line-height: 1.1;
+    font-weight: 100px;
     font-family: 'Alfa Slab One', cursive;  
   }
   .values-line {
@@ -333,32 +434,18 @@ $input-color: $white;
   }
   .values-subtitle {
     color: #9E221E;
+    text-align: center;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: bolder;
     margin-bottom: 20px;
+    font-family: 'Alfa Slab One', cursive;  
   }
   .values-text {
     color: white;
     font-size: 18px;
     line-height: 1.2;
-  }
-  .hero-image-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin-top: 40px;
+    text-align: center;
     margin-bottom: 20px;
-  }
-  .hero-image {
-    display: table;
-    width: 100%;
-    background-position: center top;
-    background-image: url("../images/homepage.jpg");
-    height: 400px;
-    color: white;
-    object-position: cover;
   }
   .phone-button {
     display: flex;
@@ -381,8 +468,9 @@ $input-color: $white;
     font-family: $family-sans-serif;
     font-weight: bold;
     font-size: 1rem;
-    margin: 20px;
-    width: 200px
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 250px
   }
   .contact-button:hover {
     background: #9E221E;
@@ -411,12 +499,12 @@ $input-color: $white;
   }
   .h2 {
     text-align: center;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 30px;
     color: white;
     margin-top: 40px;
     margin-bottom: 20px;
     line-height: 1.1;
+    font-family: 'Alfa Slab One', cursive;
   }
   .cta-title {
     text-align: center;
@@ -473,42 +561,11 @@ $input-color: $white;
   .icon-style:hover {
     cursor: pointer;
   }
-  .red-line {
-    background: #9E221E;
-    width: 30%;
-    margin: auto;
-    height: 5px;
-    margin-bottom: 20px;
-  }
-  .red-line-title {
-    background: #9E221E;
-    width: 150px;
-    margin: auto;
-    height: 10px;
-    margin-bottom: 20px;
-  }
   .text-is-black {
     color: black;
   }
   .text-is-red {
     color: #9E221E;
-  }
-  #space {
-    padding-bottom: 60px;
-    line-height: 1.2;
-  }
-  .proverb-spacing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-  }
-  .maori-proverb {
-    color: black;
-    font-size: 30px;
-    font-weight: bolder;
-    text-align: center;
-    line-height: 1.0;
   }
 
   /* Footer Styling */
@@ -520,7 +577,6 @@ $input-color: $white;
     color: white;
     font-size: 25px;
     padding-right: 30px;
-    text-decoration: underline;
     list-style: none;
     font-family: 'Alfa Slab One', cursive;
   }
@@ -552,18 +608,6 @@ $input-color: $white;
     width: 100%;
     transition: width .5s;
   }
-  .list-line::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #9E221E;
-    transition: width .5s;
-  }
-  .list-line:hover::after {
-    width: 80%;
-    transition: width .5s;
-  }
 
   /* Contact Page Styling */
   .underline {
@@ -572,9 +616,11 @@ $input-color: $white;
     font-weight: bold;
   }
   .label-style {
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     text-align: left;
+    font-weight: 100px;
+    font-family: 'Alfa Slab One', cursive;
   }
   .input-style {
     border: 2px solid transparent;
@@ -598,13 +644,19 @@ $input-color: $white;
     border: 3px #9E221E solid;
     color: white;
   }
+  .contact-padding {
+    padding-right: 150px;
+  }
   .contact-spacing {
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
   }
   .contact-subtitle {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
+    line-height: 1.1;
+    font-family: 'Alfa Slab One', cursive;
   }
   .thank-you-title {
     text-align: center;
@@ -625,18 +677,22 @@ $input-color: $white;
 
   /* Our Mahi Page Styling */
   .mahi-title {
-    color: #9E221E;
-    font-size: 70px;
-    text-align: left;
-    font-weight: bolder;
-    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
     margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    font-weight: 100px;
+    font-family: 'Alfa Slab One', cursive;  
   }
   .mahi-subtitle {
-    color: black;
-    font-size: 30px;
-    text-align: left;
+    color: #9E221E;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
     margin-bottom: 20px;
+    font-family: 'Alfa Slab One', cursive;  
   }
   .mahi-text {
     color: white;
@@ -840,8 +896,8 @@ $input-color: $white;
   }
   .privacy-title {
     color: white;
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Alfa Slab One', cursive;
     line-height: 1.0;
     margin-bottom: 20px;
   }
@@ -958,19 +1014,14 @@ $input-color: $white;
     margin-top: 70px;
   }
   .mahi-title {
-    color: #9E221E;
-    font-size: 50px;
-    text-align: left;
-    font-weight: bolder;
-    line-height: 60px;
-    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
   }
   .mahi-subtitle {
-    color: black;
-    font-size: 30px;
-    text-align: left;
-    margin-bottom: 20px;
-    line-height: 30px;
+    color: #9E221E;
+    font-size: 20px;
+    text-align: center;
   }
   .mahi-text {
     color: white;
@@ -995,9 +1046,11 @@ $input-color: $white;
   .contact-spacing {
     margin-left: 30px;
     margin-right: 30px;
+    margin-top: 20px;
   }
   .contact-subtitle {
     font-size: 25px;
+    text-align: center;
   }
   .mahi-image {
     display: flex;
@@ -1029,21 +1082,13 @@ $input-color: $white;
     padding-left: 30px;
     padding-right: 30px;
   }
-  .is-flexstart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .is-flexend {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .contact-button {
-    margin: 0px;
+    margin-bottom: 10px;
   }
   .index-text {
     text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .translation-spacing {
     margin-bottom: 20px;
@@ -1060,7 +1105,7 @@ $input-color: $white;
     width: 60px;
     margin: auto;
     height: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .h2 {
     text-align: center;
@@ -1102,23 +1147,21 @@ $input-color: $white;
     padding-left: 40px;
     padding-right: 40px;
     width: 100%;
+    padding-top: 30px;
   }
   .values-title {
     color: white;
     font-size: 30px;
-    text-align: left;
-    font-weight: bold;
+    text-align: center;
   }
   .values-subtitle {
     color: #9E221E;
     font-size: 20px;
-    text-align: left;
-    margin-top: 40px;
+    text-align: center;
   }
   .values-text {
     color: white;
     font-size: 18px;
-    text-align: left;
   }
   .blog-post-title {
     color: black;
@@ -1158,6 +1201,7 @@ $input-color: $white;
   }
   .contact-subtitle {
     font-size: 20px;
+    text-align: left;
   }
   .privacy-title {
     font-size: 25px;
@@ -1168,6 +1212,7 @@ $input-color: $white;
   .contact-button-spacing {
     margin-left: 120px;
     margin-right: 120px;
+    margin-bottom: 20px;
   }
   .phone-button {
     display: flex;
@@ -1210,6 +1255,40 @@ $input-color: $white;
     height: 10px;
     margin-bottom: 20px;
   }
+  .who-hero-image {
+    height: 300px;
+  }
+  .values-hero-image {
+    height: 300px;
+  }
+  .services-hero-image {
+    height: 300px;
+  }
+  .contact-hero-image {
+    height: 300px;
+  }
+  .img-text {
+    font-family: 'Alfa Slab One', cursive;
+    color: white;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: top .5s ease;
+  }
+  .img-button {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  br {
+    display: hidden;
+  }
+  .contact-padding {
+    padding-right: 0;
+  }
 }
 
 /* Navbar Styling */
@@ -1220,8 +1299,8 @@ $input-color: $white;
     margin-top: 30px;
     margin-bottom: 30px;
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 25px;
     right: 36px;
     top: 36px;
     float: right;
@@ -1257,7 +1336,7 @@ $input-color: $white;
     display: table;
     background: white;
     font-size: 25px;
-    font-weight: semi-bold;
+    font-family: 'Alfa Slab One', cursive;
     padding-top: 100px;
     padding-bottom: 400px;
   }
@@ -1270,16 +1349,27 @@ $input-color: $white;
   .bm-item {
     text-align: left;
     color: black;
-    font-weight: semi-bold;
     margin-bottom: 20px;
     text-align: center;
-  }
-  .bm-item:hover {
-    color: #9E221E;
-    font-weight: bolder;
   }
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
   }
+}
+.list-line {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.list-line::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 6px;
+  background: #9E221E;
+  transition: width .5s;
+}
+.list-line:hover::after {
+  width: 100%;
+  transition: width .5s;
 }
 

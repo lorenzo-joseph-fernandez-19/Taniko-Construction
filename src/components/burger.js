@@ -6,10 +6,10 @@ import { push as Menu } from 'react-burger-menu'
 const burgerMenu = () => {
     return (
         <Menu width="100%" right>
-            <Link to="/who-we-are">Who We Are</Link>
-            <Link to="/our-values">Our Values</Link>
-            <Link to="/our-services">Our Services</Link>
-            <Link to="/contact">Contact Us</Link>
+            <Link className="list-line" to="/who-we-are">Who We Are</Link>
+            <Link className="list-line" to="/our-values">Our Values</Link>
+            <Link className="list-line" to="/our-services">Our Services</Link>
+            <Link className="list-line" to="/contact">Contact Us</Link>
         </Menu>
     )
 }

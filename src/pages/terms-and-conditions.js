@@ -14,7 +14,6 @@ const Terms = () => {
         }}>
             <div className="section">
                 <h2 className="h2">Terms & Conditions</h2>
-                <hr className="red-line-title" />
             </div>
         <section className="section">
                 <div className="container index-spacing">

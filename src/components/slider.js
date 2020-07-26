@@ -2,7 +2,7 @@ import React from 'react'
 import HeroSlider, { Slide, Nav } from "hero-slider"
 import Subtitle from "../components/UI/Subtitle/subtitle.js"
 import Wrapper from '../components/UI/Wrapper/wrapper'
-import Image from "../images/homepage.jpg"
+import Image from "../images/flax.jpg"
 
 
 const Slider = () => {
