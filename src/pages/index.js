@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import '../styles/mystyles.scss'
 import Slider from '../components/slider'
-import Flax from '../images/flax.jpg'
+import Image from '../images/homepage.jpg'
 import Grass from '../images/grass.jpg'
 import Piha from '../images/piha.jpg'
 import Muriwai from '../images/muriwai.jpg'
@@ -22,7 +22,7 @@ const HomePage = () => {
         <div className="section columns is-multiline index-spacing">
             <div className="column is-6 centered">
                 <div className="img-container">
-                    <img className="img-styling" src={Muriwai} alt="Muriwai Beach" />
+                    <img className="img-styling" src={Image} alt="Auckland Beach" />
                     <p className="img-title">Who We Are</p>
                     <div className="overlay"></div>
                         <Link to="/who-we-are"><button className="img-button">Learn more</button></Link>
@@ -30,7 +30,7 @@ const HomePage = () => {
             </div>
             <div className="column is-6 centered">
                 <div className="img-container">
-                    <img className="img-styling" src={Flax} alt="New Zealand Flax" />
+                    <img className="img-styling" src={Muriwai} alt="Muriwai Beach" />
                     <p className="img-title">Our Values</p>
                     <div className="overlay"></div>
                         <Link to="/our-values"><button className="img-button">Learn more</button></Link>
@@ -38,7 +38,7 @@ const HomePage = () => {
             </div>
             <div className="column is-6 centered">
                 <div className="img-container">
-                    <img className="img-styling" src={Grass} alt="New Zealand Grass" />
+                    <img className="img-styling" src={Grass} alt="Auckland Grass" />
                     <p className="img-title">Our Services</p>
                     <div className="overlay"></div>
                     <Link to="/our-services"><button className="img-button">Learn more</button></Link>

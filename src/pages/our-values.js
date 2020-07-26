@@ -15,33 +15,33 @@ const ourValues = () => {
         <div className="values-hero-image">
             <h2 className="img-text">Our Values</h2>
         </div>
-        <div className="logo-center">
+        {/* <div className="logo-center">
             <img src={Triangle} width="600" height="600" alt="Taniko Logo" />
-        </div>
-        <div className="section mahi-spacing">
+        </div> */}
+        <div className="section">
             <div className="columns">
                 <div className="column values-spacing">
                     <div className="logo-center">
                         <img src={Atua} width="300" height="300" alt="Mauri Atua"/>
                     </div>
-                        <h2 className="values-title">Mauri Atua</h2>
-                        <p className="values-subtitle">Spiritual Life Essence</p>
+                        <h2 className="mahi-title">Mauri Atua</h2>
+                        <p className="mahi-subtitle">Spiritual Life Essence</p>
                 </div>
 
                 <div className="column values-spacing">
                     <div className="logo-center">
                         <img src={Whenua} width="300" height="300" alt="Mauri Whenua"/>
                     </div>
-                        <h2 className="values-title">Mauri Whenua</h2>
-                        <p className="values-subtitle">Environmental Life Essence</p>
+                        <h2 className="mahi-title">Mauri Whenua</h2>
+                        <p className="mahi-subtitle">Environmental Life Essence</p>
                 </div>
 
                 <div className="column values-spacing">
                     <div className="logo-center">
                         <img src={Tangata} width="300" height="300" alt="Mauri Tangata"/>
                     </div>
-                        <h2 className="values-title">Mauri Tangata</h2>
-                        <p className="values-subtitle">People Life Essence</p>
+                        <h2 className="mahi-title">Mauri Tangata</h2>
+                        <p className="mahi-subtitle">People Life Essence</p>
                 </div>
             </div>
         </div>
@@ -55,22 +55,23 @@ const ourValues = () => {
         
         <div className="section has-text-centered">
             <h2 className="values-title">Business Values</h2>
+            <p className="values-text">Tāniko is guided by the following core principles:</p>
         </div>
         <div className="section mahi-spacing">
             <div className="columns">
-                <div className="column values-spacing">
+                <div className="column red-border values-spacing">
                     <h2 className="values-title">Rangitiranga</h2>
-                    <p className="values-subtitle">Leadership, Independence & Self-Determination</p>
+                    <p className="values-subtitle">Chieftainship | Leadership | Independence | Self-Determination</p>
                     <p className="values-text">We lead ourselves and others, enhancing self-efficacy.</p>
                 </div>
-                <div className="column values-spacing">
+                <div className="column red-border values-spacing">
                 <h2 className="values-title">Tika</h2>
-                    <p className="values-subtitle">Righteousness, Being Correct & Doing the Right Thing</p>
+                    <p className="values-subtitle">Righteousness | Being Correct | Doing the Right Thing</p>
                     <p className="values-text">We are professional and we always do what is right, and correct.</p>
                 </div>
-                <div className="column values-spacing">
+                <div className="column red-border values-spacing">
                 <h2 className="values-title">Auahatanga</h2>
-                    <p className="values-subtitle">Innovation & Creativity</p>
+                    <p className="values-subtitle">Innovation | Creativity | Creativeness </p>
                     <p className="values-text">We turn creative and innovative solutions into reality.</p>
                 </div>
             </div>

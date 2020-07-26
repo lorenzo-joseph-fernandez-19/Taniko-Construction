@@ -16,7 +16,6 @@ const Footer = () => {
             <div className="column column-style">
               <ul>
                 <li className="footer-title"><p>About Us</p></li>
-                <li className="list-style"><Link to="/our-mahi">Our Work</Link></li>
                 <li className="list-style"><Link to="/our-values">Our Values</Link></li>
                 </ul>
               </div>
