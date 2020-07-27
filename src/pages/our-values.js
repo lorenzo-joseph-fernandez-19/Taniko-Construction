@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import Atua from "../images/mauri-atua.svg"
 import Whenua from "../images/mauri-whenua.svg"
 import Tangata from "../images/mauri-tangata.svg"
-import Triangle from "../images/taniko-triangle.svg"
 
 const ourValues = () => {
     return (
@@ -20,7 +19,7 @@ const ourValues = () => {
         </div> */}
         <div className="section">
             <div className="columns">
-                <div className="column values-spacing">
+                <div className="column">
                     <div className="logo-center">
                         <img src={Atua} width="300" height="300" alt="Mauri Atua"/>
                     </div>
@@ -57,7 +56,7 @@ const ourValues = () => {
             <h2 className="values-title">Business Values</h2>
             <p className="values-text">Tāniko is guided by the following core principles:</p>
         </div>
-        <div className="section mahi-spacing">
+        <div className="mahi-spacing">
             <div className="columns">
                 <div className="column red-border values-spacing">
                     <h2 className="values-title">Rangitiranga</h2>

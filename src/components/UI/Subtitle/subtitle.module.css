@@ -8,18 +8,29 @@
     border-left: 15px solid #9E221E;
     padding-left: 30px;
   }
-
+  @media only screen and (max-width: 1024px) {
+    .Container {
+      margin-left: 30px;
+    }
+  }  
   @media only screen and (max-width: 768px) {
     .Container {
       font-size: 20px;
       line-height: 1.2;
       color: white;
-      text-align: center;
+      text-align: left;
       margin-bottom: 20px;
       margin-left: 0;
       margin-right: 0;
       padding-left: 50px;
       padding-right: 50px;
       border-left: 0;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .Container {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 60px;
     }
   }
