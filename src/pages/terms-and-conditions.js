@@ -13,7 +13,7 @@ const Terms = () => {
             description: "By accessing our website we assume you accept these terms and conditions."
         }}>
             <div className="section">
-                <h2 className="h2">Terms & Conditions</h2>
+                <h2 className="img-text">Terms & Conditions</h2>
             </div>
         <section className="section">
                 <div className="container index-spacing">

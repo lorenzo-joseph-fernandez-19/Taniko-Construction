@@ -36,11 +36,7 @@ const Slider = () => {
             backgroundImage: Image,
             backgroundBlendMode: '#000000',
           }}>
-          <div className="columns">
-            <div className="column is-4">
               <Subtitle>Tāniko which means ‘to weave together’ is a professional Māori enablement collective that facilitates and implements indigenous principles and knowledge and makes them relevant in today’s world. We collaborate with individuals and organisations by interweaving indigenous knowledge into modern business practices to reveal the hidden potential and to inspire business innovation excellence.</Subtitle>
-            </div>
-          </div>
         </Slide>
         <Nav />
       </HeroSlider>

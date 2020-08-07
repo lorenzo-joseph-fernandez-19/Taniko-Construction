@@ -306,14 +306,6 @@ $input-color: $white;
     height: 400px;
     color: white;
   }
-  .contact-hero-image {
-    display: table;
-    width: 100%;
-    background: 
-      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/piha.jpg") bottom;
-    height: 400px;
-    color: white;
-  }
 .blog-hero-image {
   display: table;
     width: 100%;
@@ -978,6 +970,11 @@ $input-color: $white;
 br {
   display: none;
 }
+.index-text {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 
 @media (min-width: 768px) and (max-width: 1023px){
   .index-spacing {
@@ -985,7 +982,6 @@ br {
     padding-right: 80px;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   h1 {
@@ -1010,6 +1006,9 @@ br {
     width: 100%;
     height: 400px;
     position: absolute;
+  }
+  .blog-hero-image {
+    height: 150px;
   }
   .container-position {
     margin-top: 200px;
@@ -1294,23 +1293,24 @@ br {
     margin-bottom: 20px;
   }
   .who-hero-image {
-    height: 300px;
+    height: 150px;
   }
   .values-hero-image {
-    height: 300px;
+    height: 150px;
   }
   .services-hero-image {
-    height: 300px;
+    height: 150px;
   }
   .contact-hero-image {
-    height: 300px;
+    height: 150px;
   }
   .img-text {
     font-family: 'Bahnschrift Regular';
     color: white;
     margin-bottom: 20px;
     position: absolute;
-    top: 40%;
+    top: 33%;
+    bottom: 40%;
     left: 50%;
     font-size: 30px;
     transform: translate(-50%, -50%);
@@ -1326,6 +1326,16 @@ br {
   }
   .contact-padding {
     padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .img-text {
+    top: 37%;
+    bottom: 40%;
+    font-size: 25px;
+    width: 60%; 
+    text-align: center;
   }
 }
 
@@ -1353,6 +1363,7 @@ br {
   }
   .img-text {
     top: 50%;
+    bottom: 17%;
     font-size: 25px;
     width: 60%; 
     text-align: center;
