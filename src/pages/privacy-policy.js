@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
             description: "This privacy policy explains how we may collect, store, use, and disclose any personal information that you provide to us when using our website..."
         }}>
             <div className="section">
-                <h2 className="h2">Privacy Policy</h2>
+                <h2 className="img-text">Privacy Policy</h2>
             </div>
         <section className="section">
                 <div className="container index-spacing">

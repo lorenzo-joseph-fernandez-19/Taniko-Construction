@@ -1,14 +1,11 @@
 .Container {
-  display: grid;
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-row-start: row1-start;
-  grid-row-end: 3;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
   }
 
   @media only screen and (max-width: 768px) {
     .Container {
-      padding-left: 50px;
-      padding-right: 50px;
+     text-align: left;
     }
   }
