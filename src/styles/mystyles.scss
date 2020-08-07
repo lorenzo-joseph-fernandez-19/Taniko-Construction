@@ -181,22 +181,22 @@ $input-color: $white;
   .red-border {
     border: 1px solid #9E221E;
     height: 300px;
-    margin-top: 20px;
   }
 
   .font {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Bahnschrift Regular';
   }
 
   /* Index Page Styling */
   .img-text {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Bahnschrift Regular';
+    font-weight: 800;
     color: white;
     margin-bottom: 20px;
     position: absolute;
     top: 40%;
     left: 50%;
-    font-size: 30px;
+    font-size: 40px;
     transform: translate(-50%, -50%);
     z-index: 1;
     transition: top .5s ease;
@@ -226,16 +226,15 @@ $input-color: $white;
     left: 0;
     border-radius: 10px;
     margin-bottom: 20px;
-
   }
   .img-title {
     position: absolute;
     left: 0;
     right: 0;
     top: 120px;
-    font-size: 25px;
-    font-weight: 100px;
-    font-family: 'Alfa Slab One', cursive;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Bahnschrift Regular';
     text-align: center;
     color: white;
     z-index: 1;
@@ -379,7 +378,7 @@ $input-color: $white;
   .header-font {
     font-size: 20px;
     margin: 20px;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Bahnschrift Regular';
   }
   .header-font:hover {
     color: white;
@@ -403,6 +402,7 @@ $input-color: $white;
   .background-is-black {
     background-color: black;
     border-top: 1px solid white;
+    margin-top: 60px;
   }
   .index-text {
     color: white;
@@ -412,6 +412,15 @@ $input-color: $white;
     padding-left: 200px;
     padding-right: 200px;
   }
+  .services-text {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  
   .values-spacing {
     padding-left: 60px;
     padding-right: 60px;
@@ -424,7 +433,7 @@ $input-color: $white;
     margin-bottom: 20px;
     line-height: 1.1;
     font-weight: 100px;
-    font-family: 'Alfa Slab One', cursive;  
+    font-family: 'Bahnschrift Regular';
   }
   .values-line {
     background: #9E221E;
@@ -438,39 +447,29 @@ $input-color: $white;
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 20px;
-    font-family: 'Alfa Slab One', cursive;  
+    font-family: 'Bahnschrift Regular';
   }
   .values-text {
     color: white;
     font-size: 18px;
     line-height: 1.2;
     text-align: center;
-    margin-bottom: 20px;
-  }
-  .phone-button {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-  .contact-button-spacing {
-    margin-left: 450px;
-    margin-right: 450px;
   }
   .contact-button {
     background-color: transparent;
     border: 2px solid white;
     border-radius: 10px;
     color: #FFFFFF;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    size: 40px;
     font-family: $family-sans-serif;
     font-weight: bold;
     font-size: 1rem;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 250px
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    width: 100px;
+    padding: 15px;
   }
   .contact-button:hover {
     background: #9E221E;
@@ -501,10 +500,11 @@ $input-color: $white;
     text-align: center;
     font-size: 30px;
     color: white;
-    margin-top: 40px;
     margin-bottom: 20px;
     line-height: 1.1;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Bahnschrift Regular';
+    font-style: italic;
+    font-weight: 700;
   }
   .cta-title {
     text-align: center;
@@ -578,7 +578,9 @@ $input-color: $white;
     font-size: 25px;
     padding-right: 30px;
     list-style: none;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Bahnschrift Regular';
+    font-weight: 700;
+    text-align: left;
   }
   .footer-font {
     font-size: 18px;
@@ -616,22 +618,23 @@ $input-color: $white;
     font-weight: bold;
   }
   .label-style {
-    font-size: 15px;
+    font-size: 18px;
     color: white;
     text-align: left;
     font-weight: 100px;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Bahnschrift Regular';
   }
   .input-style {
     border: 2px solid transparent;
     color: black;
+    margin-top: 20px;
   }
   .button-style {
     text-align: center;
     color: white;
     font-size: 20px;
     border: 2px #9E221E solid;
-    border-radius: 15px;
+    border-radius: 10px;
     width: 100px;
     display: flex;
     justify-content: center;
@@ -650,13 +653,13 @@ $input-color: $white;
   .contact-spacing {
     margin-left: 200px;
     margin-right: 200px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .contact-subtitle {
     font-size: 20px;
     color: white;
     line-height: 1.1;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Bahnschrift Regular';
   }
   .thank-you-title {
     text-align: center;
@@ -684,7 +687,7 @@ $input-color: $white;
     margin-bottom: 20px;
     line-height: 1.1;
     font-weight: 100px;
-    font-family: 'Alfa Slab One', cursive;  
+    font-family: 'Bahnschrift Regular';
   }
   .mahi-subtitle {
     color: #9E221E;
@@ -692,7 +695,6 @@ $input-color: $white;
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 20px;
-    font-family: 'Alfa Slab One', cursive;  
   }
   .mahi-text {
     color: white;
@@ -703,7 +705,6 @@ $input-color: $white;
   .mahi-spacing {
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 50px;
   }
   .mahi-image {
     display: flex;
@@ -740,9 +741,10 @@ $input-color: $white;
   }
   .blog-title {
     font-size: 25px;
-    font-weight: bold;
     color: black;
     line-height: 1.0;
+    font-family: 'Bahnschrift Regular';
+    font-weight: 700;
   }
   .blog-date {
     font-weight: medium;
@@ -756,10 +758,11 @@ $input-color: $white;
   .blog-post-title {
     color: black;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 800;
     padding-top: 70px;
     line-height: 1.0;
     margin-bottom: 10px;
+    font-family: 'Bahnschrift Regular';
   }
   .blog-post-date {
     color: black;
@@ -897,7 +900,8 @@ $input-color: $white;
   .privacy-title {
     color: white;
     font-size: 25px;
-    font-family: 'Alfa Slab One', cursive;
+    font-weight: 700;
+    font-family: 'Bahnschrift Regular';
     line-height: 1.0;
     margin-bottom: 20px;
   }
@@ -915,9 +919,9 @@ $input-color: $white;
     padding-left: 40px;
   }
   .bold-subtitle {
-    font-weight: bold;
+    font-weight: 400;
     font-size: 20px;
-    color: #9E221E;
+    font-family: 'Bahnschrift Regular';
     margin-bottom: 20px;
     line-height: 1.1;
   }
@@ -958,12 +962,27 @@ $input-color: $white;
     padding-left: 50px;
     padding-right: 50px;
   }
+  .img-text {
+    top: 25%;
+  }
+  .img-button {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .footer-title {
+    padding-right: 0px;
+}
+.contact-padding {
+  padding-right: 50px;
+}
+br {
+  display: none;
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
   .index-spacing {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -1072,9 +1091,8 @@ $input-color: $white;
     margin-right: 30px;
   }
   .mahi-spacing {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: -100px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .index-spacing {
     margin-left: 0px;
@@ -1083,12 +1101,28 @@ $input-color: $white;
     padding-right: 30px;
   }
   .contact-button {
-    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  #contact-space {
+    margin-bottom: 50px;
   }
   .index-text {
     text-align: left;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .services-text {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    line-height: 1.1;
   }
   .translation-spacing {
     margin-bottom: 20px;
@@ -1108,11 +1142,12 @@ $input-color: $white;
     margin-bottom: 10px;
   }
   .h2 {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
     color: white;
     margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .error-subtitle {
     text-align: center;
@@ -1198,6 +1233,7 @@ $input-color: $white;
   }
   .footer-title {
     font-size: 20px;
+    padding-right: 20px;
   }
   .contact-subtitle {
     font-size: 20px;
@@ -1225,8 +1261,10 @@ $input-color: $white;
     align-items: center;
   }
   .values-spacing {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .cta-title {
     text-align: center;
@@ -1268,7 +1306,7 @@ $input-color: $white;
     height: 300px;
   }
   .img-text {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Bahnschrift Regular';
     color: white;
     margin-bottom: 20px;
     position: absolute;
@@ -1280,14 +1318,44 @@ $input-color: $white;
     transition: top .5s ease;
   }
   .img-button {
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   br {
-    display: hidden;
+    display: none;
   }
   .contact-padding {
     padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .img-text {
+    top: 37%;
+    font-size: 25px;
+    width: 60%; 
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .img-button {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .index-spacing {
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .bm-menu {
+    font-size: 20px;
+  }
+  .img-text {
+    top: 50%;
+    font-size: 25px;
+    width: 60%; 
+    text-align: center;
   }
 }
 
@@ -1336,7 +1404,7 @@ $input-color: $white;
     display: table;
     background: white;
     font-size: 25px;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Bahnschrift Regular';
     padding-top: 100px;
     padding-bottom: 400px;
   }
@@ -1357,8 +1425,8 @@ $input-color: $white;
   }
 }
 .list-line {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .list-line::after {
   content: "";
@@ -1371,5 +1439,5 @@ $input-color: $white;
 .list-line:hover::after {
   width: 100%;
   transition: width .5s;
-}
-
+  }
+}  

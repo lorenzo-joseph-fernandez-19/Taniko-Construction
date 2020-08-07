@@ -12,7 +12,8 @@ const ourServices = () => {
                 <h2 className="img-text">Our Services</h2>
             </div>
             <div className="section">
-                <p className="index-text">Tāniko will meet with you to discuss your cultural elevation pathways. Tāniko can offer you the following enablement tools: </p>            
+                <p className="index-text">Tāniko will meet with you to discuss your cultural elevation pathways.</p>
+                <p className="services-text">Tāniko can offer you the following enablement tools: </p> 
             </div>
         </Layout>
     )

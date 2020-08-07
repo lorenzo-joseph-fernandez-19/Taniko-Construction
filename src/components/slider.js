@@ -38,7 +38,7 @@ const Slider = () => {
           }}>
           <div className="columns">
             <div className="column is-4">
-              <Subtitle>Tāniko is a professional consultancy group that will reveal the hidden potential embedded in sacred  principles, making them relevant  in today's world. We collaborate with individuals and organisations by interweaving ancient pathways into modern business practice.  The adoption of the Tāniko system will result in the enhancement of social, environmental, economic and cultural aspirations'</Subtitle>
+              <Subtitle>Tāniko which means ‘to weave together’ is a professional Māori enablement collective that facilitates and implements indigenous principles and knowledge and makes them relevant in today’s world. We collaborate with individuals and organisations by interweaving indigenous knowledge into modern business practices to reveal the hidden potential and to inspire business innovation excellence.</Subtitle>
             </div>
           </div>
         </Slide>
