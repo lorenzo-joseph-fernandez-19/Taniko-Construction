@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
-import Atua from "../images/mauri-atua.svg"
-import Whenua from "../images/mauri-whenua.svg"
-import Tangata from "../images/mauri-tangata.svg"
+// import Atua from "../images/mauri-atua.svg"
+// import Whenua from "../images/mauri-whenua.svg"
+// import Tangata from "../images/mauri-tangata.svg"
 
 const ourValues = () => {
     return (
@@ -14,10 +14,8 @@ const ourValues = () => {
         <div className="values-hero-image">
             <h2 className="img-text">Our Values</h2>
         </div>
-        {/* <div className="logo-center">
-            <img src={Triangle} width="600" height="600" alt="Taniko Logo" />
-        </div> */}
-        <div className="section">
+      
+        {/* <div className="section">
             <div className="columns">
                 <div className="column">
                     <div className="logo-center">
@@ -50,28 +48,42 @@ const ourValues = () => {
                     <p>These three forms of relationships are interconnected, and determine who Māori are. The guiding principle within these relationships is ‘mauri’ which means, ‘life-force, life essence and soul. Mauri emanates from the creation and conception of time. Mauri holds a central place to inform Māori, how and why their lives take the form they do. It imbues Māori thinking, knowledge, culture and values with a unique cultural heartbeat and rhythm. </p>
                     <p>In a Māori worldview everything has mauri; the trees, the birds, the oceans, the winds, the mountains, the land, the moon, the stars, the sun and all humans have mauri. Mauri is the inner activity that moves within us like the wairua (spirit) and is not located in any organ of the body. Mauri is the very thing that gives and breathes life into our wellbeing, our existence. When a human has a consciousness of the mauri, they understand their role and responsibilities within an interconnected holistic Māori worldview. </p>
                 </div>
-            </div>
+            </div> */}
         
         <div className="section has-text-centered">
-            <h2 className="values-title">Business Values</h2>
-            <p className="values-text">Tāniko is guided by the following core principles:</p>
+            <p className="index-text">Tāniko sets out to achieve its vision and purpose through the following Māori values:</p>
         </div>
         <div className="mahi-spacing">
-            <div className="columns">
-                <div className="column red-border values-spacing">
+            <div className="columns is-multiline">
+            <div className="column is-one-third red-border values-spacing">
+                <h2 className="values-title">Whanaungatanga</h2>
+                    <p className="values-subtitle">Relationships | Connections </p>
+                    <p className="values-text">We value the importance of relationships and we grow, develop and maintain meaningful relationships with people.</p>
+                </div>
+                <div className="column is-one-third red-border values-spacing">
+                <h2 className="values-title">Manaakitanga</h2>
+                    <p className="values-subtitle">Kindness | Generosity | Respect </p>
+                    <p className="values-text">We care for and look after the Mana (inherited strength) of all people.</p>
+                </div>
+                <div className="column is-one-third red-border values-spacing">
                     <h2 className="values-title">Rangitiranga</h2>
-                    <p className="values-subtitle">Chieftainship | Leadership | Independence | Self-Determination</p>
-                    <p className="values-text">We lead ourselves and others, enhancing self-efficacy.</p>
+                    <p className="values-subtitle">Leadership</p>
+                    <p className="values-text">We aspire to lead by example, and we grow leadership in others.</p>
                 </div>
-                <div className="column red-border values-spacing">
-                <h2 className="values-title">Tika</h2>
-                    <p className="values-subtitle">Righteousness | Being Correct | Doing the Right Thing</p>
-                    <p className="values-text">We are professional and we always do what is right, and correct.</p>
+                <div className="column is-one-third red-border values-spacing">
+                <h2 className="values-title">Kotahitanga</h2>
+                    <p className="values-subtitle">Unity | Collaboration | Solidarity</p>
+                    <p className="values-text">We promote unity and we work in partnership, collaboration and solidarity.</p>
                 </div>
-                <div className="column red-border values-spacing">
+                <div className="column is-one-third red-border values-spacing">
                 <h2 className="values-title">Auahatanga</h2>
-                    <p className="values-subtitle">Innovation | Creativity | Creativeness </p>
+                    <p className="values-subtitle">Innovation | Creativity</p>
                     <p className="values-text">We turn creative and innovative solutions into reality.</p>
+                </div>
+                <div className="column is-one-third red-border values-spacing">
+                <h2 className="values-title">Koungatanga</h2>
+                    <p className="values-subtitle">Quality | Excellence</p>
+                    <p className="values-text">We strive for excellence and we are quality driven.</p>
                 </div>
             </div>
         </div>
