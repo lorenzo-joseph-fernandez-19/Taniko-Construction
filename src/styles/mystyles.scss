@@ -178,11 +178,21 @@ $input-color: $white;
     color: white;
     cursor: pointer;
   }
+  .spacing {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 80px;
+  }
+  .our-team-title {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 60px;
+  }
   .red-border {
     border: 1px solid #9E221E;
     height: 300px;
   }
-
   .font {
     font-family: 'Bahnschrift Regular';
   }
@@ -193,16 +203,18 @@ $input-color: $white;
     font-weight: 800;
     color: white;
     margin-bottom: 20px;
+    text-align: center;
     position: absolute;
+    margin: 0;
     top: 40%;
     left: 50%;
     font-size: 40px;
     transform: translate(-50%, -50%);
     z-index: 1;
-    transition: top .5s ease;
   }
   .img-container {
     position: relative;
+    object-position: cover;
     width: 500px;
     height: 300px;
   }
@@ -245,7 +257,6 @@ $input-color: $white;
   }
   .img-button {
     position: absolute;
-    top: 180px;
     text-align: center;
     opacity: 0;
     transition: opacity .35s ease;
@@ -259,8 +270,11 @@ $input-color: $white;
     width: 180px;
     height: 50px;
     z-index: 1;
-    margin-left: 155px;
-    margin-right: 155px;
+    margin: 0;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     margin-bottom: 40px;
   }
   .img-button:hover {
@@ -279,6 +293,8 @@ $input-color: $white;
     width: 100%;
     background: 
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/homepage.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 400px;
     color: white;
   }
@@ -287,6 +303,8 @@ $input-color: $white;
     width: 100%;
     background: 
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/muriwai.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 400px;
     color: white;
   }
@@ -295,6 +313,8 @@ $input-color: $white;
     width: 100%;
     background: 
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/grass.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 400px;
     color: white;
   }
@@ -302,7 +322,9 @@ $input-color: $white;
     display: table;
     width: 100%;
     background: 
-      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/piha.jpg") center;
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/contact-hero.jpg") top;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 400px;
     color: white;
   }
@@ -311,6 +333,8 @@ $input-color: $white;
     width: 100%;
     background: 
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/piha.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 400px;
     color: white;
 }
@@ -404,6 +428,11 @@ $input-color: $white;
     padding-left: 200px;
     padding-right: 200px;
   }
+  .contact-text {
+    color: white;
+    font-size: 18px;
+    line-height: 1.2;
+  }
   .services-text {
     color: white;
     font-size: 18px;
@@ -451,17 +480,16 @@ $input-color: $white;
     background-color: transparent;
     border: 2px solid white;
     border-radius: 10px;
+    padding: 10px;
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
     font-family: $family-sans-serif;
     font-weight: bold;
     font-size: 1rem;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: 30px;
     width: 100px;
-    padding: 15px;
+    margin-top: 20px;
+    margin-right: 10px;
   }
   .contact-button:hover {
     background: #9E221E;
@@ -547,12 +575,6 @@ $input-color: $white;
   }
 
   button:focus {outline:0;}
-  .icon-style {
-    margin-right: 5px;
-  }
-  .icon-style:hover {
-    cursor: pointer;
-  }
   .text-is-black {
     color: black;
   }
@@ -837,12 +859,14 @@ $input-color: $white;
   }
   .name-wrapper-title {
     font-size: 30px;
+    font-weight: 800;
     color: white;
+    margin-bottom: 20px;
   }
   .name-wrapper-subtitle {
     font-weight: bold;
     font-size: 20px;
-    color: #9E221E;
+    color: white;
     line-height: 1.0;
     margin-bottom: 10px;
   }
@@ -860,6 +884,7 @@ $input-color: $white;
     font-weight: bolder;
     color: white;
     margin-bottom: 20px;
+    text-decoration: underline;
   }
   .name-wrapper-skills {
     line-height: 1.5;
@@ -888,6 +913,13 @@ $input-color: $white;
   .link-underline:hover {
     cursor: pointer;
     color: #9E221E;
+  }
+  .privacy-h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Bahnschrift Regular';
+    text-align: center;
   }
   .privacy-title {
     color: white;
@@ -948,18 +980,10 @@ $input-color: $white;
   }
   .name-wrapper-title {
     line-height: 1.1;
-    margin-bottom: 10px;
   }
   .index-spacing {
     padding-left: 50px;
     padding-right: 50px;
-  }
-  .img-text {
-    top: 25%;
-  }
-  .img-button {
-    margin-left: 100px;
-    margin-right: 100px;
   }
   .footer-title {
     padding-right: 0px;
@@ -974,7 +998,14 @@ br {
   padding-left: 100px;
   padding-right: 100px;
 }
-
+.spacing {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.img-text {
+  margin-top: 0px;
+  top: 25%;
+}
 
 @media (min-width: 768px) and (max-width: 1023px){
   .index-spacing {
@@ -1086,8 +1117,8 @@ br {
     margin-bottom: 0px;
   }
   .people-spacing {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .mahi-spacing {
     margin-left: 20px;
@@ -1099,14 +1130,7 @@ br {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .contact-button {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 70%;
-    margin-left: 45px;
-    margin-right: 45px;
-  }
+
   #contact-space {
     margin-bottom: 50px;
   }
@@ -1114,6 +1138,10 @@ br {
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .spacing {
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .services-text {
     margin-top: 20px;
@@ -1141,7 +1169,7 @@ br {
     margin-bottom: 10px;
   }
   .h2 {
-    text-align: left;
+    text-align: center;
     font-size: 25px;
     color: white;
     margin-bottom: 20px;
@@ -1160,6 +1188,7 @@ br {
   }
   .name-wrapper-subtitle {
     line-height: 0.5;
+    margin-bottom: 20px;
   }
   .name-wrapper-description {
     line-height: 1.2;
@@ -1244,11 +1273,6 @@ br {
   .bold-subtitle {
     font-size: 18px;
   }
-  .contact-button-spacing {
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-bottom: 20px;
-  }
   .phone-button {
     display: flex;
     justify-content: center;
@@ -1293,33 +1317,21 @@ br {
     margin-bottom: 20px;
   }
   .who-hero-image {
-    height: 150px;
+    height: 200px;
   }
   .values-hero-image {
-    height: 150px;
+    height: 200px;
   }
   .services-hero-image {
-    height: 150px;
+    height: 200px;
   }
   .contact-hero-image {
-    height: 150px;
+    height: 200px;
   }
   .img-text {
-    font-family: 'Bahnschrift Regular';
-    color: white;
-    margin-bottom: 20px;
-    position: absolute;
-    top: 33%;
-    bottom: 40%;
-    left: 50%;
+    position: relative;
+    margin-top: 80px;
     font-size: 30px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    transition: top .5s ease;
-  }
-  .img-button {
-    margin-left: 60px;
-    margin-right: 60px;
   }
   br {
     display: none;
@@ -1327,38 +1339,12 @@ br {
   .contact-padding {
     padding-right: 0;
   }
-}
-
-@media only screen and (max-width: 500px) {
-  .img-text {
-    top: 37%;
-    bottom: 40%;
-    font-size: 25px;
-    width: 60%; 
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .img-text {
-    top: 43%;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .img-text {
-    top: 37%;
-    font-size: 25px;
-    width: 60%; 
-    text-align: center;
+  .our-team-title {
+    font-size: 30px;
   }
 }
 
 @media only screen and (max-width: 350px) {
-  .img-button {
-    margin-left: 35px;
-    margin-right: 35px;
-  }
   .index-spacing {
     margin: 0px;
     padding-left: 20px;
@@ -1366,13 +1352,6 @@ br {
   }
   .bm-menu {
     font-size: 20px;
-  }
-  .img-text {
-    top: 50%;
-    bottom: 17%;
-    font-size: 25px;
-    width: 60%; 
-    text-align: center;
   }
 }
 

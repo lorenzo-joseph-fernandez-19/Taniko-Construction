@@ -29,24 +29,21 @@ const BlogPage = () => {
         }}>
          <div className="blog-hero-image">
             <h2 className="img-text">Our Blog</h2>
-            </div>
-          <div className="section people-spacing">
-              <ol className="columns blog-column">{data.allWordpressPost.edges.map((edge) => { 
+          </div>
+          <div className="section">
+          <div className="mahi-spacing">
+              <ol className="columns">{data.allWordpressPost.edges.map((edge) => { 
                 return (
                   <Link to={`/blog/${edge.node.slug}`}>
                     <article className="column">
-                        <div className="card card-style">
-                          <div className="card-image">
-                            <figure className="image">
+                        <div className="card-style card">
+                            <figure className="image is-4by3">
                               <img src={edge.node.featured_media.source_url} alt={edge.node.title}/>
                             </figure>
-                          </div>
                           <div className="card-content">
                             <div className="media">
                               <div className="media-content">
-                              <div class="">
                                   <span class="blog-date">{edge.node.date}</span>
-                                </div>
                                 <p className="blog-title">{edge.node.title}</p>
                               </div>
                             </div>
@@ -59,8 +56,10 @@ const BlogPage = () => {
               })}
               </ol>
             </div>
+          </div>
         </Layout>
     )
 }
 
 export default BlogPage
+

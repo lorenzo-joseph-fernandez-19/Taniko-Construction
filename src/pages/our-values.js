@@ -50,8 +50,8 @@ const ourValues = () => {
                 </div>
             </div> */}
         
-        <div className="section has-text-centered">
-            <p className="index-text">Tāniko sets out to achieve its vision and purpose through the following Māori values:</p>
+        <div className="section values-spacing">
+            <p className="values-text">Tāniko sets out to achieve its vision and purpose through the following Māori values:</p>
         </div>
         <div className="mahi-spacing">
             <div className="columns is-multiline">

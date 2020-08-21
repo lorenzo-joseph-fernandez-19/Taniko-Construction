@@ -1,41 +1,22 @@
 .Container {
-    font-size: 25px;
-    line-height: 1.4;
-    color: white;
-    margin-top: 300px;
-    margin-bottom: 300px;
-    font-family: 'Bahnschrift Regular';
-    font-weight: 900;
-    padding-left: 200px;
-    padding-right: 200px;
-    text-align: center;
+  font-family: 'Bahnschrift Regular';
+  font-weight: 800;
+  color: white;
+  margin-bottom: 20px;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  font-size: 23px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 768px) {
+  .Container {
+  font-size: 18px;
+  line-height: 1.0;
   }
-  @media only screen and (max-width: 1024px) {
-    .Container {
-      margin-left: 30px;
-      margin-top: 500px;
-    }
-  }  
-  @media only screen and (max-width: 768px) {
-    .Container {
-      font-size: 20px;
-      line-height: 1.2;
-      color: white;
-      text-align: left;
-      margin-top: 100px;
-      margin-bottom: 20px;
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: 50px;
-      padding-right: 50px;
-      border-left: 0;
-    }
-  }
-  @media only screen and (max-width: 350px) {
-    .Container {
-      padding-left: 30px;
-      padding-right: 30px;
-      margin-top: 60px;
-      margin-bottom: 20px;
-    }
-  }
+}

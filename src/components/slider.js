@@ -1,7 +1,6 @@
 import React from 'react'
 import HeroSlider, { Slide, Nav } from "hero-slider"
 import Subtitle from "../components/UI/Subtitle/subtitle.js"
-import Wrapper from '../components/UI/Wrapper/wrapper'
 import Image from "../images/flax.jpg"
 
 
@@ -9,7 +8,7 @@ const Slider = () => {
     return (
       <HeroSlider
         slidingAnimation='left_to_right'
-        orientation="horizontal"
+        orientation="vertical"
         initialSlide={1}
         onBeforeChange={(previousSlide, nextSlide) =>
           console.log("onBeforeChange", previousSlide, nextSlide)
@@ -25,7 +24,7 @@ const Slider = () => {
           shouldAutoplay: false,
           shouldDisplayButtons: false,
           autoplayDuration: 4000,
-          height: '100vh',
+          height: '400px',
         }}
       >
         <Slide

@@ -8,6 +8,7 @@ export const query = graphql`
       title
       date(formatString: "MMMM Do, YYYY")
       content
+      excerpt
       featured_media {
         source_url
       }
@@ -18,7 +19,7 @@ export const query = graphql`
       <Layout pageMeta={{
         title: `${data.wordpressPost.title}`,
         keywords: ["Taniko"],
-        description: `${data.wordpressPost.content}`
+        description: `${data.wordpressPost.excerpt}`
       }}>
       <div className="hero is-medium is-bold">
          <img className="blog-image" src={data.wordpressPost.featured_media.source_url} alt={data.wordpressPost.title} width="2000" height="400" />
