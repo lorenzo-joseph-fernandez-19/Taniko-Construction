@@ -5,17 +5,18 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
       query {
-        allWordpressPost(sort: {fields: date, order: DESC}) {
+        allWpPost {
           edges {
             node {
-              title
-              slug
-              date(formatString: "MMMM Do, YYYY")
-              featured_media {
-                source_url
-              }
-              excerpt
               content
+              date (formatString: "MMMM Do, YYYY")
+              featuredImage {
+                node {
+                  mediaItemUrl
+                }
+              }
+              slug
+              title
             }
           }
         }
@@ -31,14 +32,14 @@ const BlogPage = () => {
             <h2 className="img-text">Our Blog</h2>
           </div>
           <div className="section">
-          <div className="mahi-spacing">
-              <ol className="columns">{data.allWordpressPost.edges.map((edge) => { 
+          <div className="mahi-spacing columns is-multiline">
+              <ol className="column is-narrow">{data.allWpPost.edges.map((edge) => { 
                 return (
                   <Link to={`/blog/${edge.node.slug}`}>
-                    <article className="column">
+                    <article className="">
                         <div className="card-style card">
                             <figure className="image is-4by3">
-                              <img src={edge.node.featured_media.source_url} alt={edge.node.title}/>
+                              <img src={edge.node.featuredImage.node.mediaItemUrl} alt={edge.node.title}/>
                             </figure>
                           <div className="card-content">
                             <div className="media">

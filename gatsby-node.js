@@ -16,6 +16,7 @@ exports.onCreateWebpackConfig = ({
     })
   }
 };
+
 const path = require(`path`)
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -23,16 +24,16 @@ exports.createPages = async ({ graphql, actions }) => {
   const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
   const res = await graphql(`
     query {
-        allWordpressPost(sort: {fields: date, order: DESC}) {
-            edges {
-                node {
-                  slug
-                }
-              }
-            }
+      allWpPost {
+        edges {
+          node {
+            slug
+          }
         }
+      }
+    }
   `)
-  res.data.allWordpressPost.edges.forEach(edge => {
+  res.data.allWpPost.edges.forEach(edge => {
     createPage({
       path: `/blog/${edge.node.slug}`,
       component: blogPostTemplate,
@@ -42,3 +43,4 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
+
