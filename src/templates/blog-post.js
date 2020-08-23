@@ -3,8 +3,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
 export const query = graphql`
-  query {
-    wpPost {
+  query ($slug: String!){
+      wpPost(slug: { eq: $slug }) {
       content
       date(formatString: "MMMM Do, YYYY")
       featuredImage {
