@@ -5,7 +5,7 @@ import '../styles/mystyles.scss'
 import Slider from '../components/slider'
 import Image from '../images/homepage.jpg'
 import Grass from '../images/grass.jpg'
-import Piha from '../images/piha.jpg'
+import Contact from '../images/contact-hero.jpg'
 import Muriwai from '../images/muriwai.jpg'
 
 const HomePage = () => {
@@ -46,7 +46,7 @@ const HomePage = () => {
             </div>
             <div className="column is-6 centered">
                 <div className="img-container">
-                    <img className="img-styling" src={Piha} alt="Piha Beach" />
+                    <img className="img-styling" src={Contact} alt="Our Team" />
                     <p className="img-title">Contact Us</p>
                     <div className="overlay"></div>
                     <Link to="/contact"><button className="img-button">Get in Touch</button></Link>

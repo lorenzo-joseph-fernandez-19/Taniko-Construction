@@ -1,21 +1,23 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { Link, graphql, useStaticQuery } from 'gatsby'
+// import bulmaCarousel from 'bulma-carousel/dist/js/bulma-carousel.min.js'
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
       query {
-        allWordpressPost(sort: {fields: date, order: DESC}) {
+        allWpPost {
           edges {
             node {
-              title
-              slug
-              date(formatString: "MMMM Do, YYYY")
-              featured_media {
-                source_url
-              }
-              excerpt
               content
+              date (formatString: "MMMM Do, YYYY")
+              featuredImage {
+                node {
+                  mediaItemUrl
+                }
+              }
+              slug
+              title
             }
           }
         }
@@ -29,38 +31,50 @@ const BlogPage = () => {
         }}>
          <div className="blog-hero-image">
             <h2 className="img-text">Our Blog</h2>
-            </div>
-          <div className="section people-spacing">
-              <ol className="columns blog-column">{data.allWordpressPost.edges.map((edge) => { 
+          </div>
+          <div className="section">
+          <div className="level">
+              <ol className="level-item">{data.allWpPost.edges.map((edge) => { 
                 return (
-                  <Link to={`/blog/${edge.node.slug}`}>
-                    <article className="column">
-                        <div className="card card-style">
-                          <div className="card-image">
-                            <figure className="image">
-                              <img src={edge.node.featured_media.source_url} alt={edge.node.title}/>
+                  <div className="columns is-multiline">
+                  <Link className="column" to={`/blog/${edge.node.slug}`}>
+      <section class="section">
+			<div class="container">
+				<div id="carousel-demo" class="carousel">
+					<div class="item-1">
+
+					</div>
+					<div class="item-2">
+					</div>
+					<div class="item-3">
+					</div>
+				</div>
+			</div>
+		</section>
+                        <div className="card-style card">
+                            <figure className="image is-4by3">
+                              <img className="img-style" src={edge.node.featuredImage.node.mediaItemUrl} alt={edge.node.title}/>
                             </figure>
-                          </div>
                           <div className="card-content">
                             <div className="media">
                               <div className="media-content">
-                              <div class="">
-                                  <span class="blog-date">{edge.node.date}</span>
-                                </div>
                                 <p className="blog-title">{edge.node.title}</p>
+                                <span class="blog-date">{edge.node.date}</span>
                               </div>
                             </div>
                               <button className="blog-button">Read More</button>                         
                           </div>
                         </div>
-                    </article>
                 </Link>
+                </div>
                 )
               })}
               </ol>
             </div>
+          </div>
         </Layout>
     )
 }
 
 export default BlogPage
+
