@@ -38,19 +38,6 @@ const BlogPage = () => {
                 return (
                   <div className="columns is-multiline">
                   <Link className="column" to={`/blog/${edge.node.slug}`}>
-      <section class="section">
-			<div class="container">
-				<div id="carousel-demo" class="carousel">
-					<div class="item-1">
-
-					</div>
-					<div class="item-2">
-					</div>
-					<div class="item-3">
-					</div>
-				</div>
-			</div>
-		</section>
                         <div className="card-style card">
                             <figure className="image is-4by3">
                               <img className="img-style" src={edge.node.featuredImage.node.mediaItemUrl} alt={edge.node.title}/>
