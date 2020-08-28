@@ -27,7 +27,7 @@ const BlogPage = () => {
         <Layout pageMeta={{
           title: "Our Blog",
           keywords: ["tāniko group blog"],
-          description: "Keep informed with our latest blogs."
+          description: "Keep up to date with our latest blogs."
         }}>
          <div className="blog-hero-image">
             <h2 className="img-text">Our Blog</h2>
