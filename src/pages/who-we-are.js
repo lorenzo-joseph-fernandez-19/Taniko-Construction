@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import Aiedy from '../images/Aiedy.png'
+import Aiedy from '../images/aiedy-di.png'
 import Paul from '../images/Paul.png'
 import Maxim from '../images/Maxim.png'
 
