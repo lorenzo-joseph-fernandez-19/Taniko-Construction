@@ -198,6 +198,16 @@ $input-color: $white;
     font-family: 'Bahnschrift Regular';
   }
 
+  .flexwrap {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .flexitem {
+    flex-grow: 1; /* default 0 */
+    flex-basis: 33.333333%;
+  }
+
   /* Index Page Styling */
   .img-text {
     font-family: 'Bahnschrift Regular';
