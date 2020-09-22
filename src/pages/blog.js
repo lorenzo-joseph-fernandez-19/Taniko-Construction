@@ -38,7 +38,7 @@ const BlogPage = () => {
                 return (
                   <div className="flexitem">
                   <Link to={`/blog/${edge.node.slug}`}>
-                        <div className="card-style card">
+                        <div className="card-gap card">
                             <figure className="image is-4by3">
                               <img className="img-style" src={edge.node.featuredImage.node.mediaItemUrl} alt={edge.node.title}/>
                             </figure>
