@@ -33,12 +33,12 @@ const BlogPage = () => {
             <h2 className="img-text">Our Blog</h2>
           </div>
           <div className="section">
-          <div className="level">
-              <ol className="level-item">{data.allWpPost.edges.map((edge) => { 
+          <div className="">
+              <ol className="flexwrap">{data.allWpPost.edges.map((edge) => { 
                 return (
-                  <div className="columns is-multiline">
-                  <Link className="column" to={`/blog/${edge.node.slug}`}>
-                        <div className="card-style card">
+                  <div className="flexitem">
+                  <Link to={`/blog/${edge.node.slug}`}>
+                        <div className="card-gap card">
                             <figure className="image is-4by3">
                               <img className="img-style" src={edge.node.featuredImage.node.mediaItemUrl} alt={edge.node.title}/>
                             </figure>

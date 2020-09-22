@@ -26,11 +26,10 @@ export const query = graphql`
       }}>
       <div className="hero">
          <img className="blog-image" src={data.wpPost.featuredImage.node.mediaItemUrl} alt={data.wpPost.title} />
-        <p className="img-text">{data.wpPost.title}</p>
-        <span className="img-text-date">{data.wpPost.date}</span>
+          <p className="img-text">{data.wpPost.title}</p>
        </div>
-       <div className=" container-position">
-          <div className="column is-8 is-offset-2">
+       <div className="container-position">
+          <div className="column">
             <div className="card card-style">
               <div className="card-content">
                 <div className="content blog-post-content-style">
