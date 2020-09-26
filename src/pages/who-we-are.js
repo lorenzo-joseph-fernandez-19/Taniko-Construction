@@ -26,7 +26,7 @@ const whoWeAre = () => {
                         <img src={Aiedy} height='400' width='400' alt="Aiedy Di"></img>
                     </div>
                     <div className="column">
-                    <h2 className="name-wrapper-title">Aiedy Di (Te Tinana)</h2>
+                    <h2 className="name-wrapper-title">Aiedy Di (Te Tuaiwi)</h2>
                         <ul className="name-wrapper-pepeha">
                             <li>Ko Língshān te maunga</li>
                             <li>Ko Yongding te awa</li>
@@ -41,7 +41,7 @@ const whoWeAre = () => {
                                 <li>Development</li>
                                 <li>IT systems design and implementation</li>
                             </ul>
-                            <p className="name-wrapper-description">Aiedy has worked in the procurement industry for over 6 years and has a Bcom, MCIPS and current Chairman of the CIPS Auckland Committee.</p>
+                            <p className="name-wrapper-description">Aiedy has worked in the procurement industry for over 6 years and has a BCom, MCIPS and current Chairman of the CIPS Auckland Committee.</p>
                     </div>
                 </div>
                 <div className="columns spacing">
@@ -49,7 +49,7 @@ const whoWeAre = () => {
                         <img src={Maxim} height='400' width='400' alt="Maxim Wehi"></img>
                     </div>
                     <div className="column">
-                    <h2 className="name-wrapper-title">Maxim Wehi (Te Ihomatua) </h2>
+                    <h2 className="name-wrapper-title">Maxim Wehi (Te Hinengaro) </h2>
                     <ul className="name-wrapper-pepeha">
                                 <li>Ko Matītī te maunga</li>
                                 <li>Ko Waioeka te awa</li>
@@ -74,7 +74,7 @@ const whoWeAre = () => {
                         <img src={Paul} height='400' width='400' alt="Paul Puru"></img>
                     </div>
                     <div className="column">
-                        <h2 className="name-wrapper-title">Pāora Puru (Te Ngākau)</h2>
+                        <h2 className="name-wrapper-title">Pāora Puru (Te Whatumanawa)</h2>
                         <ul className="name-wrapper-pepeha">
                                 <li>Ko Maungawhau te maunga</li>
                                 <li>Ko Waioeka te awa</li>
@@ -93,11 +93,7 @@ const whoWeAre = () => {
                             </ul>
                             <p className="name-wrapper-description">Pāora has a passion for Māori development, advocating for Māori to access greater economic opportunities to aid and support whānau, hapū <br /> and iwi prosperity.</p>
                     </div>
-                </div>
-                
-                
-                       
-                   
+                </div>                   
         </Layout>
     )
 }
