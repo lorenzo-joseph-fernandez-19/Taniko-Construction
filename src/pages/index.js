@@ -13,7 +13,7 @@ const HomePage = () => {
         <Layout pageMeta={{
             title: "Weaving a collective future together",
             keywords: ["maori enablement consultants, tāniko group, professional consultancy group"],
-            description: "Tāniko is a professional consultancy group that will reveal the hidden potential embedded in sacred  principals and make them relevant in today's world. We collaborate with individuals and organisations by interweaving ancient pathways into modern business practice."
+            description: "Tāniko is a professional consultancy group that will reveal the hidden potential embedded in sacred principals and make them relevant in today's world. We collaborate with individuals and organisations by interweaving ancient pathways into modern business practice."
         }}>
         <div>
           {typeof window !== 'undefined' && <Slider />}
