@@ -14,8 +14,8 @@ const contactPage = () => {
                   <h2 className="img-text">Contact Us</h2>
                 </div>
                 <div className="section has-text-centered contact-spacing">
-                  <h2 className="h2">Mā whero, mā pango ka oti ai te mahi</h2>
-                  <div className="contact-text">With your threads and our threads, the work will be completed. We’d love to hear from you!</div>
+                  <h2 className="h2">Mā whero, mā pango, ka oti ai te mahi,</h2>
+                  <div className="contact-text">With your threads and our threads, the work will be completed. <br />We’d love to hear from you!</div>
                 </div>
                   <ul className="columns centered">
                       <li><OutboundLink className="column contact-button" href="tel:+6427 515 6058" rel="noreferrer noopener"><FontAwesomeIcon icon={['fas', 'phone']} rotation={90} className="icon is-small" /></OutboundLink></li>
