@@ -17,7 +17,7 @@ const whoWeAre = () => {
             <div className="section">
                 <div className="index-text content">
                     <p>Tāniko means “to finger weave and or an embroider” which is a traditional Māori variation of twining. Tāniko designs are informed by cultural narratives on how Māori articulate their stories, culture, traditions, values and their spiritual and physical connections to the natural environment, Te Taiao. Tāniko patterns symbolize powerful reminders to the past which weave into the present, resulting in a platform for a sustainable future.</p>
-                    <p>The conceptual idea of Tāniko is that as a Māori enablement collective we interweave our collective threads together with the treads of our partners; to elevate the collective potential and shared mana (inherited strength and spiritual power) towards the pathway of Te Angitū, collective success.</p>
+                    <p>The conceptual idea of Tāniko is that as a Māori enablement collective we interweave our collective threads together with the threads of our partners; to elevate the collective potential and shared mana (inherited strength and spiritual power) towards the pathway of Te Angitū, collective success.</p>
                 </div>
             </div>
                 <h2 className="our-team-title">Our Team</h2>
@@ -77,10 +77,10 @@ const whoWeAre = () => {
                         <h2 className="name-wrapper-title">Pāora Puru (Te Whatumanawa)</h2>
                         <ul className="name-wrapper-pepeha">
                                 <li>Ko Maungawhau te maunga</li>
-                                <li>Ko Waioeka te awa</li>
                                 <li>Ko Te Mānukanuka 0 Hoturoa te moana</li>
                                 <li>Ko Tainui te waka</li>
                                 <li>Ko Ngāti Te Ata Waiohua te iwi</li>
+                                <li>Ko Tāhuna Kaitoto te marae</li>
                                 <li>Ko Te Ata-i-Rehia te tupuna</li>
                                 <li>Ko Te Huakaiwaka te rangatira</li>
                             </ul>
