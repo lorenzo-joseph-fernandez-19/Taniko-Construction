@@ -31,7 +31,7 @@ const ourValues = () => {
                     <p className="values-text">We care for and look after the Mana (inherited strength) of all people.</p>
                 </div>
                 <div className="column is-one-third red-border values-spacing">
-                    <h2 className="values-title">Rangatiranga</h2>
+                    <h2 className="values-title">Rangatiratanga</h2>
                     <p className="values-subtitle">Leadership</p>
                     <p className="values-text">We aspire to lead by example, and we grow leadership in others.</p>
                 </div>
