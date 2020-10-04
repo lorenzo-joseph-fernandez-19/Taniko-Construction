@@ -18,7 +18,7 @@ const ourServices = () => {
                 <div className="mahi-spacing">
             <div className="columns is-multiline">
             <div className="column is-one-third red-border values-spacing">
-                <h2 className="values-title">Cultural Competency Services</h2>
+                <h2 className="values-title">Cultural Capability Pathways</h2>
                     <p className="values-text">Equipping your business with an understanding and appreciation for a Māori world view.</p>
                 </div>
                 <div className="column is-one-third red-border values-spacing">
